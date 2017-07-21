@@ -6,10 +6,10 @@
 .DS_Store
 .svn
 
-prezos/out/
-prezos/log/*.log
-prezos/tmp/**
-prezos/node_modules/
-prezos/.sass-cache
-prezos/css/reveal.min.css
-prezos/js/reveal.min.js
+docs/out/
+docs/log/*.log
+docs/tmp/**
+docs/node_modules/
+docs/.sass-cache
+docs/css/reveal.min.css
+docs/js/reveal.min.js
