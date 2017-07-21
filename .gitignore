@@ -1,0 +1,15 @@
+.idea/
+*.iml
+*.iws
+*.eml
+
+.DS_Store
+.svn
+
+prezos/out/
+prezos/log/*.log
+prezos/tmp/**
+prezos/node_modules/
+prezos/.sass-cache
+prezos/css/reveal.min.css
+prezos/js/reveal.min.js
