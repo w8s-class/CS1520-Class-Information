@@ -1,7 +1,3 @@
-# Slide Decks
-
-* [Course Overview](/demo.html)
-
 # Part 1
 
 * Lecture 1
@@ -41,5 +37,37 @@
 * Lecture 11
 	* Exam
 
-* [Python](/demo.html)
-* [JavaScript](/demo.html)
+
+# Part 2
+
+* Lecture 1
+	* Intro to JavaScript
+		* Regex
+* Lecture 2
+	* DOM and Events
+	* JavaScript Forms
+	* Intro to AJAX
+* Lecture 3
+	* Intro to AJAX (Cont)
+	* AJAX and the DOM
+	* AJAX and XML
+	* AJAX and JSON
+	* JSON and jQuery
+	* APIs
+	* Client Side Storage
+
+
+# Part 3
+
+* Intro to jQuery
+* jQuery and AJAX
+
+
+# Part 4
+
+* Intro to XML
+* Markup Languages
+* Intro to CSS
+* XSL
+* Anatomy of XML
+* XML Document Models

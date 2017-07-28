@@ -8,11 +8,19 @@
 
 ## Source Material
 
-* Material from these notes is obtained from various sources, including, but not limited to, the following:
-	* Programming the World Wide Web, various editions, by Robert W. Sebesta
-	* Online documentation at: http://www.php.net and in particular the PHP Manual at http://www.php.net/manual/en/
-	* PHP and MySQL Web Development, by Luke Welling and Laura Thomson (Developer's Library)
-	* The Web Wizard's Guide to PHP by David A. Lash (AW)
+Material from these notes is obtained from various sources, including, but not limited to, the following:
+
+
+[Programming the World Wide Web](https://www.amazon.com/Programming-World-Wide-Web-8th/dp/0133775984), various editions, by Robert W. Sebesta
+
+
+Online documentation at: <http://www.php.net> and in particular the PHP Manual at <http://www.php.net/manual/en/>
+
+
+[PHP and MySQL Web Development](https://www.amazon.com/PHP-MySQL-Web-Development-4th/dp/0672329166), by Luke Welling and Laura Thomson (Developer's Library)
+
+
+[The Web Wizard's Guide to PHP](https://www.amazon.com/Web-Wizards-Guide-PHP/dp/0321121740) by David A. Lash (AW)
 
 
 
