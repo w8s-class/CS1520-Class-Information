@@ -1,8 +1,22 @@
 # Syllabus CS1520 Fall 2017
 
-[Programming Languages for Web Applications](http://people.cs.pitt.edu/~ramirez/cs1520/)
-
 [Slides](https://w8s-class.github.io/CS1520-Class-Information/)
+
+# Optional Textbook
+
+[Programming the World Wide Web, 8th Ed.](https://www.amazon.com/Programming-World-Wide-Web-8th/dp/0133775984) 
+Robert W. Sebesta 
+
+ISBN-13: 9780133776096
+
+# Grading Breakdown
+
+| Interaction          | Grade Percentage |
+|:---------------------|:-----------------|
+| First Exam           | 25%              |
+| Second Exam          | 25%              |
+| Programming Projects | 45%              |
+| Participation        | 5%               |
 
 # Course Policies
 
