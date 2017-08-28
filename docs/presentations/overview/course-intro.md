@@ -23,8 +23,12 @@
 
 ## History of the WWW
 
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-background-image="https://images4.alphacoders.com/550/thumb-1920-55008.jpg" -->
+
 * 1945: [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush) proposed the "memex", a device for storing and linking information stored on mircrofilm
 * 1963: [Ted Nelson](https://en.wikipedia.org/wiki/Ted_Nelson) coined the term "hypertext" as a text approach breaking away from traditional linear limitations
+* 1979: The Hitchhiker's Guide to the Galaxy
 
 Note:
 
