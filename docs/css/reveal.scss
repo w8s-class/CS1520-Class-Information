@@ -1492,3 +1492,17 @@ $header-footer-font: 0.3em;
 .reveal .footer{
   bottom: $header-footer-margin;
 }
+
+.element-bkg {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.column-left {
+	float: left; 
+	width: 45%
+}
+
+.column-right {
+	float: right; 
+	width: 40%
+}

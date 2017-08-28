@@ -1,0 +1,55 @@
+# Programming Languages for Web Applications
+
+
+
+## Goals for the Course
+
+* Examine the functionality of several <span class="fragment highlight-green">different programming languages</span> to gain a better understanding of the study of programming languages, themselves.
+* Learn the basics of and current practices for developing <span class="fragment highlight-green">web applications</span>.
+
+
+
+## What is the World Wide Web
+
+> "a part of the Internet accessed through a graphical user interface and containing documents often connected by hyperlinks —called also Web" <!-- .element: class="fragment highlight-red grow" -->
+
+
+
+## The World Wide Web
+
+> "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet"
+
+
+
+## History of the WWW
+
+* 1945: [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush) proposed the "memex", a device for storing and linking information stored on mircrofilm
+* 1963: [Ted Nelson](https://en.wikipedia.org/wiki/Ted_Nelson) coined the term "hypertext" as a text approach breaking away from traditional linear limitations
+
+Note:
+
+* Bush
+    * Key player in getting the manhattan project started and administering it
+    * wanted to develop a collective memory machine
+* Nelson
+    * Wanted to develop a system to help organize his chaotic thought process
+
+
+
+## [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
+
+* 1980: proposed ENQUIRE as a hypertext documentation system for CERN in Switzerland
+* 1989: proposed implementing a hypermedia system on top of the Internet, inventing the Web
+* 1990: wrote the first web browser (called WorldWideWeb)
+
+<!-- .element: class="column-left" style="font-size:0.8em;"-->
+
+![Sir Tim Berners-Lee](images/overview/Sir_Tim_Berners-Lee.jpg)
+<!-- .element: class="column-right" -->
+
+
+
+## WorldWideWeb
+
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-background-image="images/overview/worldwideweb-app.jpeg" -->

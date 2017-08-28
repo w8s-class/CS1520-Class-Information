@@ -1,5 +1,10 @@
 ## Disclaimer
 
+<!-- .element: class="fragment highlight-green" -->
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-transition="zoom" -->
+<!-- .slide: data-background-image="http://0.media.dorkly.cvcdn.com/92/72/77a6f1576e187ef11ec91b7e179e54e1.gif" -->
+
 * These notes are intended for use by students in CS1520 at the University of Pittsburgh and no one else
 * These notes are provided free of charge and may not be sold in any shape or form
 * These notes are NOT a substitute for material covered during course lectures.  If you miss a lecture, you should definitely obtain both these notes and notes written by a student who attended the lecture.

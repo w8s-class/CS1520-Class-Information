@@ -1369,3 +1369,14 @@ body {
 
 .reveal .footer {
   bottom: 0.3em; }
+
+.element-bkg {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.column-left {
+  float: left;
+  width: 45%; }
+
+.column-right {
+  float: right;
+  width: 40%; }
