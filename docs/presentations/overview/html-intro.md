@@ -92,3 +92,21 @@ span.italics {font-style: italic;}
 
 * Difference? <!-- .element: class="fragment current-visible" -->
 
+
+
+# Assignment
+
+
+
+## Assignment 1
+
+* Create github user
+* Join Slack chat
+    * email me [me@toddwaits.org](mailto:me@toddwaits.org) for an invite link
+    * Message me!
+* Join github class group
+* Create a repo with:
+    * `index.html`
+    * Use html tags to introduce yourself
+    * Style with CSS
+    * Have more than one commit
