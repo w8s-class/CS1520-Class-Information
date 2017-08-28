@@ -1,13 +1,16 @@
 ## Slides
 
 * [Course Overview](course-overview.html)
+
+<!-- 
 * [Intro to Web Servers](#)
 * [Intro to HTML](#)
-* [Intro to Python](#)
+* [Intro to Python](#) 
+-->
 
 
 
-## Servers and Communication
+<!-- ## Servers and Communication
 * [CGI and HTTP](#)
 * [Cookies and Sessions](#)
 * [Email](#)
@@ -19,4 +22,4 @@
 * [Persisting Data](#)
 * [MySQL](#)
 * [MySQL and Python](#)
-* [Database Security](#)
+* [Database Security](#) -->

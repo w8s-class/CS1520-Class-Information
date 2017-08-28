@@ -7,6 +7,9 @@
 
 ## Instructor Info
 
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-background-image="https://i.makeagif.com/media/5-24-2015/QYib8h.gif" -->
+
 * Todd Waits
     * Email: me@toddwaits.org
     * Slack: <https://cs1520-fall2017.slack.com>

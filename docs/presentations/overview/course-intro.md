@@ -11,7 +11,7 @@
 
 ## What is the World Wide Web
 
-> "a part of the Internet accessed through a graphical user interface and containing documents often connected by hyperlinks —called also Web" <!-- .element: class="fragment highlight-red grow" -->
+> "a part of the Internet accessed through a graphical user interface and containing documents often connected by hyperlinks-- called also Web" <!-- .element: class="fragment highlight-red grow" -->
 
 
 
