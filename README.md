@@ -22,6 +22,8 @@ Todd Waits
 * Twitter: [@toddwaits](https://twitter.com/toddwaits)
 * Web: <http://www.toddwaits.org>
 
+I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will not be monitoring Slack or Email between the hours of 10p-8a. Weekend responses will be spotty.
+
 | Office     | Hours |
 |:-----------|:------|
 | TBD        | TBD   |
