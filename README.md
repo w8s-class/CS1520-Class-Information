@@ -61,7 +61,7 @@ ISBN-13: 9780133776096
 
 | #  | Topics                                                | Materials                                                                                                |
 |:---|:------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| 0  | Introduction to the course                            | * Goals of the course                                                                                    |
+| 0  | Introduction to the course                            | * [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                                                                                    |
 |    |                                                       | * Brief HTML/CSS overview slides                                                                         |
 |    |                                                       | * [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)                                          |
 |    |                                                       | * [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                                            |
