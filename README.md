@@ -26,7 +26,7 @@ I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will
 
 No need to address me as `Professor`. You can call me Todd.
 
-**APPEND `[CS1250]` TO ALL EMAIL COMMUNICATION SUBJECT LINES.** I will lose track of emails that do not include that in the subject. 
+**APPEND `[CS1520]` TO ALL EMAIL COMMUNICATION SUBJECT LINES.** I will lose track of emails that do not include that in the subject. 
 
 | Office | Hours               |
 |:-------|:--------------------|
