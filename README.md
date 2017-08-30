@@ -29,7 +29,9 @@ I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will
 | TBD    | Lecture 1: T 5p-6p  |
 | TBD    | Lecture 2: Th 5p-6p |
 
-### TA
+### TAs
+
+#### T/Th Lecture 1 TA
 
 Pranut Jain
 
@@ -39,6 +41,17 @@ Pranut Jain
 | Office     | Hours |
 |:-----------|:------|
 | 5501       | TBD   |
+
+#### M Lecture 2 TA
+
+TBD
+
+* Email: TBD
+* GitHub: TBD
+
+| Office     | Hours |
+|:-----------|:------|
+| TBD        | TBD   |
 
 Email Pranut to set an appointment for the first two weeks, as we determine office hours.
 
