@@ -30,16 +30,16 @@ I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will
 
 ### TA
 
-TBD
+Pranut Jain
 
-* Email: TBD
-* GitHub: TBD
-* Twitter: TBD
-* Web: TBD
+* Email: praj17@pitt.edu
+* GitHub: pranut
 
 | Office     | Hours |
 |:-----------|:------|
-| TBD        | TBD   |
+| 5501       | TBD   |
+
+Email Pranut to set an appointment for the first two weeks, as we determine office hours.
 
 ### Optional Textbook
 
