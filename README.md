@@ -6,8 +6,8 @@
 
 | Class                | Class Number | Location     | Time              |
 |:---------------------|:-------------|:-------------|:------------------|
-| Lecture Section 1    | 20013        | SENSQ 5502   | T/Th 6:00-7:15 PM |
-| Lecture Section 2    | 30648        | VICTORIA 122 | M 5:30-8:15 PM    |
+| Lecture 1            | 20013        | SENSQ 5502   | T/Th 6:00-7:15 PM |
+| Lecture 2            | 30648        | VICTORIA 122 | M 5:30-8:15 PM    |
 | Recitation Section 1 | 30649        | SENSQ 5505   | F 4:00-4:50 PM    |
 | Recitation Section 2 | 30650        | SENSQ 5505   | F 5:00-5:50 PM    |
 | Recitation Section 3 | 20021        | SENSQ 5502   | F 10:00-10:50 AM  |
@@ -24,9 +24,10 @@ Todd Waits
 
 I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will not be monitoring Slack or Email between the hours of 10p-8a. Weekend responses will be spotty.
 
-| Office     | Hours |
-|:-----------|:------|
-| TBD        | TBD   |
+| Office | Hours               |
+|:-------|:--------------------|
+| TBD    | Lecture 1: T 5p-6p  |
+| TBD    | Lecture 2: Th 5p-6p |
 
 ### TA
 
