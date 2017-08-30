@@ -24,6 +24,10 @@ Todd Waits
 
 I will try to reply to email within 24 hrs, and Slack chats within 4 hrs. I will not be monitoring Slack or Email between the hours of 10p-8a. Weekend responses will be spotty.
 
+No need to address me as `Professor`. You can call me Todd.
+
+**APPEND `[CS1250]` TO ALL EMAIL COMMUNICATION SUBJECT LINES.** I will lose track of emails that do not include that in the subject. 
+
 | Office | Hours               |
 |:-------|:--------------------|
 | TBD    | Lecture 1: T 5p-6p  |
