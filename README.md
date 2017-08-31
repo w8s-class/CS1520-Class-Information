@@ -39,7 +39,7 @@ No need to address me as `Professor`. You can call me Todd.
 
 Pranut Jain
 
-* Email: praj17@pitt.edu
+* Email: prj17@pitt.edu
 * GitHub: pranut
 
 | Office     | Hours |
