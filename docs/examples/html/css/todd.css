@@ -1,0 +1,12 @@
+h1.awesome, h4 {
+    color: red;
+    font-style: italic;
+}
+
+.class p {
+    color: brown;
+}
+
+#first {
+    font-size: 3em;
+}
