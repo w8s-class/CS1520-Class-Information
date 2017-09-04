@@ -1,25 +1,25 @@
 # Programming Languages for Web Applications
 
-
+-###-
 
 ## Goals for the Course
 
 * Examine the functionality of several <span class="fragment highlight-green">different programming languages</span> to gain a better understanding of the study of programming languages, themselves.
 * Learn the basics of and current practices for developing <span class="fragment highlight-green">web applications</span>.
 
-
+-###-
 
 ## What is the World Wide Web
 
 > "a part of the Internet accessed through a graphical user interface and containing documents often connected by hyperlinks-- called also Web" <!-- .element: class="fragment highlight-red grow" -->
 
-
+-###-
 
 ## The World Wide Web
 
 > "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet"
 
-
+-###-
 
 ## History of the WWW
 
@@ -38,7 +38,7 @@ Note:
 * Nelson
     * Wanted to develop a system to help organize his chaotic thought process
 
-
+-###-
 
 ## [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
 
@@ -51,7 +51,7 @@ Note:
 ![Sir Tim Berners-Lee](images/overview/Sir_Tim_Berners-Lee.jpg)
 <!-- .element: class="column-right" -->
 
-
+-###-
 
 ## WorldWideWeb
 

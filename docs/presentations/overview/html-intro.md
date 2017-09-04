@@ -1,6 +1,6 @@
 # HTML
 
-
+-###-
 
 ## HTML
 
@@ -11,7 +11,7 @@
 * HTML documents are built out of HTML elements
     * Elements are delineated by tags
 
-
+-###-
 
 ## Intro to HTML5
 
@@ -21,7 +21,7 @@
         <body> </body>
     </html>
 
-
+-###-
 
 ## HTML Tag Basics
 
@@ -43,7 +43,7 @@ Multiline comment
 -->
 ```
 
-
+-###-
 
 ## HTML Tag Basics
 
@@ -53,7 +53,7 @@ Multiline comment
 <br /> <!-- The br tag inputs a line break -->
 ```
 
-
+-###-
 
 ## HTML Tag Basics
 
@@ -63,7 +63,7 @@ Multiline comment
 <a href="http://example.com">click here!</a>
 ```
 
-
+-###-
 
 ## Modern Use of HTML
 
@@ -73,7 +73,7 @@ Multiline comment
 * It is often used in conjunction with Cascading Style Sheets (CSS), which describe the presentation of the document
     * Colors, fonts, etc.
 
-
+-###-
 
 ### Italics Example
 
@@ -92,11 +92,11 @@ span.italics {font-style: italic;}
 
 * Difference? <!-- .element: class="fragment current-visible" -->
 
-
+-###-
 
 # Assignment
 
-
+-###-
 
 ## Assignment 1
 

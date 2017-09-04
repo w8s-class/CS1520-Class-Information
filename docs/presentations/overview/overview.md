@@ -3,7 +3,7 @@
 * These notes are intended for use by students in CS1520 at the University of Pittsburgh.  They are provided free of charge and may not be sold in any shape or form.
 * These notes are **NOT** a substitute for material covered during course lectures.  If you miss a lecture, you should definitely obtain both these notes and notes written by a student who attended the lecture.
 
-
+-###-
 
 ## Instructor Info
 
@@ -16,14 +16,14 @@
     * <https://appear.in>
     * Office: TBD
 
-
+-###-
 
 ## Class Information
 
 * All other info appears on the class [website](https://github.com/w8s-class/CS1520-Class-Information)
     * E.g., office hours, TA contact info/office hours
 
-
+-###-
 
 ### How to Email 
 
@@ -43,7 +43,7 @@ Note:
     * Help with lecture material/projects
     * Come to office hours!
 
-
+-###-
 
 ### Course Information
 
@@ -60,7 +60,7 @@ Note:
 * Assignment submission will be done via GitHub, create an account now, get git installed and familiarize yourself with GitHub
 * FOLLOW POLICIES
 
-
+-###-
 
 ## Tentative Syllabus
 
