@@ -80,97 +80,97 @@ ISBN-13: 9780133776096
 
 | #  | Topics                                                | Materials                                                                                                |
 |:---|:------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| 0  | Introduction to the course                            | * [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                                                                                    |
-|    |                                                       | * Brief HTML/CSS overview slides                                                                         |
-|    |                                                       | * [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)                                          |
-|    |                                                       | * [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                                            |
-|    |                                                       | * [Example Source](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/html) |
-| 1  | Introduction to client-side scripting with Javascript | * slides                                                                                                 |
-|    |                                                       | * MDN JS                                                                                                 |
-|    |                                                       | * Javascript examples: js1 js2 js3 js4 js5 js6 js7                                                       |
-| 2  | The DOM and Event-driven Programming                  | * slides                                                                                                 |
-|    |                                                       | * MDN Document                                                                                           |
-|    |                                                       | * MDN DOM                                                                                                |
-|    |                                                       | * MDN Node                                                                                               |
-|    |                                                       | * MDN Element                                                                                            |
-|    |                                                       | * MDN Events                                                                                             |
-|    |                                                       | * DOM game example                                                                                       |
-|    |                                                       | * Javascript examples: js8 js9 js10 js11                                                                 |
-| 3  | Web Storage                                           | * slides                                                                                                 |
-|    |                                                       | * MDN Storage API                                                                                        |
-|    |                                                       | * Javascript examples: js12                                                                              |
-| 4  | Regular Expressions                                   | * slides                                                                                                 |
-|    |                                                       | * MDN Regex                                                                                              |
-|    |                                                       | * Javascript examples: js13 js14                                                                         |
-| 5  | HTTP Overview and Introduction to Networking          | * slides                                                                                                 |
-|    |                                                       | * MDN HTTP codes                                                                                         |
-| 6  | Python                                                | * slides                                                                                                 |
-|    |                                                       | * Tutorial                                                                                               |
-|    |                                                       | * Language reference                                                                                     |
-|    |                                                       | * Standard library                                                                                       |
-|    |                                                       | * Python examples: py1 py2 py3 py4 py5 py6 py7 py8 py9                                                   |
-| 7  | Server-side scripting with Flask                      | * slides                                                                                                 |
-|    |                                                       | * Installation                                                                                           |
-|    |                                                       | * Python 3 note                                                                                          |
-|    |                                                       | * Quickstart                                                                                             |
-|    |                                                       | * API                                                                                                    |
-|    |                                                       | * Flask examples: fl1 fl2 fl3 fl4 fl5 fl6                                                                |
-| 8  | Using Templates to Generate Views in Flask            | * slides                                                                                                 |
-|    |                                                       | * Jinja2 docs                                                                                            |
-|    |                                                       | * Template Inheritance                                                                                   |
-|    |                                                       | * Flask examples: fl7 fl8 fl9                                                                            |
-| 9  | Developing Models in Flask                            | * slides                                                                                                 |
-|    |                                                       | * SQLAlchemy install guide                                                                               |
-|    |                                                       | * Flask-SQLAlchemy quickstart                                                                            |
-|    |                                                       | * Flask-SQLAlchemy user's guide                                                                          |
-|    |                                                       | * SQLAlchemy column types                                                                                |
-|    |                                                       | * SQLAlchemy docs                                                                                        |
-|    |                                                       | * SQLAlchemy library                                                                                     |
-|    |                                                       | * Flask-SQLAlchemy queries                                                                               |
-|    |                                                       | * Flask-SQLAlchemy BaseQuery                                                                             |
-|    |                                                       | * SQLAlchemy Query API                                                                                   |
-|    |                                                       | * Common filter() operators                                                                              |
-|    |                                                       | * Basic relationships                                                                                    |
-|    |                                                       | * Relationship API                                                                                       |
-|    |                                                       | * Flask examples: fl10 fl11 fl12                                                                         |
-| 10 | AJAX, XML, JSON                                       | * slides                                                                                                 |
-|    |                                                       | * MDN AJAX portal                                                                                        |
-|    |                                                       | * MDN AJAX quickstart                                                                                    |
-|    |                                                       | * MDN JS Timers                                                                                          |
-|    |                                                       | * JavaScript examples: js15 js16 js17                                                                    |
-| 11 | REST, Building RESTful APIs with Flask                | * slides                                                                                                 |
-|    |                                                       | * Extended REST example                                                                                  |
-|    |                                                       | * PayPal's REST API documentation                                                                        |
-|    |                                                       | * Flask-RESTful documenation                                                                             |
-|    |                                                       | * Flask-RESTful installation                                                                             |
-|    |                                                       | * Flask-RESTful quickstart                                                                               |
-|    |                                                       | * Flask examples: fl13                                                                                   |
-| 12 | Functional programming                                | * slides                                                                                                 |
-|    |                                                       | * MDN Array.map()                                                                                        |
-|    |                                                       | * MDN Array.reduce()                                                                                     |
-|    |                                                       | * MDN Array.filter()                                                                                     |
-|    |                                                       | * JavaScript examples: js18 js19 js20 js21                                                               |
-| 13 | Web security                                          | * slides                                                                                                 |
-|    |                                                       | * XSS Wikipedia article                                                                                  |
-|    |                                                       | * MDN CORS                                                                                               |
-| 14 | Authentication                                        | * slides                                                                                                 |
-|    |                                                       | * MDN HTTP Authentication                                                                                |
-|    |                                                       | * Base64 Encoding                                                                                        |
-|    |                                                       | * Flask Basic Authentication                                                                             |
-|    |                                                       | * OAuth                                                                                                  |
-|    |                                                       | * OpenID                                                                                                 |
-|    |                                                       | * Python examples: py10 py11                                                                             |
-| 15 | Responsive design, Backus–Naur form                   | * slides                                                                                                 |
-|    |                                                       | * Google Responsive Design Basics                                                                        |
-|    |                                                       | * MDN viewports                                                                                          |
-|    |                                                       | * Viewports blog post                                                                                    |
-|    |                                                       | * MDN Media queries                                                                                      |
-|    |                                                       | * CSS examples: cs1 cs2 cs3                                                                              |
-| 16 | Progressive web apps, Javascript service workers      | * slides                                                                                                 |
-|    |                                                       | * Google PWA tutorial                                                                                    |
-|    |                                                       | * MDN Service worker                                                                                     |
-|    |                                                       | * MDN Promise                                                                                            |
-|    |                                                       | * PWA examplea: pw1                                                                                      |
+| 0  | Introduction to the course                            | [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                                                                                    |
+|    |                                                       | Brief HTML/CSS overview slides                                                                         |
+|    |                                                       | [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)                                          |
+|    |                                                       | [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                                            |
+|    |                                                       | [Example Source](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/html) |
+| 1  | Introduction to client-side scripting with Javascript | [slides](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                                                                                                 |
+|    |                                                       | MDN JS                                                                                                 |
+|    |                                                       | Javascript examples: js1 js2 js3 js4 js5 js6 js7                                                       |
+| 2  | The DOM and Event-driven Programming                  | slides                                                                                                 |
+|    |                                                       | MDN Document                                                                                           |
+|    |                                                       | MDN DOM                                                                                                |
+|    |                                                       | MDN Node                                                                                               |
+|    |                                                       | MDN Element                                                                                            |
+|    |                                                       | MDN Events                                                                                             |
+|    |                                                       | DOM game example                                                                                       |
+|    |                                                       | Javascript examples: js8 js9 js10 js11                                                                 |
+| 3  | Web Storage                                           | slides                                                                                                 |
+|    |                                                       | MDN Storage API                                                                                        |
+|    |                                                       | Javascript examples: js12                                                                              |
+| 4  | Regular Expressions                                   | slides                                                                                                 |
+|    |                                                       | MDN Regex                                                                                              |
+|    |                                                       | Javascript examples: js13 js14                                                                         |
+| 5  | HTTP Overview and Introduction to Networking          | slides                                                                                                 |
+|    |                                                       | MDN HTTP codes                                                                                         |
+| 6  | Python                                                | slides                                                                                                 |
+|    |                                                       | Tutorial                                                                                               |
+|    |                                                       | Language reference                                                                                     |
+|    |                                                       | Standard library                                                                                       |
+|    |                                                       | Python examples: py1 py2 py3 py4 py5 py6 py7 py8 py9                                                   |
+| 7  | Server-side scripting with Flask                      | slides                                                                                                 |
+|    |                                                       | Installation                                                                                           |
+|    |                                                       | Python 3 note                                                                                          |
+|    |                                                       | Quickstart                                                                                             |
+|    |                                                       | API                                                                                                    |
+|    |                                                       | Flask examples: fl1 fl2 fl3 fl4 fl5 fl6                                                                |
+| 8  | Using Templates to Generate Views in Flask            | slides                                                                                                 |
+|    |                                                       | Jinja2 docs                                                                                            |
+|    |                                                       | Template Inheritance                                                                                   |
+|    |                                                       | Flask examples: fl7 fl8 fl9                                                                            |
+| 9  | Developing Models in Flask                            | slides                                                                                                 |
+|    |                                                       | SQLAlchemy install guide                                                                               |
+|    |                                                       | Flask-SQLAlchemy quickstart                                                                            |
+|    |                                                       | Flask-SQLAlchemy user's guide                                                                          |
+|    |                                                       | SQLAlchemy column types                                                                                |
+|    |                                                       | SQLAlchemy docs                                                                                        |
+|    |                                                       | SQLAlchemy library                                                                                     |
+|    |                                                       | Flask-SQLAlchemy queries                                                                               |
+|    |                                                       | Flask-SQLAlchemy BaseQuery                                                                             |
+|    |                                                       | SQLAlchemy Query API                                                                                   |
+|    |                                                       | Common filter() operators                                                                              |
+|    |                                                       | Basic relationships                                                                                    |
+|    |                                                       | Relationship API                                                                                       |
+|    |                                                       | Flask examples: fl10 fl11 fl12                                                                         |
+| 10 | AJAX, XML, JSON                                       | slides                                                                                                 |
+|    |                                                       | MDN AJAX portal                                                                                        |
+|    |                                                       | MDN AJAX quickstart                                                                                    |
+|    |                                                       | MDN JS Timers                                                                                          |
+|    |                                                       | JavaScript examples: js15 js16 js17                                                                    |
+| 11 | REST, Building RESTful APIs with Flask                | slides                                                                                                 |
+|    |                                                       | Extended REST example                                                                                  |
+|    |                                                       | PayPal's REST API documentation                                                                        |
+|    |                                                       | Flask-RESTful documenation                                                                             |
+|    |                                                       | Flask-RESTful installation                                                                             |
+|    |                                                       | Flask-RESTful quickstart                                                                               |
+|    |                                                       | Flask examples: fl13                                                                                   |
+| 12 | Functional programming                                | slides                                                                                                 |
+|    |                                                       | MDN Array.map()                                                                                        |
+|    |                                                       | MDN Array.reduce()                                                                                     |
+|    |                                                       | MDN Array.filter()                                                                                     |
+|    |                                                       | JavaScript examples: js18 js19 js20 js21                                                               |
+| 13 | Web security                                          | slides                                                                                                 |
+|    |                                                       | XSS Wikipedia article                                                                                  |
+|    |                                                       | MDN CORS                                                                                               |
+| 14 | Authentication                                        | slides                                                                                                 |
+|    |                                                       | MDN HTTP Authentication                                                                                |
+|    |                                                       | Base64 Encoding                                                                                        |
+|    |                                                       | Flask Basic Authentication                                                                             |
+|    |                                                       | OAuth                                                                                                  |
+|    |                                                       | OpenID                                                                                                 |
+|    |                                                       | Python examples: py10 py11                                                                             |
+| 15 | Responsive design, Backus–Naur form                   | slides                                                                                                 |
+|    |                                                       | Google Responsive Design Basics                                                                        |
+|    |                                                       | MDN viewports                                                                                          |
+|    |                                                       | Viewports blog post                                                                                    |
+|    |                                                       | MDN Media queries                                                                                      |
+|    |                                                       | CSS examples: cs1 cs2 cs3                                                                              |
+| 16 | Progressive web apps, Javascript service workers      | slides                                                                                                 |
+|    |                                                       | Google PWA tutorial                                                                                    |
+|    |                                                       | MDN Service worker                                                                                     |
+|    |                                                       | MDN Promise                                                                                            |
+|    |                                                       | PWA examplea: pw1                                                                                      |
 
 ## Course Policies
 
