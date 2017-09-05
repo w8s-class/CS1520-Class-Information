@@ -51,7 +51,7 @@
 
 * Programming languages designed for use within a given runtime environment
 	* Often to automate tasks for the user
-	* bash, zsh, fish
+	* `bash`, `zsh`, `fish`
 	* Perl
 	* Python
 * These languages are often *interpreted*
@@ -86,7 +86,7 @@
 
 ## Java
 
-* Both gcc and Low Level Virtual Machine (LLVM) compile code in a series of phases:
+* Both `gcc` and Low Level Virtual Machine (LLVM) compile code in a series of phases:
 	* Front-end compilers turn source code into an Intermediate Representation (IR)
 	* IR is optimized
 	* Optimized IR is turned into machine code
