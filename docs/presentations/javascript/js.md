@@ -162,6 +162,23 @@ Note: Does a script tag mean Javascript? Any language the browser can understand
 	* Must begin with `$`, `_`, or a letter
 		* Followed by any sequence of `$`'s, `_`'s, letters, or digits
 
+Note:
+Started as a requirement in languages like FORTRAN or BASIC when:
+
+```
+10 V1=100
+20 PRINTV1
+```
+and 
+``` 
+10V1=100
+20PRINTV1
+```
+
+So `101V=100` could be `10 1V=100` or `101 V=100` or `1 01V=100`.
+
+Source: [StackOverflow](https://stackoverflow.com/a/5793730)
+
 -###-
 
 ## Javascript Numeric Operators
