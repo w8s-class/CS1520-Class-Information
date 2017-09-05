@@ -159,8 +159,8 @@ Note: Does a script tag mean Javascript? Any language the browser can understand
 * Variable names
 	* Are case sensitive
 	* Cannot contain keywords
-	* Must begin with $, _, or a letter
-		* Followed by any sequence of $'s, _'s, letters, or digits
+	* Must begin with `$`, `_`, or a letter
+		* Followed by any sequence of `$`'s, `_`'s, letters, or digits
 
 -###-
 
