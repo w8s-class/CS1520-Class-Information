@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>More JS Objects</title>
+<script type="text/javascript">
+	function compareSal(a, b)
+	{
+		return a.salary - b.salary;
+	}
+	
+	function compareAge(a, b)
+	{
+		return a.age - b.age;
+	}
+
+	function Worker(n, a, s, prop)
+	{
+		this.name = n;
+		this.age = a;
+		this.salary = s;
+		this.show = prop;
+	}
+
+	function display()
+	{
+		document.write("Name: ", this.name,"; ");
+		document.write("Age: ", this.age, "; ");
+		document.write("Salary: ", this.salary, ";");
+	}
+	
+	function show_workers(w)
+	{
+		document.write("Here are the workers<br/>");
+		for (var i = 0; i < w.length; i++)
+		{
+			w[i].show();  // This is actually calling display()
+			document.write("<br/>");
+		}
+		document.write("<br/>");
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+   var names = ["Herb", "Mort", "Ingmar", "Marge", "Gertrude", "Bertha"];
+   var ages = [50, 35, 40, 25, 70, 30];
+   var sals = [40000, 80000, 100000, 60000, 250000, 90000];
+   var workers = new Array(names.length);
+   
+   // Note how the display function is passed as an argument to the constructor
+   // Javascript allows a lot of flexibility is these types of assignments
+   for (var i = 0; i < workers.length; i++)
+   {
+		workers[i] = new Worker(names[i], ages[i], sals[i], display);
+   }
+   // We can now sort in various ways by passing in the appropriate
+   // comparator
+   show_workers(workers);
+	document.write("<br/>");
+   workers.sort(compareSal);
+   show_workers(workers); 
+	document.write("<br/>");
+   workers.sort(compareAge);
+   show_workers(workers);
+</script>
+</body>
+</html>

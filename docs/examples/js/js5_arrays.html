@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Arrays</title>
+<script type="text/javascript">
+	function printIt(A)
+	{
+		document.write("The array contains:<br/>");
+		for (var i = 0; i < A.length-1; i++)
+			 document.write(A[i], " : ");
+		document.write(A[A.length-1], "<br/>");
+	}
+	function printItRec(A)
+	{
+		document.write("The array contains:<br/>");
+		printRec(A);
+	}
+	
+	function printRec(A)  // Print nested arrays recursively
+	{
+		for (var i = 0; i < A.length; i++)
+		{
+			if (A[i] instanceof Array)  // instanceof operator similar to Java
+			{
+				printRec(A[i]);
+				document.write("<br/>");
+			}
+			else
+				document.write(A[i] + " ");
+		}
+	}
+
+	function by_num(a, b)
+	{
+		var ans = (a - b);
+		return ans;
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+ 
+	var A, B, C;
+	A = new Array("here", "is", "an", "array", "of", "string", "data");
+	B = new Array(25);
+	C = new Array("10");
+	
+	for (var i = 0; i < B.length; i++)
+		B[i] = (59*i) % 200;
+	
+	printIt(A);
+	printIt(B);
+	printIt(C);
+
+	document.write("<br /><br />");
+	
+	A.sort();
+	printIt(A);
+	B.sort();
+	printIt(B);
+	B.sort(by_num);
+	printIt(B);
+
+	document.write("<br /><br />");
+	
+	A.length = 10;
+	printIt(A);
+	A[12] = "end";
+	printIt(A);
+	A.length = 6;
+	printIt(A);
+	A.length = 10;
+	printIt(A);
+	A.length = 20;
+	printIt(A);
+
+	document.write("<br /><br />");
+	
+	var s = A.join();
+	document.write(s, "<br/>");
+
+	document.write("<br /><br />");
+	
+	C = new Array(3);
+	for (i = 0; i < C.length; i++)
+	{
+		 C[i] = new Array(4);
+		 for (var j = 0; j < C[i].length; j++)
+			  C[i][j] = (i+1)*j;
+	}
+	
+	document.write(C, "<br/>");
+	document.write(typeof(C), "<br/>");
+	printIt(C);
+	printItRec(C);  // Print recursively (similar to PHP example)
+	printIt(C[0]); printIt(C[1]); printIt(C[2]);
+
+	document.write("<br /><br />");
+	
+	var X = Array(1, 2, 3, 4);
+	var Y = Array(1, 2, 3, 4);
+	var Z = X;
+	document.write("<br/>");
+	printIt(X);
+	if (X == Y)
+	{
+		document.write("X == Y" + "<br/>");
+	}
+	if (X == Z)
+	{
+		document.write("X == Z" + "<br/>");
+	}
+	Z[4] = 5;
+	printIt(X);
+</script>
+</body>
+</html>

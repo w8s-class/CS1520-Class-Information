@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Closuer Example</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ex = [];
+		for (var i = 0; i < 5; i++) {
+			ex[i] = function() { document.write(i); };
+		}
+		for (var j = 0; j < 5; j++) {
+			ex[j]();
+		}
+	</script>
+</body>
+</html>

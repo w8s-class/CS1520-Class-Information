@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Functions</title>
+<script type="text/javascript">
+	function pow(x,y) // changes to x and y do not affect
+	{                 // actual parameters
+		var ans = 1;  // ans is local to the function
+		for (var i = 1; i <= y; i++)
+		{             // i is local to the function, but not
+		              // to the for loop
+			ans *= x;
+		}
+		//document.write("i is " + i);         // i still exists here
+		return ans;
+	}
+
+  function pow2() // changes to x and y do not affect
+	{                 // actual parameters
+		var ans = 1;  // ans is local to the function
+		for (var i = 1; i <= arguments[1]; i++)
+		{             // i is local to the function, but not
+		              // to the for loop
+			ans *= arguments[0];
+		}
+		              // i still exists here
+		return ans;
+	}
+
+	function wacky(val)
+	{
+		if (val == 1)
+			return "String Data";
+		else
+			return 1000;
+	}
+
+	function check_equal(v1, v2)
+	{
+		document.write(v1, " == ", v2, "is:  ");
+		if (v1 == v2)
+		{
+			document.write("true!");
+		}
+		else
+		{
+			document.write("false!");
+		}
+		document.write("<br />");
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	var base, exp, ans;
+
+	base = parseInt(prompt("Enter a base","2"));
+	exp = parseInt(prompt("Enter an exponent","1"));
+	ans = pow(base, exp);
+	document.write("(using pow):  ", base, " to the ", exp, " = ", ans, "<br\>");
+	ans = pow2(base, exp);
+	document.write("(using pow2):  ", base, " to the ", exp, " = ", ans, "<br\>");
+
+	document.write("<br /><br />");
+	
+	document.write(wacky(1), " ", typeof(wacky(1)), "  ", typeof(wacky(2)), "<br\>");
+
+	document.write("<br /><br />");
+
+	check_equal("asdf", 0);
+	check_equal("", 0);
+	check_equal("asdf", true);
+	check_equal("true", true);
+	check_equal("1", true);
+	check_equal("", false);
+
+	document.write("<br /><br />");
+	
+	var x1 = "12345";
+	var x2 = 12345;
+
+	if (x1 == x2)
+	{
+		document.write(x1 + " and " + x2 + " have the same value <br/>");
+	}
+
+	if (x1 === x2)
+	{
+		document.write(x1 + " and " + x2 + " have the same value and type <br/>");
+	}
+
+	document.write("<br /><br />");
+	
+	var num = parseInt(prompt("Enter the numerator"));
+	var den = parseInt(prompt("Enter the denominator"));
+
+	if ((den != 0) && (Math.abs(num/den) < 1))
+	{
+		document.write(num + "/" + den + " is a proper fraction");
+	}
+	else if ((den != 0) && (Math.abs(num/den) >= 1))
+	{
+		document.write(num + "/" + den + " is an improper fraction");
+	}
+	else
+		document.write(num + "/" + den + " is undefined");
+
+	document.write("<br/>");
+
+	var test = 100/0;
+	document.write(test, " is a ", typeof(test), "<br/>");
+
+	var wackier = test + " and beyond";
+	document.write(wackier, " is a ", typeof(wackier));
+</script>
+</body>
+</html>

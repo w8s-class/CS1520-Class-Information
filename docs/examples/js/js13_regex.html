@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Regex exmaples</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var s = "a man, a plan, a canal: panama";
+			document.write("starting string:  ", s, "<br /><br />");
+
+			var loc = s.search(/plan/);
+			document.write("search finds /plan/ at ", loc, "<br /><br />");
+
+			var matches = s.match(/\w+/g);
+			document.write("match(/\\w+/g) finds:  ", matches, "<br /><br />");
+
+			var re = new RegExp("\\w+", "g");
+			var matches = s.match(re);
+			document.write("match(new RegExp(\"\\\\w+\", \"g\")) finds:  ", matches, "<br /><br />");
+
+			var re2 = /\W+/;
+			var matches2 = s.split(re2);
+			document.write("words from split(/\\W+/): " , matches2, "<br /><br />");
+
+			var t = s.replace(/\W+/g, "-");  // Note:Text incorrectly shows replace as a mutator
+			document.write("s: ", s, "<br />t = s.replace(/\\W+/g, \"-\"): ", t);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX table updates!</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</head>
+	<body>
+		<table>
+			{% for i in items %}
+				<tr>
+					{% for j in i %}
+						<td>{{ j }}</td>
+					{% endfor %}
+				</tr>
+			{% else %}
+				<tr><td>Whole lot of nothing!</td></tr>
+			{% endfor %}
+		</table>
+		<h3> Add new row: </h3>
+		<form name="theForm">
+			<input type="text" id="a" name="a" value="" />
+			<input type="text" id="b" name="b" value="" />
+			<input type="text" id="c" name="c" value="" />
+			<input type="button" id="theButton" value="enter" />
+		</form>
+	</body>
+</html>

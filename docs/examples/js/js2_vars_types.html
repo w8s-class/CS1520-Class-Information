@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Variables and Types</title>
+</head>
+<body>
+<pre>
+<script type = "text/javascript">
+    var s, x, y1, y2, z1, z2, z3, z4;
+    x = 12;
+
+    y1 = "5";
+    y2 = "bogus";
+
+    z1 = x + y1;
+    z2 = x + parseInt(y1);
+    z3 = x * y1;
+    z4 = x * y2;
+
+    document.writeln(typeof(z4));
+    document.writeln(x, "+", y1, "=", z1);
+    document.writeln(x, "+", y1, "=", z2);
+    document.writeln(x, "*", y1, "=", z3);
+    document.writeln(x, "*", y2, "=", z4);
+
+	document.write("<br /><br />");
+	
+    var wacky = z4 + " ha hah";
+	document.writeln("wacky = " + wacky, " and its type is " + typeof(wacky));
+
+	document.write("<br /><br />");
+	
+    document.writeln("s = ", s, " and its type is " , typeof(s));
+    s = prompt("Enter a string","");
+    document.writeln("s = ", s, " and its type is " , typeof(s));
+
+	document.write("<br /><br />");
+	
+    var t = s.toUpperCase();
+	document.writeln(t);
+    var u = s.length;
+	document.writeln(u);
+    var v = s.substring(6,11);
+	document.writeln(v);
+
+	document.write("<br /><br />");
+	
+    document.writeln(typeof(s));
+    s = 345;
+    document.writeln(typeof(s));
+
+	document.write("<br /><br />");
+	
+    var test = 19;
+	var xx = 7;
+    var ans = (int) (test / xx);
+    document.writeln(ans);
+</script>
+</pre>
+</body>
+</html>

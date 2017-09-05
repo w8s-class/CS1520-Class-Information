@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic DOM Example</title>
+		<script type="text/javascript">
+			function analyze_obj(o, color, index) {
+				var s = color + " child " + index + ":  " + o;
+				
+				if (o instanceof HTMLElement)
+					s += "\nIs an HTMLElement";
+					
+				if (o instanceof Element)
+					s += "\nIs an Element";
+					
+				if (o instanceof Text)
+					s += "\nIs Text";
+					
+				if (o instanceof Node)
+					s += "\nIs a Node";
+					
+				alert(s);
+			}
+			
+			function check() {
+				var r = document.getElementById("reddiv");
+				var rchildren = r.childNodes;
+				for(var i = 0; i < rchildren.length; i++) {
+					analyze_obj(rchildren[i], "red", i);
+				}
+				alert("red textContent:  " + r.textContent + "\n" + typeof(r.textContent));
+
+				r.textContent = "foo";
+				
+				var b = document.getElementById("bluediv");
+				var bchildren = b.childNodes;
+				for(var i = 0; i < bchildren.length; i++) {
+					analyze_obj(bchildren[i], "blue", i);
+				}
+				alert("blue textContent:  " + b.textContent + "\n" + typeof(b.textContent));
+
+				b.textContent = "bar";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="reddiv" style="color:white; background-color:red;">hello there!</div>
+		<div id="bluediv" style="color:white; background-color:blue;">
+			hi
+			<div id="greendiv" style="color:white; background-color:green;"> there!</div>
+			bye!
+		</div>
+		<script type="text/javascript">check();</script>
+	</body>
+</html>

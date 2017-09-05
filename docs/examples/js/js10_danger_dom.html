@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Danger DOM Example</title>
+	</head>
+	<body>
+		<div id="reddiv" style="color:white; background-color:red;">red</div>
+		<div id="bluediv" style="color:white; background-color:blue;">blue</div>
+		<div id="greendiv" style="color:white; background-color:green;"> green</div>
+		<!-- Element.innerHTML -->
+		<script type="text/javascript">document.getElementById("reddiv").innerHTML = '<img src="derp://" onerror="alert(\'OMG H4X!!\');" />';</script>
+		<!-- Node.textContent -->
+		<script type="text/javascript">document.getElementById("bluediv").textContent = '<img src="derp://" onerror="alert(\'OMG H4X!!\');" />';</script>
+		<!-- Also Node functions -->
+		<script type="text/javascript">
+			var gd = document.getElementById("greendiv");
+			var new_text = document.createTextNode('<img src="derp://" onerror="alert(\'OMG H4X!!\');" />');
+			gd.replaceChild(new_text, gd.firstChild);
+		</script>
+	</body>
+</html>

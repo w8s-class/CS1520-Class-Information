@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Objects</title>
+<script type="text/javascript">
+
+	function by_size(a, b)
+	{
+		return a.size - b.size;
+	}
+
+	function TV(brand, size, injacks, outjacks)
+	{
+		this.brand = brand;
+		this.size = size;
+		this.jacks = new Object();
+		this.jacks.input = injacks;
+		this.jacks.output = outjacks;
+	}
+
+	function show_properties()
+	{
+		document.write("Here is your TV: <br />");
+		document.write("Brand: ", this.brand,"<br />");
+		document.write("Size: ", this.size, "<br />");
+		document.write("Input Jacks: ");
+		document.write(this.jacks.input, "<br />");
+		document.write("Output Jacks: ");
+		document.write(this.jacks.output, "<br />");
+	}
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	var my_tv = new TV("Samsung", 46, 5, 2);
+	var your_tv = new TV("Sharp", 60, 8, 1);
+	my_tv.display = show_properties;   // We would normally put this statement
+	your_tv.display = show_properties; // in the constructor function.  I am
+	                                   // putting it here just to show that
+	                                   // it can be done
+	my_tv.display();
+	document.write("<br />");
+	your_tv.display();
+	document.write("<br />");
+	if (by_size(my_tv, your_tv) > 0)
+		document.write("My TV is bigger than yours <br />");
+	else
+		document.write("Your TV is bigger than mine <br />");
+		
+	document.write("My TV is a " + typeof(my_tv) + "<br />");
+	if (my_tv instanceof TV)
+	{
+		document.write("My TV is a TV");
+	}
+   
+</script>
+</body>
+</html>
