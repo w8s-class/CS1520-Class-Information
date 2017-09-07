@@ -85,7 +85,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)                                          |
 |    |                                                       | [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                                            |
 |    |                                                       | [Example Source](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/html) |
-| 1  | Introduction to client-side scripting with Javascript | [slides](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                                                                                                 |
+| 1  | Introduction to client-side scripting with Javascript | [slides](https://w8s-class.github.io/CS1520-Class-Information/js.html)                                                                                                 |
 |    |                                                       | [MDN JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)                                                                                                 |
 |    |                                                       | [js1](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js1_basic.html)     |
 |    |                                                       | [js2](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js2_vars_types.html)                                                                         |
@@ -94,7 +94,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [js5](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js5_arrays.html)                                                                         |
 |    |                                                       | [js6](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js6_objects.html)                                                                         |
 |    |                                                       | [js7](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js7_more_objects.html)                                                                         |
-| 2  | The DOM and Event-driven Programming                  | slides                                                                                                 |
+| 2  | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                                                                 |
 |    |                                                       | MDN Document                                                                                           |
 |    |                                                       | MDN DOM                                                                                                |
 |    |                                                       | MDN Node                                                                                               |
