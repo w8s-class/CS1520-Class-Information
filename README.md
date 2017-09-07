@@ -31,8 +31,8 @@ No need to address me as `Professor`. You can call me Todd.
 
 | Office | Hours               |
 |:-------|:--------------------|
-| TBD    | Lecture 1: T 5p-6p  |
-| TBD    | Lecture 2: Th 5p-6p |
+| 6148   | Lecture 1: T 5p-6p  |
+| 6148   | Lecture 2: Th 5p-6p |
 
 ### TAs
 
