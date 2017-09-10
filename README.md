@@ -50,14 +50,15 @@ Pranut Jain
 
 #### M Lecture 2 TA
 
-TBD
+Jeong-Min Lee
 
-* Email: TBD
-* GitHub: TBD
+* TA website: http://cs.pitt.edu/~jlee/teaching/cs1520
+* Email: jlee@cs.pitt.edu
+* GitHub: jel158
 
 | Office     | Hours |
 |:-----------|:------|
-| TBD        | TBD   |
+| 5324       | TBD   |
 
 Email Pranut to set an appointment for the first two weeks, as we determine office hours.
 
