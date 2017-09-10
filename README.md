@@ -19,6 +19,7 @@
 Todd Waits
 
 * Email: [me@toddwaits.org](mailto:toddwaits.org)
+* Pitt Email: [tow16@pitt.edu](mailto:tow16@pitt.edu)
 * GitHub: [w8s](https://www.github.com/w8s)
 * Twitter: [@toddwaits](https://twitter.com/toddwaits)
 * Web: <http://www.toddwaits.org>
