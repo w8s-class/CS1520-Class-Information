@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You Sunk My Battleship!</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">You Sunk my Battleship <small>DRAFT</small></h1>
+            <p class="lead">Assignment Two. Due Date: Friday, September 29 at midnight.</p>
+            <hr class="my-4">
+            <p>Gain experience building interactive, client-side web applications using JavaScript and the DOM.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../assignment1/assignment1.html">Assignment One</a>
+                    <a class="list-group-item list-group-item-action active" href="#">Assignment Two</a>
+                    <a class="list-group-item list-group-item-action disabled" href="#">Assignment Three</a>
+                    <a class="list-group-item list-group-item-action disabled" href="#">Assignment Four</a>
+                    <a class="list-group-item list-group-item-action disabled" href="#">Assignment Five</a>
+                    <a class="list-group-item list-group-item-action disabled" href="#">Assignment Six</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2>Battleship!</h2>
+                
+                <p class="lead">You will be implementing the game of Battleship to be played with the web browser. This assignment is to demonstrate an understanding of how to utilize Javascript to collect, persist, and manipulate data, and to respond to user interactions to dynamically change the DOM.</p>
+                
+                <ul>
+                    <li>For this version, you will assume that only one user is viewing the page that presents your game at a time (e.g., the two players are using a laptop that they pass back and forth between turns).</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">Wikipedia's Battleship</a> entry lays out the rules.</li>
+                    <li>Your game will be built on a 10x10 grids, with rows labeled 1-10 and columns labeled A-J.</li>
+                    <li>We will assume that players will place <strong>3</strong> game pieces
+                        <ul>
+                            <li>an aircraft carrier (5 spaces long)</li>
+                            <li>a battleship (4 spaces long)</li>
+                            <li>a submarine (3 spaces long).</li>
+                        </ul>
+                    </li>
+                    <li>These pieces can be placed either horizontally or vertically, and cannot overlap.</li>
+                </ul>
+
+                <h2>Specifications</h2>
+                <p class="lead">These are the base requirements for making the page work. You can enhance. You cannot use external libraries like jQuery for this project.</p>
+
+                <ul>
+                    <li>When the page is loaded, your game should begin by asking the first player for her name (for example, lets assume that the first player is Alice), and a string representing her ship placements.
+                        <ul>
+                            <li>Your game should be flexible in accepting the syntax of a ship placement string. Specifically, it should accept strings of the following forms as equivalent, with each resulting in an aircraft carrier placed on A1, A2, A3, A4, A5; a battleship at B6, C6, D6, E6; and a submarine at H3, I3, J3:
+                                <ul>
+                                    <li>A:A1-A5;B:B6-E6; S:H3-J3</li>
+                                    <li>A(A1-A5); B(B6-E6); S(H3-J3);</li>
+                                    <li>B(B6-E6);S(H3-J3);A(A1-A5)</ll>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>After gathering the first player's name and ship placement, your game should prompt the second player for their name and ship placement (for example, lets assume the second player is Bob).</li>
+                    <li>With this starting info in hand, your game should begin the first player's turn
+                        <ul>
+                            <li>At the start of a turn, your game should pop up an alert indicating whose turn it is (e.g., "Click OK to begin Alice's turn").</li>
+                            <li>After the prompt is dismissed, your game should render 2 10x10 grids, one at the top of the window, and the other just below it, closer to the bottom of the browser window.
+                                <ul>
+                                    <li>Both grids should have a light blue background.</li>
+                                    <li>The top grid should represent the current players target (i.e., the grid where the other player's ships reside), while the bottom represents the current player's ship deployment.
+                                        <ul>
+                                            <li>At the start of the first player's first turn, the top grid will be completely empty, and the bottom grid will show only the location of the first player's ships</li>
+                                        </ul>
+                                    </li>
+                                    <li>On the bottom grid, each space occupied by part of an aircraft carrier should contain an "A", each space occupied by part of a battleship should contain a "B", each space occupied by part of a submarine should contain an "S".</li>
+                                </ul>
+                            </li>
+                            <li>The player is then free to click a space into top grid to "fire" at.
+                                <ul>
+                                    <li>Clicks on the lower grid should have no effect.</li>
+                                    <li>The game should pop up an alert to inform the player whether the shot was a hit or a miss.</li>
+                                    <li>If the player clicks on a space where no part of any of the other player's ships was placed, the shot is a miss, and the space should be colored white.</li>
+                                    <li>If some part of one of the other player's ships was placed in the clicked space, the shot is a hit, and the space should be colored red.
+                                        <ul>
+                                            <li>If this hit represents the final portion of a ship (i.e., the 5th hit on an aircraft carrier, the 4th hit on a battleship, or the 3rd hit on a submarine), the player should be alerted as to which of the other player's ships they have sunk.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>After the player has clicked on their target space and the hit or miss has been reported, the player's turn is ended and the other player's turn should begin with a popup (e.g., "Click to begin Bob's turn").
+                                <ul>
+                                    <li><em><strong>Note:</strong></em> that this will require blanking the page before the alert is created to prevent Bob from seeing Alice's ship placement (and vice-versa), and will require a rearranging of the page after the alert is dismissed so that Bob's target grid appears at the top of the page, and his ship placement appears on the bottom.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>At any point in time, a player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with their ship placements.</li>
+                    <li>The game continues until all of one player's ships have been sunk, at which point the other player wins the game.
+                        <ul>
+                            <li>Once a winner has been established, your game should compute the winner's score
+                                <ul>
+                                    <li>Score is computed as: 24 - (2 points for each hit against them)
+                                        <ul>
+                                            <li>10 points for sinking the opponent's aircraft carrier</li>
+                                            <li>8 points for sinking the opponent's battleship</li>
+                                            <li>6 points for sinking the opponent's submarine</li>
+                                        </ul>
+                                    </li>
+                                    <li>If Alice won the game while Bob was able to sink her submarine and land a single hit on her battle ship, but did not hit her aircraft carrier at all, Alice score would be 16
+                                        <ul>
+                                            <li>24 - (2 * 4)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Your game should keep track of the names and scores of the 10 players with the highest scores in local storage.
+                                        <ul>
+                                            <li>If 10 players have all achieved the max score (24), no further updates to local storage are required.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+                </ul>
+
+                <h2>Submission Guidelines</h2>
+                <p></p>
+
+
+                <h2>Grading Criteria</h2>
+                <p>We will download a zip archive of the repo and run the HTML/JS file created locally in the browser.</p>
+                
+                <ul>
+                    <li>This project will require extensive manipulation of the DOM to enable the game to run as described.</li>
+                    <li>Your game does not need to persist across page refreshes.  It is acceptable for a page refresh to restart the game.</li>
+                    <li>While you are not going to be heavily graded on the style and design of your game, it should be presented in a clear and readable manner.</li>
+                </ul>
+
+                <dl class="row">
+                    <dt class="col-sm-3">Inline CSS Styles</dt>
+                    <dd class="col-sm-9">
+                        <p>-5 points</p>
+                        <p>e.g. <code>&lt;p style="color:red;"&gt;...&lt;/p&gt;</code></p>
+                    </dd>
+                    <dt class="col-sm-3">Use of style block in HTML</dt>
+                    <dd class="col-sm-9">
+                        <p>-5 points</p>
+                        <p>e.g.<code>&lt;style&gt;&lt;/style&gt;</code></p>
+                    </dd>
+                    <dt class="col-sm-3">Failed references</dt>
+                    <dd class="col-sm-9">
+                        <p>-15 points</p>
+                        <p>For example, if you reference a local CSS file, but do not check it in to source control, it would return a <code>404 Not Found</code></p>
+                        <p>A great way to test this is to load it on a friend's computer, or to download the repo to a fresh directory and check to see everything loads properly.</p>
+                    </dd> 
+                    <dt class="col-sm-3">Web page will not render on grader's browser.</dt>
+                    <dd class="col-sm-9">
+                        <p>-50 points</p>
+                    </dd> 
+                    <dt class="col-sm-3">Late assignment</dt>
+                    <dd class="col-sm-9">
+                        <p>-100 points</p>
+                    </dd>              
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
