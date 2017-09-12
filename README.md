@@ -96,16 +96,20 @@ ISBN-13: 9780133776096
 |    |                                                       | [js6](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js6_objects.html)                                                                         |
 |    |                                                       | [js7](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js7_more_objects.html)                                                                         |
 | 2  | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                                                                 |
-|    |                                                       | MDN Document                                                                                           |
-|    |                                                       | MDN DOM                                                                                                |
-|    |                                                       | MDN Node                                                                                               |
-|    |                                                       | MDN Element                                                                                            |
-|    |                                                       | MDN Events                                                                                             |
-|    |                                                       | DOM game example                                                                                       |
-|    |                                                       | Javascript examples: js8 js9 js10 js11                                                                 |
+|    |                                                       | [MDN Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)                                                                                           |
+|    |                                                       | [MDN DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)                                                                                                |
+|    |                                                       | [MDN Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)                                                                                               |
+|    |                                                       | [MDN Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)                                                                                            |
+|    |                                                       | [MDN Events](https://developer.mozilla.org/en-US/docs/Web/API/Event)                                                                                             |
+|    |                                                       | [DOM game example]                                                                                       |
+|    |                                                       | Javascript examples: 
+|||[js8](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js8_dom.html)| 
+|||[js9](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js9_more_dom.html)| 
+|||[js10](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js10_danger_dom.html)| 
+|||[js11](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js11_capture_dom.html)|                                                                 |
 | 3  | Web Storage                                           | slides                                                                                                 |
-|    |                                                       | MDN Storage API                                                                                        |
-|    |                                                       | Javascript examples: js12                                                                              |
+|    |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                                                                        |
+|    |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)                                                                              |
 | 4  | Regular Expressions                                   | slides                                                                                                 |
 |    |                                                       | MDN Regex                                                                                              |
 |    |                                                       | Javascript examples: js13 js14                                                                         |
