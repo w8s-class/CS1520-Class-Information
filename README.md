@@ -110,7 +110,7 @@ ISBN-13: 9780133776096
 | 3  | Web Storage                                           | [slides](https://w8s-class.github.io/CS1520-Class-Information/storage.html)                                                                                                             |  |
 |    |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                        |  |
 |    |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)    |  |
-| 4  | Regular Expressions                                   | slides                                                                                                             |  |
+| 4  | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                                                                                             |  |
 |    |                                                       | MDN Regex                                                                                                          |  |
 |    |                                                       | Javascript examples: js13 js14                                                                                     |  |
 | 5  | HTTP Overview and Introduction to Networking          | slides                                                                                                             |  |

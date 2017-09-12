@@ -5,3 +5,4 @@
 * [Javascript](js.html)
 * [DOM](dom.html)
 * [Storage](storage.html)
+* [Regular Expressions](regex.html)
