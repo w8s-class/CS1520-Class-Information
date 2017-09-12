@@ -107,7 +107,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [js9](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js9_more_dom.html)                          |  |
 |    |                                                       | [js10](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js10_danger_dom.html)                      |  |
 |    |                                                       | [js11](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js11_capture_dom.html)                     |  |
-| 3  | Web Storage                                           | slides                                                                                                             |  |
+| 3  | Web Storage                                           | [slides](https://w8s-class.github.io/CS1520-Class-Information/storage.html)                                                                                                             |  |
 |    |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                        |  |
 |    |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)    |  |
 | 4  | Regular Expressions                                   | slides                                                                                                             |  |

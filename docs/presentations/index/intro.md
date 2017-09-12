@@ -4,3 +4,4 @@
 * [Git Overview](git.html)
 * [Javascript](js.html)
 * [DOM](dom.html)
+* [Storage](storage.html)
