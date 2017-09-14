@@ -283,6 +283,9 @@ document.write(newstr);
 
 ## Advice
 
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-background-image="https://media.tenor.com/images/049898e9e1d908f95877538e30307df5/tenor.gif" -->
+
 * When developing a regular expression, consider two	different questions:
 	* Does it MATCH all of the strings you want it to match?
 	* Does it NOT MATCH all of the strings you do not want it to match?
