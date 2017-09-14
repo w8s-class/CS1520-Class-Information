@@ -60,15 +60,30 @@ var re = /snipe/g;
 
 -###-
 
-## The `*`
+## The `*` Indicator
 
 * This one indicator for matching repeated characters (or classes or patterns)
 * `*`
 	* Repeated 0 or more times
+
+-###-
+
+## The `+` Indicator
+
 * `+`
 	* Repeated 1 or more times
+
+-###-
+
+## The `?` Indicator
+
 * `?`
 	* Occurs 0 or 1 times
+
+-###-
+
+## The `{n}` Indicator
+
 * `{n}`
 	* Repeated exactly n times
 * `{n, m}`
@@ -97,9 +112,178 @@ var re = /snipe/g;
 	* `q`
 	* `7`
 	* `T`
+
+-###-
+
+## Complement Character Sets
+
 * `[^iI1]` does not match:
 	* `i`
 	* `I`
 	* `1`
 
 -###-
+
+## More Character Sets
+
+* `[abcdefghijklmnopqrstuvwxyz]`
+* `[a-z]`
+	* What would happen:  `"A".search(/[a-z]/)`
+* `[A-Za-z0-9]`
+* `[^A-Za-z0-9]`
+* `[aeiouAEIOU]`
+* `[0-9+-\/*]`
+	* What does this match?
+
+Note: 
+* Will find nothing (case sensitive
+* Will match math expressions (\/ escapes the /, though not necessary in chrome, assumed since it is in a character class)
+* Matches:
+	* `3`
+	* `+`
+	* `-`
+	* `*`
+	* `/`
+	* `.`
+* Non-matches:
+	* `\`
+
+-###-
+
+## Builtin Character Sets
+
+* `\d`
+	* Digits
+	* [0-9]
+* `\D`
+	* Non Digits
+	* `[^0-9]`
+
+-###-
+
+## Builtin Character Sets
+
+* `\w`
+	* Any alphanumeric character
+	* `[A-Za-z0-9]`
+* `\W`
+	* Non-alphanumeric
+	* `[^A-Za-z0-9]`
+
+-###-
+
+## Builtin Character Sets
+
+* `\s`
+	* "Space" characters (e.g., space, tab newline, etc.)
+	* `[\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
+\u202f\u205f\u3000\ufeff]`
+* `\S`
+	* Non-space characters
+	* `[^\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
+\u202f\u205f\u3000\ufeff]`
+
+-###-
+
+## Anchors
+
+* `^`
+	* Matches the beginning of a string
+	* Unless in multiline mode, then matches the beginning of a line
+* `$`
+	* Matches the end of a string
+	* Unless in multiline mode, then matches the end of a line
+
+-###-
+
+## Anchors
+
+* `\b`
+	* Word boundary
+* `\B`
+	* Not a word boundary
+
+-###-
+
+## Greedy vs Lazy evaluation
+
+* By default matches are greedy from left
+* If multiple characters can be matched, as many are consumed as possible left to right, as long as overall match can still succeed
+* Backtracking may be needed to obtain overall match
+We can change the matching to be lazy by putting a ? after the repetition operator
+* `/a*?/`
+	* `"aaaaaaa".match(/a*?/)`
+	* `"aaaaaaa".match(/a*/)`
+
+-###-
+
+## Subgroups `()`
+
+* `()`
+* "Saves" the results of a portion of the overall match
+* Can recall previously matched values with `\n`
+	* Where `n` is a number
+* `"foofoo".match(/(.*)\1/)`
+	* Finds a match!
+* `"foobar".match(/(.*)\1/)`
+	* ???
+* `"barbaz".match(/(.*)\1/)`
+	* ???
+
+-###-
+
+## Subgroup Utility
+
+* Javascript will allow you to reference matched subgroups in the replace function with `$n`
+
+```
+var re = /(\w+)\s(\w+)/;
+var str = 'John Smith';
+var newstr = str.replace(re, '$2, $1');
+document.write(newstr);
+```
+
+-###-
+
+## Flags
+
+* `g`
+	* Global search
+* `i`
+	* Case-insensitive search
+* `m`
+	* Multi-line search.
+* `y`
+	* Perform a "sticky" search that matches starting at the current position in the target string
+
+-###-
+
+## Other Functions
+
+* `|`
+	* Or
+	* `/red|green/`
+* `(?:x)`
+	* matches, but does not save `x`
+* `x(?=y)`
+	* Matches `x` only if followed by `y`
+* `x(?!y)`
+	* Matches `x` only if it is not followed by `y`
+
+-###-
+
+## Exercises
+
+* An Expression that:
+	* Whether a string contains a valid floating point number
+	* Whether a string represents a valid date
+	* Whether a string represents a valid email address
+
+-###-
+
+## Advice
+
+* When developing a regular expression, consider two	different questions:
+	* Does it MATCH all of the strings you want it to match?
+	* Does it NOT MATCH all of the strings you do not want it to match?
+* Mistakes are often made when only one of those questions is considered
