@@ -58,9 +58,8 @@ Jeong-Min Lee
 
 | Office     | Hours |
 |:-----------|:------|
-| 5324       | TBD   |
-
-Email Pranut to set an appointment for the first two weeks, as we determine office hours.
+| 5324       | Monday 2:00-5:00pm  |
+(If you don't fit the time, you can send me email to set up an appointment at other time.)
 
 ### Optional Textbook
 
