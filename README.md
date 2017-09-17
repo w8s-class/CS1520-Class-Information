@@ -47,6 +47,7 @@ Pranut Jain
 | Office     | Hours |
 |:-----------|:------|
 | 5501       | Thursday 2:30-5:30pm   |
+
 And by appointment throughout the week(Preferably Friday).
 
 #### M Lecture 2 TA
