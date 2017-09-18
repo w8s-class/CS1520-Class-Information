@@ -112,8 +112,10 @@ ISBN-13: 9780133776096
 |    |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                        |  |
 |    |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)    |  |
 | 4  | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                                                                                             |  |
-|    |                                                       | MDN Regex                                                                                                          |  |
-|    |                                                       | Javascript examples: js13 js14                                                                                     |  |
+|    |                                                       | [MDN Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)                                                                                                          |  |
+|    |                                                       | Javascript examples: 
+|||[js13](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js13_regex.html) |
+|||[js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)|                                                                                     |  |
 | 5  | HTTP Overview and Introduction to Networking          | slides                                                                                                             |  |
 |    |                                                       | MDN HTTP codes                                                                                                     |  |
 | 6  | Python                                                | slides                                                                                                             |  |
