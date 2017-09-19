@@ -251,3 +251,17 @@ Accept-Ranges: bytes
     * Not Found
 * 500
     * Internal Server Error
+
+-###-
+
+## Networked Infrastructure
+
+![Magic](/images/http/networking.svg) <!-- .element: style="width:50%;" -->
+
+-###-
+
+## Backend Application Stack
+
+![Python](/images/http/python-512.png) <!-- .element: style="width:20%;" -->
+![SQLite](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/2000px-Sqlite-square-icon.svg.png) <!-- .element: style="width:20%;" -->
+![Flask](https://cdn.tutsplus.com/net/authors/jeffreyway/flask.jpg)
