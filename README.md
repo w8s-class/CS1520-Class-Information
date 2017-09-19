@@ -46,7 +46,9 @@ Pranut Jain
 
 | Office     | Hours |
 |:-----------|:------|
-| 5501       | TBD   |
+| 5501       | Thursday 2:30-5:30pm   |
+
+And by appointment throughout the week(Preferably Friday).
 
 #### M Lecture 2 TA
 
@@ -58,9 +60,9 @@ Jeong-Min Lee
 
 | Office     | Hours |
 |:-----------|:------|
-| 5324       | TBD   |
+| 5324       | Monday 2:00-5:00pm  |
 
-Email Pranut to set an appointment for the first two weeks, as we determine office hours.
+(If you don't fit the time, you can send me email to set up an appointment at other time.)
 
 ### Optional Textbook
 
