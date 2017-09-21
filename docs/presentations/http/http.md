@@ -222,18 +222,59 @@ Accept-Ranges: bytes
 ## HTTP Methods
 
 * `GET`
-* `HEAD`
-    * Like `GET`, but returns headers only, no body
 * `POST`
 * `PUT`
 * `DELETE`
     * Delete listed resource
 
+Note:
+* POST
+    * Sends info to the Server to act on.
+    * Can create, but generally shouldn't (idempotent)
+    * returns response, but not required to send much else
+* PUT
+    * Like POST
+    * since PUT is idempotent, you must send all possible values.
+    * get the same response (everything) all the time
+* DELETE
+    * The DELETE method deletes the specified resource.
+
+-###-
+
+## HTTP Safe Methods
+
+* `HEAD`
+    * Like `GET`, but returns headers only, no body
+* `OPTIONS`
+    * Gets a list of methods supported by the destination server
+* `TRACE`
+    * Like `GET`, but returns changes made to the request as it travels through the network
+
 -###-
 
 ## Comparisons of HTTP Methods
 
-![HTTP Method Comparisons](images/http/httpmethods.png)
+```
+| HTTP Method | RFC      | Request Has Body | Response Has Body | Safe | Idempotent | Cacheable |
+|:------------|:---------|:-----------------|:------------------|:-----|:-----------|:----------|
+| GET         | RFC 7231 | No               | Yes               | Yes  | Yes        | Yes       |
+| HEAD        | RFC 7231 | No               | No                | Yes  | Yes        | Yes       |
+| POST        | RFC 7231 | Yes              | Yes               | No   | No         | Yes       |
+| PUT         | RFC 7231 | Yes              | Yes               | No   | Yes        | No        |
+| DELETE      | RFC 7231 | No               | Yes               | No   | Yes        | No        |
+| CONNECT     | RFC 7231 | Yes              | Yes               | No   | No         | No        |
+| OPTIONS     | RFC 7231 | Optional         | Yes               | Yes  | Yes        | No        |
+| TRACE       | RFC 7231 | No               | Yes               | Yes  | Yes        | No        |
+| PATCH       | RFC 5789 | Yes              | Yes               | No   | No         | No        |
+```
+
+Note:
+* CONNECT
+    * The CONNECT method converts the request connection to a transparent TCP/IP tunnel, usually to facilitate SSL-encrypted communication (HTTPS) through an unencrypted HTTP proxy. See HTTP CONNECT tunneling.
+* PATCH
+    * The PATCH method applies partial modifications to a resource.
+* Idempotent
+    * From a RESTful service standpoint, for an operation (or service call) to be idempotent, clients can make that same call repeatedly while producing the same result.
 
 -###-
 
