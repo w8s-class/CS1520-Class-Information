@@ -36,13 +36,13 @@
 
 ## Defining Regular Expressions in Javascript
 
-```
+```javascript
 new RegExp(pattern[, flags]);
 
 var re = new RegExp("snipe");
 ```
 
-```
+```javascript
 // /pattern/flags;
 var re = /snipe/g;
 ```
@@ -236,7 +236,7 @@ We can change the matching to be lazy by putting a ? after the repetition operat
 
 * Javascript will allow you to reference matched subgroups in the replace function with `$n`
 
-```
+```javascript
 var re = /(\w+)\s(\w+)/;
 var str = 'John Smith';
 var newstr = str.replace(re, '$2, $1');
