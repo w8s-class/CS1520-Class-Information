@@ -16,7 +16,7 @@ How would you apply it to a detailed web page?
 
 -###-
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +55,7 @@ Note:
 
 ## Consider this HTML
 
-```
+```html
 <!-- My document -->
 <html>
 <head>
@@ -145,7 +145,7 @@ Note:
 
 ## Importing JQuery
 
-```
+```html
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 </script> 
 ```
@@ -166,13 +166,13 @@ Note:
 
 ## Javascript vs JQuery
 
-```
+```javascript
 // Javascript
 var wrapper = document.getElementById("wrapper"),
     els = wrapper.querySelectorAll("p");
 ```
 
-```
+```javascript
 // JQuery
 var els = $("#wrapper p");
 ```
