@@ -120,7 +120,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)                      |
 | 5  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                           |
 |    |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                         |
-| 6  | Python                                                | slides                                                                                                             |
+| 6  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                         |
 |    |                                                       | Tutorial                                                                                                           |
 |    |                                                       | Language reference                                                                                                 |
 |    |                                                       | Standard library                                                                                                   |
