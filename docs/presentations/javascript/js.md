@@ -165,12 +165,12 @@ Note: Does a script tag mean Javascript? Any language the browser can understand
 Note:
 Started as a requirement in languages like FORTRAN or BASIC when:
 
-```
+```fortran
 10 V1=100
 20 PRINTV1
 ```
 and 
-``` 
+```fortran
 10V1=100
 20PRINTV1
 ```
@@ -265,7 +265,7 @@ Note:
 
 * Functions execute when they are called, just as in any language
 	* Because of this, function definitions should be in the head HTML element
-```
+```html
 <head>
 	<script>function ... </script>
 </head>
@@ -304,16 +304,16 @@ Note: js4
 
 * Multiple ways to create arrays:
 
-```
+```javascript
 // Using the new operator and a constructor with multiple arguments:
 var A = new Array("hello", 2, "you");
 ```
-```
+```javascript
 // Using the new operator and a constructor with a 
 //    single numeric argument
 var B = new Array(50);
 ```
-```
+```javascript
 // Using square brackets to make a literal
 var C = ["we", "can", 50, "mix", 3.5, "types"];
 ```
@@ -357,7 +357,7 @@ Note: js5
 
 ## Sorting comparison function psuedocode
 
-```
+```javascript
 function compare(a, b) {
 	if (a is less than b by some ordering criterion) {
 		return -1;
@@ -394,7 +394,7 @@ function compare(a, b) {
 
 * Property values can be data or functions (methods):
 
-```
+```javascript
 var my_tv = new Object();
 my_tv.brand = "Samsung";
 my_tv.size = 46;
@@ -415,7 +415,7 @@ my_tv.jacks.output = 2;
 
 ## Object Details
 
-```
+```javascript
 function TV(brand, size, injacks, outjacks) {
 	this.brand = brand;
 	this.size = size;
