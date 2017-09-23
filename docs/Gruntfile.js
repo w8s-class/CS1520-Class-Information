@@ -37,6 +37,7 @@ module.exports = function(grunt) {
 			core: {
 				files: {
 					'css/reveal.css': 'css/reveal.scss',
+					'css/solarized-ext.css': 'css/solarized-ext.scss'
 				}
 			},
 			themes: {

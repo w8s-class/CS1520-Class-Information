@@ -60,11 +60,11 @@ Note:
 
 ## Host Attribute
 
-```
-> GET / HTTP/1.1
-> Host: www.toddwaits.org
-> User-Agent: curl/7.54.0
-> Accept: */*
+```http
+GET / HTTP/1.1
+Host: www.toddwaits.org
+User-Agent: curl/7.54.0
+Accept: */*
 ```
 
 Note:
@@ -75,20 +75,20 @@ Note:
 
 ## Getting an HTTP Request to a Webserver
 
-* Physical Layer <!-- .element: class="fragment grow" data-fragment-index="3" -->
-* Data Link Layer <!-- .element: class="fragment grow" data-fragment-index="3" -->
-* Network Layer <!-- .element: class="fragment highlight-red" data-fragment-index="2" -->
-* Transport Layer <!-- .element: class="fragment highlight-green" data-fragment-index="1" -->
-* Session Layer <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
-* Presentation Layer <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
-* Application Layer <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
+* Physical Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
+* Data Link Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
+* Network Layer <!-- .element: class="fragment highlight-orange" data-fragment-index="2" -->
+* Transport Layer <!-- .element: class="fragment highlight-yellow" data-fragment-index="1" -->
+* Session Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
+* Presentation Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
+* Application Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
 
 <!-- .element: class="column-left" -->
 
-* Application <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
-* Transport <!-- .element: class="fragment highlight-green" data-fragment-index="1" -->
-* Internet <!-- .element: class="fragment highlight-red" data-fragment-index="2" -->
-* Link Layer <!-- .element: class="fragment grow" data-fragment-index="3" -->
+* Application <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
+* Transport <!-- .element: class="fragment highlight-yellow" data-fragment-index="1" -->
+* Internet <!-- .element: class="fragment highlight-orange" data-fragment-index="2" -->
+* Link Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
 
 <!-- .element: class="column-right" -->
 
@@ -123,7 +123,7 @@ Note:
 
 ## HTTP Route
 
-```
+```bash
  1  pod-w-vl75.gw.cmu.net (128.237.128.1)  12.768 ms  467.251 ms  129.222 ms
  2  core0-pod-w-cyh.gw.cmu.net (128.2.0.241)  1.501 ms  2.032 ms  1.529 ms
  3  pod-i-cyh-core0.gw.cmu.net (128.2.0.250)  1.491 ms  2.224 ms  2.284 ms
@@ -156,7 +156,7 @@ Note:
 
 ## HTTP Response
 
-```
+```http
 HTTP/1.1 200 OK
 Server: nginx
 Date: Tue, 19 Sep 2017 18:35:50 GMT
@@ -254,7 +254,7 @@ Note:
 
 ## Comparisons of HTTP Methods
 
-```
+```markdown
 | HTTP Method | RFC      | Request Has Body | Response Has Body | Safe | Idempotent | Cacheable |
 |:------------|:---------|:-----------------|:------------------|:-----|:-----------|:----------|
 | GET         | RFC 7231 | No               | Yes               | Yes  | Yes        | Yes       |
@@ -286,6 +286,11 @@ Note:
     * Moved Permanently
 * 400
     * Bad Request
+
+-###-
+
+## HTTP Status Codes
+
 * 403
     * Forbidden
 * 404

@@ -1,0 +1,101 @@
+/*********************************************
+ * CUSTOMIZATIONS
+ *********************************************/
+
+$base03:#002b36;
+$base02:#073642;
+$base01:#586e75;
+$base00:#657b83;
+$base0:#839496;
+$base1:#93a1a1;
+$base2:#eee8d5;
+$base3:#fdf6e3;
+$yellow:#b58900;
+$orange:#cb4b16;
+$red:#dc322f;
+$magenta:#d33682;
+$violet:#6c71c4;
+$blue:#268bd2;
+$cyan:#2aa198;
+$green:#859900;
+
+.element-bkg {
+  color: $base3;
+
+  h2 {
+    color: $base3;
+  }
+
+}
+
+/*********************************************
+ * Fragment Additions
+ *********************************************/
+
+.reveal .slides section .fragment.highlight-red,
+.reveal .slides section .fragment.highlight-current-red,
+.reveal .slides section .fragment.highlight-green,
+.reveal .slides section .fragment.highlight-current-green,
+.reveal .slides section .fragment.highlight-blue,
+.reveal .slides section .fragment.highlight-current-blue,
+.reveal .slides section .fragment.highlight-violet,
+.reveal .slides section .fragment.highlight-current-violet,
+.reveal .slides section .fragment.highlight-cyan,
+.reveal .slides section .fragment.highlight-current-cyan,
+.reveal .slides section .fragment.highlight-magenta,
+.reveal .slides section .fragment.highlight-current-magenta,
+.reveal .slides section .fragment.highlight-orange,
+.reveal .slides section .fragment.highlight-current-orange,
+.reveal .slides section .fragment.highlight-yellow,
+.reveal .slides section .fragment.highlight-current-yellow {
+    opacity: 1;
+    visibility: inherit;
+}
+.reveal .slides section .fragment.highlight-red.visible {
+    color: $red;
+}
+.reveal .slides section .fragment.highlight-green.visible {
+    color: $green;
+}
+.reveal .slides section .fragment.highlight-blue.visible {
+    color: $blue;
+}
+.reveal .slides section .fragment.highlight-violet.visible {
+    color: $violet;
+}
+.reveal .slides section .fragment.highlight-cyan.visible {
+    color: $cyan;
+}
+.reveal .slides section .fragment.highlight-magenta.visible {
+    color: $magenta;
+}
+.reveal .slides section .fragment.highlight-orange.visible {
+    color: $orange;
+}
+.reveal .slides section .fragment.highlight-yellow.visible {
+    color: $yellow;
+}
+.reveal .slides section .fragment.highlight-current-red.current-fragment {
+color: $red;
+}
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+color: $green;
+}
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+color: $blue;
+}
+.reveal .slides section .fragment.highlight-current-violet.current-fragment {
+color: $violet;
+}
+.reveal .slides section .fragment.highlight-current-cyan.current-fragment {
+color: $cyan;
+}
+.reveal .slides section .fragment.highlight-current-magenta.current-fragment {
+color: $magenta;
+}
+.reveal .slides section .fragment.highlight-current-orange.current-fragment {
+color: $orange;
+}
+.reveal .slides section .fragment.highlight-current-yellow.current-fragment {
+color: $yellow;
+}
