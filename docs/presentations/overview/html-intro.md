@@ -27,7 +27,7 @@
 
 * Most tags are pairs, start and end tags:
     
-```
+```html
 <p> 
   This text would be considered a paragraph
 </p>
@@ -36,7 +36,7 @@
 
 * Comments have their own start and end tags:
 
-```
+```html
 <!-- This is an HTML comment --> 
 <!--
 Multiline comment
@@ -49,7 +49,7 @@ Multiline comment
 
 * There are also self closing tags
     
-```
+```html
 <br /> <!-- The br tag inputs a line break -->
 ```
 
@@ -59,7 +59,7 @@ Multiline comment
 
 * Tags also have attributes
     
-```
+```html
 <a href="http://example.com">click here!</a>
 ```
 
@@ -77,7 +77,7 @@ Multiline comment
 
 ### Italics Example
 
-```
+```html
 <style>
 span.italics {font-style: italic;}
 </style>
@@ -86,7 +86,7 @@ span.italics {font-style: italic;}
 
 * Emphasis tag
     
-```
+```html
 <em>this will be italicized</em>
 ```
 
