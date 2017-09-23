@@ -118,8 +118,8 @@ ISBN-13: 9780133776096
 |    |                                                       | Javascript examples:                                                                                               |    |  |
 |    |                                                       | [js13](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js13_regex.html)                           |    |  |
 |    |                                                       | [js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)                      |    |  |
-| 5  | HTTP Overview and Introduction to Networking          | slides                                                                                                             |    |  |
-|    |                                                       | MDN HTTP codes                                                                                                     |    |  |
+| 5  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                                                                             |    |  |
+|    |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                                                                                     |    |  |
 | 6  | Python                                                | slides                                                                                                             |    |  |
 |    |                                                       | Tutorial                                                                                                           |    |  |
 |    |                                                       | Language reference                                                                                                 |    |  |
