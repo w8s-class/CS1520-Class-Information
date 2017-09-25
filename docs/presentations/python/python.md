@@ -435,33 +435,155 @@ except Exception as e:
 
 ## Breaking Down the Loop
 
+```python
+temp_iter = iter(crazy_list)
+while True:
+    try:
+        item = temp_iter.__next__()
+    except StopIteration:
+        break
+
+    print(item)
+```
+
 -###-
 
 ## Generators
+
+* Functions that use the yield keyword to return values in order to create iterators
+* State is maintained between function calls to the generator
+
+```python
+def enum(seq):
+    n = 0
+    for i in seq:
+        yield n, i
+        n += 1
+
+def fibonacci():
+    i = j = 1
+    while True:
+        r, i, j = i, j, i + j
+        yield r
+```
+
+Note:
+* Unlike a list, a generator expression can only be used once (afterwards, it's useless)
+
+## Generators
+
+```python
+numbers = [1,2,3,4]
+squares = (x*x for x in nums) 
+
+for s in squares:
+    print(s, end=' ')
+for s in squares:
+    print(s, end=' ')
+```
+
+Note:
+* Use them when you don't need to hold the data.
 
 -###-
 
 ## Basic Object Oriented Python
 
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print()
+```
+
+
 -###-
 
 ## Basic Inheritance
+
+```python
+class Student(Person):
+    def __init__(self, name, age):
+        super(Student, self).__init__(name, age)
+
+        self.classes = []
+
+    def add_class(self, new):
+        self.classes.append(new)
+
+    def display(self):
+        super(Student, self).display()
+        print("Classes:", self.classes)
+        print()
+```
 
 -###-
 
 ## Decorators
 
+```python
+def plus_one(original_function):
+    def new_function(x, y):
+        return original_function(x, y) + 1
+    return new_function
+```
+
+```python
+@plus_one
+def add(x, y):
+    return x + y
+```
+
 -###-
 
 ## Basic File I/O
+
+```python
+outf = open("example.txt", "w")
+for i in range(10):
+    outf.write(str(i) + "\n")
+outf.close()
+
+inf = open("example.txt")
+for line in inf:
+    print(line.strip())
+inf.close()
+```
 
 -###-
 
 ## Python Contexts
 
+```python
+with open("example.txt") as inf:
+    for line in inf:
+        print(line.strip())
+```
+
 -###-
 
 ## DIY Contexts
+
+```
+from contextlib import contextmanager
+
+@contextmanager
+def tag(name):
+    print("<{}>".format(name))
+    yield
+    print("</{}>".format(name))
+
+with tag("h1"):
+    print("foo")
+```
+
+Note:
+* Note that exceptions need to be carefully handled within context generators!
 
 -###-
 
