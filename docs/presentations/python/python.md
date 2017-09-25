@@ -302,6 +302,9 @@ w = ('CS1520',)   # A 1-item tuple
 class_room = "%s %s" % (s[1], s[2])
 ```
 
+Note:
+Tuple : 28 bytes + 4 bytes/object
+
 -###-
 
 ## Tuple Unpacking
@@ -327,6 +330,7 @@ if 3 in l:
 Note:
 * Order maintained.
 * Can hold any object
+* List : 36 bytes + 4 bytes/object
 
 -###-
 
@@ -349,6 +353,7 @@ Note:
 * Easy interoperability (convert to JSON)
 * All objects are Dictionaries
 * No order
+* Dict: 140 bytes + 12 bytes/object
 
 ## Looping
 
@@ -501,6 +506,8 @@ class Person:
         print()
 ```
 
+Note:
+* Instance: 32 bytes + size of dict
 
 -###-
 
