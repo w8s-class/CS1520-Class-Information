@@ -196,9 +196,9 @@ c = (2 + 3) * 4
 
 ```python
 if a < b:
-    print "Computer says no"
+    print ("Computer says no")
 else:
-    print "Computer says yes"
+    print ("Computer says yes")
 ```
 
 -###-
