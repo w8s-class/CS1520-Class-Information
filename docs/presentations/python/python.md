@@ -315,6 +315,8 @@ Tuple : 28 bytes + 4 bytes/object
 name, student_count, room = s # Omitted the ()
 ```
 
+-###-
+
 ## Lists
 
 * Mutable sequences
@@ -354,6 +356,8 @@ Note:
 * All objects are Dictionaries
 * No order
 * Dict: 140 bytes + 12 bytes/object
+* {'key': 'value'}.__hash__() & size-1 (determines order)
+* printing shows order
 
 ## Looping
 
@@ -474,6 +478,7 @@ def fibonacci():
 
 Note:
 * Unlike a list, a generator expression can only be used once (afterwards, it's useless)
+* yield/return
 
 ## Generators
 
@@ -508,6 +513,9 @@ class Person:
 
 Note:
 * Instance: 32 bytes + size of dict
+* Allocation
+    * 0 - 5  attributes  (140 bytes)
+    * 6 - 21 attributes  (524 bytes)
 
 -###-
 
