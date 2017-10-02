@@ -608,14 +608,9 @@ Note:
 
 > "A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is the most important."
 
--###-
-
 Note:
 
 * Idiomatic Python
-
-## Tips
-
 * If it's hard to explain to a person, you're probably doing it wrong
 
 -###-
