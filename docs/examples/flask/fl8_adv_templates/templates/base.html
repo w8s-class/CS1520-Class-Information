@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}loginForm!{% endblock %}</title>
+	</head>
+	<body>
+		{% if username %}
+			Logged in as {{ username }}, <a href="{{ url_for("unlogger") }}">click here to logout</a>
+			<br />
+			<br />
+		{% endif %}
+		{% block body %}
+		{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}loginForm!{% endblock %}</title>
+	</head>
+	<body>
+		{% if "username" in session %}
+			Logged in as {{ session["username"] }}, <a href="{{ url_for("unlogger") }}">click here to logout</a>
+			<br />
+			<br />
+		{% endif %}
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<ul class="flashes">
+					{% for m in messages %}
+						<li>{{ m }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		{% endwith %}
+		{% block body %}
+		{% endblock %}
+	</body>
+</html>

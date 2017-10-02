@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}ALL profiles! - {{ super() }}{% endblock %}
+
+{% block body %}
+	<ul>
+		{% for u in users %}
+			<li><a href="/profile/{{ u }}">{{ u }}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}
