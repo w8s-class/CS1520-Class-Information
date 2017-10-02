@@ -605,9 +605,14 @@ Note:
 ## Pythonic Coding
 
 > "Code is read much more often than it is written."
+
 > "A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is the most important."
 
 -###-
+
+Note:
+
+* Idiomatic Python
 
 ## Tips
 
@@ -616,6 +621,8 @@ Note:
 -###-
 
 ## [PEP 8](https://www.python.org/dev/peps/pep-0008/)
+
+> One of Guido's key insights is that code is read much more often than it is written. The guidelines provided here are intended to improve the readability of code and make it consistent across the wide spectrum of Python code. As PEP 20 says, "Readability counts".
 
 -###-
 
@@ -630,5 +637,3 @@ Note:
         * Context Managers
     * Class variables 
     * And many more!!!
-
--###-
