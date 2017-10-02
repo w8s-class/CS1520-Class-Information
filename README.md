@@ -133,7 +133,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo">)                               |
 |    |                                                       | [py8](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py8_dec.py)                             |
 |    |                                                       | [py9](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py9_context.py)                         |
-| 7  | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                                                                                             |
+| 7  | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                          |
 |    |                                                       | [Installation](http://flask.pocoo.org/docs/0.12/installation/)                                                     |
 |    |                                                       | [Python 3 note](http://flask.pocoo.org/docs/0.12/python3/#python3-support)                                         |
 |    |                                                       | [Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/)                                                         |
