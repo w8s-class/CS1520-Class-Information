@@ -138,7 +138,12 @@ ISBN-13: 9780133776096
 |    |                                                       | [Python 3 note](http://flask.pocoo.org/docs/0.12/python3/#python3-support)                                         |
 |    |                                                       | [Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/)                                                         |
 |    |                                                       | [API](http://flask.pocoo.org/docs/0.12/api/)                                                                       |
-|    |                                                       | Flask examples: fl1 fl2 fl3 fl4 fl5 fl6                                                                            |
+|    |                                                       | Flask examples: fl1 |
+|||fl2 |
+|||fl3 |
+|||fl4 |
+|||fl5 |
+|||fl6                                                                            |
 | 8  | Using Templates to Generate Views in Flask            | slides                                                                                                             |
 |    |                                                       | Jinja2 docs                                                                                                        |
 |    |                                                       | Template Inheritance                                                                                               |
