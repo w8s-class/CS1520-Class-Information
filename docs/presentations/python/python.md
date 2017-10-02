@@ -370,7 +370,7 @@ for i in range(len(crazy_list)):
 
 crazy_index = {}
 for n, item in enumerate(crazy_list):
-        crazy_index[item].append(n)
+        crazy_index[item] = (n)
 ```
 
 -###-
@@ -479,6 +479,8 @@ def fibonacci():
 Note:
 * Unlike a list, a generator expression can only be used once (afterwards, it's useless)
 * yield/return
+
+-###-
 
 ## Generators
 
