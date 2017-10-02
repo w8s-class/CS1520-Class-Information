@@ -124,7 +124,15 @@ ISBN-13: 9780133776096
 |    |                                                       | Tutorial                                                                                                           |
 |    |                                                       | Language reference                                                                                                 |
 |    |                                                       | Standard library                                                                                                   |
-|    |                                                       | Python examples: py1 py2 py3 py4 py5 py6 py7 py8 py9                                                               |
+|    |                                                       | Python examples: py1 |
+||| [py2]()| 
+||| [py3]()| 
+||| [py4]()| 
+||| [py5]()| 
+||| [py6]()| 
+||| [py7]()| 
+||| [py8]()| 
+||| [py9]()|
 | 7  | Server-side scripting with Flask                      | slides                                                                                                             |
 |    |                                                       | Installation                                                                                                       |
 |    |                                                       | Python 3 note                                                                                                      |
