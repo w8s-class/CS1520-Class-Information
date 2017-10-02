@@ -122,8 +122,8 @@ ISBN-13: 9780133776096
 |    |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                         |
 | 6  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                         |
 |    |                                                       | Tutorial                                                                                                           |
-|    |                                                       | [Language reference](https://docs.python.org/3/reference/index.html)                                                                                                 |
-|    |                                                       | [Standard library](https://docs.python.org/3/library/index.html)                                                                                                   |
+|    |                                                       | [Language reference](https://docs.python.org/3/reference/index.html)                                               |
+|    |                                                       | [Standard library](https://docs.python.org/3/library/index.html)                                                   |
 |    |                                                       | Python examples: [py1](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py1_intro.py)          |
 |    |                                                       | [py2](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py2_slice.py)                           |
 |    |                                                       | [py3](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py3_functions.py)                       |
