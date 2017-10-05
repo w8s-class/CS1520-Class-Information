@@ -418,6 +418,26 @@ classes = { 'Waits': 'CS1520', 'Ramirez': 'CS1520', 'Frank': 'CS1401' }
 * Successive calls to `__next__()` will iterate through the items in the collection
 * When no more items remain in the collection, all future calls to `__next__()` should raise a `StopIteration` exception
 
+Note:
+```python
+class Fib:                                        
+    def __init__(self, max):                      
+        self.max = max
+
+    def __iter__(self):                          
+        self.a = 0
+        self.b = 1
+        return self
+
+    def __next__(self):                          
+        fib = self.a
+        if fib > self.max:
+            raise StopIteration                  
+        self.a, self.b = self.b, self.a + self.b
+        return fib 
+```
+
+
 -###-
 
 ## Exceptions and Try statements
@@ -469,11 +489,11 @@ def enum(seq):
         yield n, i
         n += 1
 
-def fibonacci():
-    i = j = 1
-    while True:
-        r, i, j = i, j, i + j
-        yield r
+def fib(max):
+    a, b = 0, 1
+    while a < max:
+        yield a
+        a, b = b, a + b
 ```
 
 Note:

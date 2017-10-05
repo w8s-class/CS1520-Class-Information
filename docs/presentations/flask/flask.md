@@ -80,13 +80,23 @@ Note:
 
 -###-
 
-## Model - View - Controller (MVC)
+## Model
 
-* Controller
-    * The decorated code you've seen up until this point
 * Model
     * Handles interaction with stored data
     * We'll use an abstraction off of SQLite as our model
+
+-###-
+
+## Controller
+
+* Controller
+    * The decorated code you've seen up until this point
+
+-###-
+
+## View
+
 * View
     * Represents what is displayed to the user
     * We'll use templates of HTML files that are populated with data from our model

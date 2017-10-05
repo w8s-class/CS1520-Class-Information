@@ -14,4 +14,5 @@
 * [HTTP and Networking](http.html)
 * [Python](python.html)
 * [Flask](flask.html)
+* [Flask Templates](flask-templates.html)
 
