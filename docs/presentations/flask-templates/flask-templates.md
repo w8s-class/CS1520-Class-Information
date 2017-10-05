@@ -13,11 +13,11 @@
 
 ## Basic Jinja tags
 
-* `{{ ... }}`
+* `{% raw %}{{ ... }}{% endraw %}`
     * Expression tag, contents are evaluated and place in the text
-* `{% ... %}`
+* `{% raw %}{% ... %}{% endraw %}`
     * Statement tag, used to define Jinja constructs and issue flow control statements
-* `{# ... #}`
+* `{% raw %}{# ... #}{% endraw %}`
     * Comment
 
 -###-
@@ -25,6 +25,7 @@
 ## Simple Jinja tag example
 
 ```jinja
+{% raw %}
 <!doctype html>
 <html>
 <head>
@@ -38,7 +39,7 @@
     {% endif %}
 </body>
 </html>
-
+{% endraw %}
 ```
 
 -###- 
@@ -60,10 +61,10 @@ Note:
 ## Control structures
 
 * Operate similarly to their Python variants
-    * `{% if cond %} {% elif cond %} {% else %} {% endif %}`
+    * `{% raw %}{% if cond %} {% elif cond %} {% else %} {% endif %} {% endraw %}`
 * Only render a part of the template if some condition is met
     * E.g., display logout link if a user is logged in
-    * `{% for i in seq %} {% endfor %}`
+    * `{% raw %}{% for i in seq %} {% endfor %} {%endraw%}`
 * Render some part of the template multiple times for each item in a given sequence
     * E.g., create a div for each of a user's blog posts
 
@@ -74,8 +75,10 @@ Note:
 * Define blocks of a template that can be overridden in subtemplates
 
 ```
+{% raw %}
 {% block name %}
 {% endblock %}
+{% endraw %}
 ```
 
 * Establish inheritance through the `{% extends base %}` tag
