@@ -83,6 +83,9 @@ ISBN-13: 9780133776096
 
 ## Schedule
 
+**Midterm:** Oct. 10 (Lecture 2 - Monday Class) & Oct. 12 (Lecture 1 Tuesday/Thursday Class)
+
+
 | #  | Topics                                                | Materials                                                                                                          |
 |:---|:------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|
 | 0  | Introduction to the course                            | [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                   |
