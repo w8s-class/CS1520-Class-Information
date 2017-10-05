@@ -41,6 +41,7 @@ No need to address me as `Professor`. You can call me Todd.
 
 Pranut Jain
 
+* TA website: http://cs.pitt.edu/~pranut
 * Email: prj17@pitt.edu
 * GitHub: pranut
 
