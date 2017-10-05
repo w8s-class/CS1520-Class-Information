@@ -145,12 +145,12 @@ ISBN-13: 9780133776096
 |    |                                                       | [fl4](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl4_login.py)                            |
 |    |                                                       | [fl5](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl5_redirect.py)                         |
 |    |                                                       | [fl6](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl6_session_login.py)                    |
-| 8  | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                                                                                             |
-|    |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                                                        |
-|    |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                                                                                               |
-|    |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip) 
-|||[fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)| 
-|||[fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                                                                                        |
+| 8  | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                |
+|    |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                    |
+|    |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                            |
+|    |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)       |
+|    |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                   |
+|    |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                           |
 | 9  | Developing Models in Flask                            | slides                                                                                                             |
 |    |                                                       | SQLAlchemy install guide                                                                                           |
 |    |                                                       | Flask-SQLAlchemy quickstart                                                                                        |
