@@ -81,7 +81,7 @@ Note:
 {% endraw %}
 ```
 
-* Establish inheritance through the `{% extends base %}` tag
+* Establish inheritance through the `{%raw%}{% extends base %}{% endraw %}` tag
 
 Note:
 * fl8
