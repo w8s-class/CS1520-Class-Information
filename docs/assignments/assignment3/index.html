@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>So You Think You Can Cater</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">So You Think You Can Cater</h1>
+            <p class="lead">Assignment Three. Due Date: Friday, October 27 at 11:59.999999 pm.</p>
+            <hr class="my-4">
+            <p>To gain experience using Flask and building data models via an ORM by developing a website to help manage a catering company.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../assignment1/assignment1.html">Assignment One</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment2/index.html">Assignment Two</a>
+                    <a class="list-group-item list-group-item-action active" href="../assignment3/index.html">Assignment Three</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment4/index.html">Assignment Four</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment5/index.html">Assignment Five</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2 id="high-leveldescription:">High-level description:</h2>
+                <p>You will be writing a website to help manage a catering company. To accomplish this, you will need to consider three classes of users: the owner of the company, company staff, and registered customers. Customers will request events on given days (or cancel events they had previously requested), staff will sign up to work events, and the owner will given a rundown of what events are scheduled and who is working each event. The company cannot schedule more than 1 event per day, and each event needs only 3 Staff members to run.</p>
+                <h2 id="specifications:">Specifications:</h2>
+                <ol>
+                    <li>You must build your website using Python 3.6 or greater, Flask 0.12, SQLAlchemy, and the Flask-SQLAlchemy extension.</li>
+                    <li>Managing users
+                        <ul>
+                            <li>Each user (Owner, Staff, or Customer) should have a username and password.</li>
+                            <li>Customers are free to register for their own account.</li>
+                            <li>Staff accounts must be created by the Owner (it is fine for the Owner to set passwords for the Staff).</li>
+                            <li>If a user is logged in, no matter what page they are on, they should have access to a logout link.</li>
+                        </ul>
+                    </li>
+                    <li>Owner
+                        <ul>
+                            <li>Should be able to login with the username &#8220;owner&#8221; and password &#8220;pass&#8221;.</li>
+                            <li>Once logged in, the Owner should be presented with a link to create new staff accounts, and a list of all scheduled events.
+                                <ul>
+                                    <li>For each event, the Staff members signed up to work that event should be listed.</li>
+                                    <li>If no events are scheduled, a message should be displayed informing the Owner of this explicitly.</li>
+                                    <li>If any scheduled event has no staff signed up to work, a message should be displayed informing the Owner of this explicitly.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Staff
+                        <ul>
+                            <li>Once logged in, Staff members should be presented with a list of events they are scheduled to work and a list of events that they can sign up to work.
+                                <ul>
+                                    <li>For each event that a Staff member can sign up to work, they should be provided a link to sign up for that event.</li>
+                                    <li>No event that already has 3 Staff members signed up to work should be presented as a sign up option for other Staff members.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Customers
+                        <ul>
+                            <li>Once logged in, Customers should be presented with a form to request a new event, and a list of events they have already requested.
+                                <ul>
+                                    <li>If a Customer requests an event on a date when another event is already scheduled, they should be presented with an message saying that the company is already booked for that date.</li>
+                                    <li>For each requested event, the Customer should be provided with a link to cancel that event.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Data management
+                        <ul>
+                            <li>To ease bootstrapping and testing of your application, hardcode the Owner&#8217;s username and password in your app to be &#8220;owner&#8221; and &#8220;pass&#8221;.</li>
+                            <li>All other data for your application should be stored in an SQLite database named &#8220;catering.db&#8221; using SQLAlchemy&#8217;s ORM and the Flask-SQLAlchemy extension.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="submissionguidelines:">Submission Guidelines:</h2>
+                <ul>
+                    <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
+                    <li>Do not include catering.db in your submitted repository.</li>
+                    <li>You must name the main flask file for your site &#8220;catering.py&#8221;, and place it in the root directory of your repository.</li>
+                    <li>You must be able to run your application by setting the FLASK_APP environment variable to your catering.py and running &#8220;flask run&#8221;</li>
+                    <li>You must be able to initialize your database by setting the FLASK_APP environment variable to your catering.py and running &#8220;flask initdb&#8221;</li>
+                    <li>You must fill out info_sheet.txt.</li>
+                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub repository at that time will be considered your submission for this assignment.</li>
+                </ul>
+                <h2 id="additionalnoteshints:">Additional Notes/Hints:</h2>
+                <ul>
+                    <li>You may find it handy to use the HTML &#8220;date&#8221; input type for event scheduling.</li>
+                    <li>While you are not going to be heavily graded on the style and design of your web site, it should be presented in a clear and readable manner.</li>
+                </ul>
+                <h2 id="gradingrubric:">Grading Rubric:</h2>
+                <ul>
+                    <li>Owner login set correctly: 5%</li>
+                    <li>Customer registration: 5%</li>
+                    <li>Staff account creation: 5%</li>
+                    <li>Login works appropriately: 15%</li>
+                    <li>Logout always available and works: 5%</li>
+                    <li>Owner page displays as specified: 15%</li>
+                    <li>Staff page displays as specified: 5%</li>
+                    <li>Staff work sign up works: 10%</li>
+                    <li>Customer page displays as specified: 5%</li>
+                    <li>Customer create event works: 10%</li>
+                    <li>Customer cancel event works: 10%</li>
+                    <li>Clear and readable presentation: 5%</li>
+                    <li>Submission/info sheet: 5%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

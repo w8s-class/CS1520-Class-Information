@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money on my Mind, and my mind on my REST API</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Money on my Mind, and my mind on my REST API</h1>
+            <p class="lead">Assignment Three. Due Date: Friday, Dec. 8 at 11:59.999999 pm.</p>
+            <hr class="my-4">
+            <p>To gain experience with building RESTful APIs and using functional programming.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../assignment1/assignment1.html">Assignment One</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment2/index.html">Assignment Two</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment3/index.html">Assignment Three</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment4/index.html">Assignment Four</a>
+                    <a class="list-group-item list-group-item-action active" href="../assignment5/index.html">Assignment Five</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2 id="high-leveldescription:">High-level description:</h2>
+                <p>You will write a very simple budget application for a single user. Your application should support several budget categories, and a set monthly limit for each category (e.g., $700 for rent, $200 for food, $100 for gas, etc.). The application should allow the user to enter purchases and present an up to date list of the user&#8217;s remaining budgeted amount in each category (e.g., you have $0/$700 left for rent, you are $20 over your food budget of $200, and you have $44/$100 left for gas), and the amount spent on uncategorized purchases. You can represent all server-side data as Python data structures, you do not need to use SQLAlchemy.</p>
+                <h2 id="specifications:">Specifications:</h2>
+                <ol>
+                    <li>You must build a RESTful API for accessing your budget category and purchase resources. Specifically, users should be able to perform HTTP GETs, POSTs, and DELETEs on &#8220;/cats&#8221; to get a list of budget categories, add a new category, and delete a category (respectively), and also perform HTTP GETs and POSTs to &#8220;/purchases&#8221; to get a list of individual purchases by the user and to add a new purchase.
+                        <ul>
+                            <li>All data must be transmitted using JSON.</li>
+                        </ul>
+                    </li>
+                    <li>Since we assume for this project that your website manages the budget of only a single user, you do not need to implement any user management, login, or password authentication.</li>
+                    <li>When the root resource of your site is accessed (&#8220;/&#8221;), your Flask application should send a basic page skeleton to the user along with a JavaScript application that will make AJAJ requests to populate the page.</li>
+                    <li>Once the page is loaded by a user&#8217;s browser, it should make AJAJ requests for the list of categories and list of purchases made by the user using the RESTful API.</li>
+                    <li>Because you are only outputting budget category summaries to the main page, use console.log() to print the contents of every AJAJ response you get to ensure ease of grading.</li>
+                    <li>Once populated, the page should display the status of each of the user&#8217;s budget categories, and the total of uncategorized purchases.
+                        <ul>
+                            <li>Using Array.map(), Array.reduce(), and/or Array.filter() could be helpful in writing succinct code to perform your budget analysis.</li>
+                        </ul>
+                    </li>
+                    <li>The user should always have the ability to add a new purchase (specifying the amount spent, what it was spent on, the date that it was spent, and the category it should be counted towards) or category (specifying name and limit), and also always have the ability to delete any existing category.</li>
+                    <li>You do not need to regularly poll the server for updates. However, once user requests any changes (e.g., add a purchase, add a category, delete a category), your application should fetch updated information via the RESTful API, and recompute the status of each of the user&#8217;s budget categories.</li>
+                    <li>Because we are not storing the data using SQLAlchemy, you do not need to persist data across server instances.
+                        <ul>
+                            <li>If the server is killed (i.e., Ctrl+C issued), all category/purchase data can be forgotten.</li>
+                        </ul>
+                    </li>
+                    <li>You must build your website using JavaScript, JSON, AJAJ, Python 3.6 or greater, and Flask 0.12.</li>
+                </ol>
+                <h2 id="submissionguidelines:">Submission Guidelines:</h2>
+                <ul>
+                    <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
+                    <li>You must name the main flask file for your site &#8220;budget.py&#8221;, and place it in the root directory of your repository.</li>
+                    <li>You must be able to run your application by setting the FLASK_APP environment variable to your budget.py and running &#8220;flask run&#8221;</li>
+                    <li>You must fill out info_sheet.txt.</li>
+                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub repository at that time will be considered your submission for this assignment.</li>
+                </ul>
+                <h2 id="additionalnoteshints:">Additional Notes/Hints:</h2>
+                <ul>
+                    <li>While you are not going to be heavily graded on the style and design of your web site, it should be presented in a clear and readable manner.</li>
+                    <li>Using the JavaScript Date() class, you can construct a date object, and use that to figure out the current month.</li>
+                    <li>While you are not explicitly required to use Flask-restful, you are certainly allowed to use it to build a RESTful API. If you decide against using Flask-restful, be sure to take care in building a truly RESTful API.</li>
+                    <li>The lack of persistent data may lead to unwieldly debugging. You may find it helpful to use cURL (https://curl.haxx.se/docs/manpage.html) to automate a series of test insteractions with the RESTful API.</li>
+                </ul>
+                <h2 id="gradingrubric:">Grading Rubric:</h2>
+                <ul>
+                    <li>Data is fetched correctly: 10%</li>
+                    <li>Add category works correctly: 10%</li>
+                    <li>Delete category works correctly: 10%</li>
+                    <li>Add purchase works correctly: 10%</li>
+                    <li>RESTful API properly implemented: 15%</li>
+                    <li>Proper analysis of budget performed: 25%</li>
+                    <li>All AJAJ responses (to POST and GET requests) are clearly printed to the JS console: 10%</li>
+                    <li>Clear and readable presentation: 5%</li>
+                    <li>Submission/info sheet: 5%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
