@@ -13,19 +13,19 @@
 
 ## Basic Jinja tags
 
-* `{% raw %}{{ ... }}{% endraw %}`
+* <!--{% raw %}-->`{{ ... }}`<!--{% endraw %}-->
     * Expression tag, contents are evaluated and place in the text
-* `{% raw %}{% ... %}{% endraw %}`
+* <!--{% raw %}-->`{% ... %}`<!--{% endraw %}-->
     * Statement tag, used to define Jinja constructs and issue flow control statements
-* `{% raw %}{# ... #}{% endraw %}`
+* <!--{% raw %}-->`{# ... #}`<!--{% endraw %}-->
     * Comment
 
 -###-
 
 ## Simple Jinja tag example
 
+<!--{% raw %}-->
 ```jinja
-{% raw %}
 <!doctype html>
 <html>
 <head>
@@ -39,8 +39,8 @@
     {% endif %}
 </body>
 </html>
-{% endraw %}
 ```
+<!--{% endraw %}-->
 
 -###- 
 
@@ -61,10 +61,10 @@ Note:
 ## Control structures
 
 * Operate similarly to their Python variants
-    * `{% raw %}{% if cond %} {% elif cond %} {% else %} {% endif %} {% endraw %}`
+    * <!--{% raw %}-->`{% if cond %} {% elif cond %} {% else %} {% endif %}`<!--{% endraw %}-->
 * Only render a part of the template if some condition is met
     * E.g., display logout link if a user is logged in
-    * `{% raw %}{% for i in seq %} {% endfor %} {%endraw%}`
+    * <!--{% raw %}-->`{% for i in seq %} {% endfor %}`<!--{% endraw %}-->
 * Render some part of the template multiple times for each item in a given sequence
     * E.g., create a div for each of a user's blog posts
 
@@ -74,14 +74,14 @@ Note:
 
 * Define blocks of a template that can be overridden in subtemplates
 
+<!--{% raw %}-->
 ```
-{% raw %}
 {% block name %}
 {% endblock %}
-{% endraw %}
 ```
+<!--{% endraw %}-->
 
-* Establish inheritance through the `{%raw%}{% extends base %}{% endraw %}` tag
+* Establish inheritance through the <!--{% raw %}-->`{% extends base %}`<!--{% endraw %}--> tag
 
 Note:
 * fl8
