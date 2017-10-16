@@ -154,20 +154,24 @@ ISBN-13: 9780133776096
 |    |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)       |
 |    |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                   |
 |    |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                           |
-| 9  | Developing Models in Flask                            | slides                                                                                                             |
-|    |                                                       | SQLAlchemy install guide                                                                                           |
-|    |                                                       | Flask-SQLAlchemy quickstart                                                                                        |
-|    |                                                       | Flask-SQLAlchemy user's guide                                                                                      |
-|    |                                                       | SQLAlchemy column types                                                                                            |
-|    |                                                       | SQLAlchemy docs                                                                                                    |
-|    |                                                       | SQLAlchemy library                                                                                                 |
-|    |                                                       | Flask-SQLAlchemy queries                                                                                           |
-|    |                                                       | Flask-SQLAlchemy BaseQuery                                                                                         |
-|    |                                                       | SQLAlchemy Query API                                                                                               |
-|    |                                                       | Common filter() operators                                                                                          |
-|    |                                                       | Basic relationships                                                                                                |
-|    |                                                       | Relationship API                                                                                                   |
-|    |                                                       | Flask examples: fl10 fl11 fl12                                                                                     |
+| 9  | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                                                                                             |
+|    |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                                                                                           |
+|    |                                                       | [Flask-SQLAlchemy quickstart](http://flask-sqlalchemy.pocoo.org/2.3/quickstart/)                                                                                        |
+|    |                                                       | [Flask-SQLAlchemy user's guide](http://flask-sqlalchemy.pocoo.org/2.3/)                                                                                      |
+|    |                                                       | [SQLAlchemy column types](http://docs.sqlalchemy.org/en/latest/core/types.html)                                                                                            |
+|    |                                                       | [SQLAlchemy docs](http://docs.sqlalchemy.org/en/latest/)                                                                                                    |
+|    |                                                       | [SQLAlchemy library](https://www.sqlalchemy.org/library.html)                                                                                                 |
+|    |                                                       | [Flask-SQLAlchemy queries](http://flask-sqlalchemy.pocoo.org/2.3/queries/)                                                                                           |
+|    |                                                       | [Flask-SQLAlchemy BaseQuery](http://flask-sqlalchemy.pocoo.org/2.3/api/#flask_sqlalchemy.BaseQuery)                                                                                         |
+|    |                                                       | [SQLAlchemy Query API](http://docs.sqlalchemy.org/en/latest/orm/query.html)                                                                                               |
+|    |                                                       | [Common `filter()` operators](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html#common-filter-operators)                                                                                          |
+|    |                                                       | [Basic relationships](http://flask-sqlalchemy.pocoo.org/2.3/models/)                                                                                                |
+|    |                                                       | [Relationship API](http://docs.sqlalchemy.org/en/latest/orm/relationship_api.html)                                                                                                   |
+|    |                                                       | Flask examples: |
+|||[fl10](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl10_model.py)| 
+|||[sqlalchemy1](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/sqlalchemy1.zip)|
+|||[fl11](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl11_flaskr.zip)| 
+|||[fl12](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl12_minitwit.zip)                                                                                     |
 | 10 | AJAX, XML, JSON                                       | slides                                                                                                             |
 |    |                                                       | MDN AJAX portal                                                                                                    |
 |    |                                                       | MDN AJAX quickstart                                                                                                |
