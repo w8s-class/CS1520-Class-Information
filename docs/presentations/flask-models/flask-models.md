@@ -341,8 +341,10 @@ one-to-one, add `uselist=False` to `relationship()`
 * `select`
     * The default
     * SQLAlchemy will load the data as necessary in one go using a standard select statement
+    * Loads when the parameter is accessed.
 * `joined`
     * SQLAlchemy will load the relationship in the same query as the parent using a JOIN statement.
+    * Loaded in initial query.
 
 -###-
 
@@ -350,8 +352,10 @@ one-to-one, add `uselist=False` to `relationship()`
 
 * `subquery`
     * Works like joined but instead SQLAlchemy will use a subquery
+    * Loaded in initial query.
 * `dynamic`
-    * Instead of loading the items SQLAlchemy will return another query object which you can further refine before loading the items
+    * Instead of loading the items SQLAlchemy will return another query object which you can further refine before loading the items.
+    * Must use something like `.all()` to access the list of data.
 
 Note:
 * A query object equivalent to a dynamic user.addresses relationship can be created using Address.query.with_parent(user) 
