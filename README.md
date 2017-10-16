@@ -134,7 +134,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [py4](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py4_sequence.py)                        |
 |    |                                                       | [py5](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py5_ex.py)                              |
 |    |                                                       | [py6](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py6_gen.py)                             |
-|    |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo">)                               |
+|    |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo.py">)                               |
 |    |                                                       | [py8](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py8_dec.py)                             |
 |    |                                                       | [py9](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py9_context.py)                         |
 | 7  | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                          |

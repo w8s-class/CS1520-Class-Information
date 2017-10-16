@@ -61,11 +61,11 @@ Note:
 ## Control structures
 
 * Operate similarly to their Python variants
-    * <!--{% raw %}-->`{% if cond %} {% elif cond %} {% else %} {% endif %}`<!--{% endraw %}-->
-* Only render a part of the template if some condition is met
+* <!--{% raw %}-->`{% if cond %} {% elif cond %} {% else %} {% endif %}`<!--{% endraw %}-->
+    * Only render a part of the template if some condition is met
     * E.g., display logout link if a user is logged in
-    * <!--{% raw %}-->`{% for i in seq %} {% endfor %}`<!--{% endraw %}-->
-* Render some part of the template multiple times for each item in a given sequence
+* <!--{% raw %}-->`{% for i in seq %} {% endfor %}`<!--{% endraw %}-->
+    * Render some part of the template multiple times for each item in a given sequence
     * E.g., create a div for each of a user's blog posts
 
 -###-
