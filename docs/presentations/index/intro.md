@@ -16,4 +16,5 @@
 * [Flask](flask.html)
 * [Flask Templates](flask-templates.html)
 * [Flask Models](flask-models.html)
+* [AJAX](ajax.html)
 
