@@ -18,3 +18,6 @@
 * [Flask Models](flask-models.html)
 * [AJAX](ajax.html)
 
+-###-
+
+* [REST](rest.html)
