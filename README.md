@@ -180,21 +180,21 @@ ISBN-13: 9780133776096
 |    |                                                       | [sqlalchemy1](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/sqlalchemy1.zip)                 |
 |    |                                                       | [fl11](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl11_flaskr.zip)                        |
 |    |                                                       | [fl12](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl12_minitwit.zip)                      |
-| 10 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                                                                             |
-|    |                                                       | [MDN AJAX portal](https://developer.mozilla.org/en-US/docs/AJAX)                                                                                                    |
-|    |                                                       | [MDN AJAX quickstart](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)                                                                                                |
-|    |                                                       | [MDN JS Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)                                                                                                      |
-|    |                                                       | JavaScript examples: 
-|||[js15](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js15_ajax.html)| 
-|||[js16](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js16_ajax_in_action.zip)| 
-|||[js17](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js17_ajax_poll.zip)                                                                                |
-| 11 | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                                                                                             |
+| 10 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                           |
+|    |                                                       | [MDN AJAX portal](https://developer.mozilla.org/en-US/docs/AJAX)                                                   |
+|    |                                                       | [MDN AJAX quickstart](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)                               |
+|    |                                                       | [MDN JS Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)                                  |
+|    |                                                       | JavaScript examples:                                                                                               |
+|    |                                                       | [js15](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js15_ajax.html)                            |
+|    |                                                       | [js16](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js16_ajax_in_action.zip)                   |
+|    |                                                       | [js17](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js17_ajax_poll.zip)                        |
+| 11 | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                           |
 |    |                                                       | Extended REST example                                                                                              |
-|    |                                                       | [PayPal's REST API documentation](https://developer.paypal.com/docs/api/overview/)                                                                                    |
-|    |                                                       | [Flask-RESTful documenation](http://flask-restful.readthedocs.io/en/latest/api.html)                                                                                         |
-|    |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                                                                                         |
-|    |                                                       | [Flask-RESTful quickstart](http://flask-restful.readthedocs.io/en/latest/quickstart.html)                                                                                           |
-|    |                                                       | Flask examples: [fl13](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl13_restful.zip)                                                                                               |
+|    |                                                       | [PayPal's REST API documentation](https://developer.paypal.com/docs/api/overview/)                                 |
+|    |                                                       | [Flask-RESTful documenation](http://flask-restful.readthedocs.io/en/latest/api.html)                               |
+|    |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                      |
+|    |                                                       | [Flask-RESTful quickstart](http://flask-restful.readthedocs.io/en/latest/quickstart.html)                          |
+|    |                                                       | Flask examples: [fl13](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl13_restful.zip)       |
 | 12 | Functional programming                                | slides                                                                                                             |
 |    |                                                       | MDN Array.map()                                                                                                    |
 |    |                                                       | MDN Array.reduce()                                                                                                 |
