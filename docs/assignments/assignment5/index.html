@@ -36,9 +36,9 @@
                         </ul>
                     </li>
                     <li>Since we assume for this project that your website manages the budget of only a single user, you do not need to implement any user management, login, or password authentication.</li>
-                    <li>When the root resource of your site is accessed (&#8220;/&#8221;), your Flask application should send a basic page skeleton to the user along with a JavaScript application that will make AJAJ requests to populate the page.</li>
-                    <li>Once the page is loaded by a user&#8217;s browser, it should make AJAJ requests for the list of categories and list of purchases made by the user using the RESTful API.</li>
-                    <li>Because you are only outputting budget category summaries to the main page, use console.log() to print the contents of every AJAJ response you get to ensure ease of grading.</li>
+                    <li>When the root resource of your site is accessed (&#8220;/&#8221;), your Flask application should send a basic page skeleton to the user along with a JavaScript application that will make AJAX requests to populate the page.</li>
+                    <li>Once the page is loaded by a user&#8217;s browser, it should make AJAX requests for the list of categories and list of purchases made by the user using the RESTful API.</li>
+                    <li>Because you are only outputting budget category summaries to the main page, use console.log() to print the contents of every AJAX response you get to ensure ease of grading.</li>
                     <li>Once populated, the page should display the status of each of the user&#8217;s budget categories, and the total of uncategorized purchases.
                         <ul>
                             <li>Using Array.map(), Array.reduce(), and/or Array.filter() could be helpful in writing succinct code to perform your budget analysis.</li>
@@ -51,14 +51,14 @@
                             <li>If the server is killed (i.e., Ctrl+C issued), all category/purchase data can be forgotten.</li>
                         </ul>
                     </li>
-                    <li>You must build your website using JavaScript, JSON, AJAJ, Python 3.6 or greater, and Flask 0.12.</li>
+                    <li>You must build your website using JavaScript, JSON, AJAX, Python 3.6 or greater, and Flask 0.12.</li>
                 </ol>
                 <h2 id="submissionguidelines:">Submission Guidelines:</h2>
                 <ul>
                     <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
                     <li>You must name the main flask file for your site &#8220;budget.py&#8221;, and place it in the root directory of your repository.</li>
                     <li>You must be able to run your application by setting the FLASK_APP environment variable to your budget.py and running &#8220;flask run&#8221;</li>
-                    <li>You must fill out info_sheet.txt.</li>
+                    <li>You must fill out <a href="../errata/readme.html" target="_blank">README.md</a>.</li>
                     <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub repository at that time will be considered your submission for this assignment.</li>
                 </ul>
                 <h2 id="additionalnoteshints:">Additional Notes/Hints:</h2>
@@ -76,9 +76,9 @@
                     <li>Add purchase works correctly: 10%</li>
                     <li>RESTful API properly implemented: 15%</li>
                     <li>Proper analysis of budget performed: 25%</li>
-                    <li>All AJAJ responses (to POST and GET requests) are clearly printed to the JS console: 10%</li>
+                    <li>All AJAX responses (to POST and GET requests) are clearly printed to the JS console: 10%</li>
                     <li>Clear and readable presentation: 5%</li>
-                    <li>Submission/info sheet: 5%</li>
+                    <li>Submission/readme: 5%</li>
                 </ul>
             </div>
         </div>
