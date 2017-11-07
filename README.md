@@ -189,7 +189,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [js16](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js16_ajax_in_action.zip)                   |
 |    |                                                       | [js17](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js17_ajax_poll.zip)                        |
 | 11 | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                           |
-|    |                                                       | [Extended REST example](https://github.com/w8s-class/flask_api_sample/tree/sqlalchemy)                                                                                              |
+|    |                                                       | [Extended REST example](https://github.com/w8s-class/flask_api_sample/tree/sqlalchemy)                             |
 |    |                                                       | [PayPal's REST API documentation](https://developer.paypal.com/docs/api/overview/)                                 |
 |    |                                                       | [Flask-RESTful documenation](http://flask-restful.readthedocs.io/en/latest/api.html)                               |
 |    |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                      |
