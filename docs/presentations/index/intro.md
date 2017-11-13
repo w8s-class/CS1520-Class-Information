@@ -20,4 +20,8 @@
 
 -###-
 
+## Slides
+
 * [REST](rest.html)
+* [Web Security](security.html)
+* [Auth](auth.html)

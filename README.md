@@ -90,8 +90,8 @@ ISBN-13: 9780133776096
 
 **Final:**
 
-* Dec. 11 (Lecture 2 - Monday Class) from 12p-2p & Dec. 12 
-* (Lecture 1 Tuesday/Thursday Class) 6p-8p.
+* Dec. 11 (Lecture 2 - Monday Class) from 12p-2p 
+* Dec. 12 (Lecture 1 Tuesday/Thursday Class) 6p-8p.
 
 
 | #  | Topics                                                | Materials                                                                                                          |
@@ -200,15 +200,15 @@ ISBN-13: 9780133776096
 |    |                                                       | MDN Array.reduce()                                                                                                 |
 |    |                                                       | MDN Array.filter()                                                                                                 |
 |    |                                                       | JavaScript examples: js18 js19 js20 js21                                                                           |
-| 13 | Web security                                          | slides                                                                                                             |
-|    |                                                       | XSS Wikipedia article                                                                                              |
-|    |                                                       | MDN CORS                                                                                                           |
-| 14 | Authentication                                        | slides                                                                                                             |
-|    |                                                       | MDN HTTP Authentication                                                                                            |
-|    |                                                       | Base64 Encoding                                                                                                    |
-|    |                                                       | Flask Basic Authentication                                                                                         |
-|    |                                                       | OAuth                                                                                                              |
-|    |                                                       | OpenID                                                                                                             |
+| 13 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                                                                                             |
+|    |                                                       | [XSS Wikipedia article](https://en.wikipedia.org/wiki/Cross-site_scripting)                                                                                              |
+|    |                                                       | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)                                                                                                           |
+| 14 | Authentication                                        | [slides](https://w8s-class.github.io/CS1520-Class-Information/auth.html)                                                                                                             |
+|    |                                                       | [MDN HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)                                                                                            |
+|    |                                                       | [Base64 Encoding](https://en.wikipedia.org/wiki/Base64)                                                                                                    |
+|    |                                                       | [Flask Basic Authentication](https://flask-basicauth.readthedocs.io/en/latest/)                                                                                         |
+|    |                                                       | [OAuth](https://oauth.net/)                                                                                                              |
+|    |                                                       | [OpenID](http://openid.net/)                                                                                                             |
 |    |                                                       | Python examples: py10 py11                                                                                         |
 | 15 | Responsive design, Backus–Naur form                   | slides                                                                                                             |
 |    |                                                       | Google Responsive Design Basics                                                                                    |
