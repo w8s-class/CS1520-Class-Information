@@ -49,6 +49,11 @@ Note:
 * Public-key cryptography
     * Anyone can encrypt a message such that only Bob can read it
     * E.g., RSA
+
+-###-
+
+## Tools for Identity
+
 * Digital signatures
     * Anyone can verify that Bob sent a message
     * E.g., RSA
