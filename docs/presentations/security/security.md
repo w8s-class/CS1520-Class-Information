@@ -97,6 +97,11 @@ Note:
 * To get JSON representation of resource `ex_b.com/r1` from `ex_a.com`
     * Can't use AJAX
     * Violates same-origin policy on scripts
+
+-###-
+
+## Other origins: JSONP
+
 * Use the `<script>` tag and some clever h4x:
     * `<script "application/javascript" src="ex_b.com/r1"></script>`
     * Except, ex_b.com/r1 will return JSON, not JS…
@@ -182,6 +187,7 @@ Note:
 ## Data storage: Passwords
 
 * Assertion: You (as a server operator) should know a user's password
+* Assertion: Your application should know a user's password
 
 -###-
 
