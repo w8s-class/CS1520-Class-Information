@@ -200,17 +200,17 @@ ISBN-13: 9780133776096
 |    |                                                       | MDN Array.reduce()                                                                                                 |
 |    |                                                       | MDN Array.filter()                                                                                                 |
 |    |                                                       | JavaScript examples: js18 js19 js20 js21                                                                           |
-| 13 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                                                                                             |
-|    |                                                       | [XSS Wikipedia article](https://en.wikipedia.org/wiki/Cross-site_scripting)                                                                                              |
-|    |                                                       | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)                                                                                                           |
-| 14 | Authentication                                        | [slides](https://w8s-class.github.io/CS1520-Class-Information/auth.html)                                                                                                             |
-|    |                                                       | [MDN HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)                                                                                            |
-|    |                                                       | [Base64 Encoding](https://en.wikipedia.org/wiki/Base64)                                                                                                    |
-|    |                                                       | [Flask Basic Authentication](https://flask-basicauth.readthedocs.io/en/latest/)                                                                                         |
-|    |                                                       | [OAuth](https://oauth.net/)                                                                                                              |
-|    |                                                       | [OpenID](http://openid.net/)                                                                                                             |
-|    |                                                       | Python examples: [py10](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py10_dec2.py) 
-|||[py11](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py_11vararg.py)                                                                                         |
+| 13 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                       |
+|    |                                                       | [XSS Wikipedia article](https://en.wikipedia.org/wiki/Cross-site_scripting)                                        |
+|    |                                                       | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)                                                 |
+| 14 | Authentication                                        | [slides](https://w8s-class.github.io/CS1520-Class-Information/auth.html)                                           |
+|    |                                                       | [MDN HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)                        |
+|    |                                                       | [Base64 Encoding](https://en.wikipedia.org/wiki/Base64)                                                            |
+|    |                                                       | [Flask Basic Authentication](https://flask-basicauth.readthedocs.io/en/latest/)                                    |
+|    |                                                       | [OAuth](https://oauth.net/)                                                                                        |
+|    |                                                       | [OpenID](http://openid.net/)                                                                                       |
+|    |                                                       | Python examples: [py10](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py10_dec2.py)         |
+|    |                                                       | [py11](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py_11vararg.py)                        |
 | 15 | Responsive design, Backus–Naur form                   | slides                                                                                                             |
 |    |                                                       | Google Responsive Design Basics                                                                                    |
 |    |                                                       | MDN viewports                                                                                                      |
