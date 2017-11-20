@@ -195,11 +195,14 @@ ISBN-13: 9780133776096
 |    |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                      |
 |    |                                                       | [Flask-RESTful quickstart](http://flask-restful.readthedocs.io/en/latest/quickstart.html)                          |
 |    |                                                       | Flask examples: [fl13](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl13_restful.zip)       |
-| 12 | Functional programming                                | slides                                                                                                             |
-|    |                                                       | MDN Array.map()                                                                                                    |
-|    |                                                       | MDN Array.reduce()                                                                                                 |
-|    |                                                       | MDN Array.filter()                                                                                                 |
-|    |                                                       | JavaScript examples: js18 js19 js20 js21                                                                           |
+| 12 | Functional programming                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/functional.html)                                                                                                             |
+|    |                                                       | [MDN Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)                                                                                                    |
+|    |                                                       | [MDN Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)                                                                                                 |
+|    |                                                       | [MDN Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)                                                                                                |
+|    |                                                       | JavaScript examples: [js18](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js18_functional_loop.html) 
+|||[js19](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js19_player_points.html) |
+|||[js20](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js20_closure_motivation.html)| 
+|||[js21](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js21_closure.html)|                                                                           |
 | 13 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                       |
 |    |                                                       | [XSS Wikipedia article](https://en.wikipedia.org/wiki/Cross-site_scripting)                                        |
 |    |                                                       | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)                                                 |

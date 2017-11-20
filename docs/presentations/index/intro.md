@@ -25,3 +25,4 @@
 * [REST](rest.html)
 * [Web Security](security.html)
 * [Auth](auth.html)
+* [Functional](functional.html)
