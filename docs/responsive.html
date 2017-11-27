@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>CS 1520 – Responsive</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/solarized.css">
+        <link rel="stylesheet" href="css/theme/solarized-ext.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/tomorrow.css">
+        <link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="header">
+                <p>CS/COE 1520 – Programming Languages for Web Applications </p>
+            </div>
+            <div class="slides">
+                <section data-markdown="presentations/responsive/responsive.md"  
+                         data-separator="^-###-"  
+                         data-separator-vertical="^-##-"  
+                         data-separator-notes="^Note:"  
+                         data-charset="iso-8859-15">
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            var title = 'Responsive'
+            var footerDetails = [
+                    {
+                        'text': 'CS/COE 1520',
+                        'link': '.'
+                    },
+                    {
+                        'text': 'Todd Waits',
+                        'link': 'http://www.toddwaits.org' 
+                    }
+                ]
+            
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                center: false,
+                controls: false,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize({'title':title, 'details':footerDetails}); } }
+                ]
+            });
+        </script>
+    </body>
+</html>

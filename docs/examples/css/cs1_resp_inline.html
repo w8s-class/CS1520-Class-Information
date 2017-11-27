@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beginning JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- what is vh?  why vh for height, but % for width? -->
+	<style>
+		div {
+			width: 90%;
+			margin: auto;
+		}
+		@media (max-width: 500px) {
+			div {
+				background-color: red;
+				height: 80vh;
+			}
+		}
+		@media (min-width: 501px) and (max-width: 600px){
+			div {
+				background-color: green;
+				height: 50vh;
+			}
+		}
+		@media (min-width: 601px) {
+			div {
+				background-color: blue;
+				height: 20vh;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

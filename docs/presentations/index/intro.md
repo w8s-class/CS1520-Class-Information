@@ -26,3 +26,4 @@
 * [Web Security](security.html)
 * [Auth](auth.html)
 * [Functional](functional.html)
+* [Responsive](responsive.html)

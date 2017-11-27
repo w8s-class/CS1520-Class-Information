@@ -214,7 +214,7 @@ ISBN-13: 9780133776096
 |    |                                                       | [OpenID](http://openid.net/)                                                                                            |  |
 |    |                                                       | Python examples: [py10](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py10_dec2.py)              |  |
 |    |                                                       | [py11](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py_11vararg.py)                             |  |
-| 15 | Responsive design, Backus–Naur form                   | slides                                                                                                                  |  |
+| 15 | Responsive design, Backus–Naur form                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/responsive.html)                                                                                                                  |  |
 |    |                                                       | Google Responsive Design Basics                                                                                         |  |
 |    |                                                       | MDN viewports                                                                                                           |  |
 |    |                                                       | Viewports blog post                                                                                                     |  |
