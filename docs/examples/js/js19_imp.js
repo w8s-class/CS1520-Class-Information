@@ -1,37 +1,99 @@
-data = [{"name": "Crosby", "age": 28, "points": [0, 0, 0, 1, 1, 0]}, { "name": "Malkin", "age": 29, "points": [1, 1, 0, 0, 0, 0]}, {"name": "Letang", "age": 29, "points": [1, 0, 1, 0, 1]}];
+data = [
+  {
+    "name": "Crosby",
+    "age": 28,
+    "points": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "name": "Malkin",
+    "age": 29,
+    "points": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "Letang",
+    "age": 29,
+    "points": [
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  }
+];
 
 // output
-var names = data.map(grabGrabAtt("name"));
-var points = data.map(grabGrabAtt("points"));
-var avgs = points.map(avgAcrossArray);
+var names = grabNames(data);
+var points = grabPoints(data);
+var avgs = avgAllSubArrays(points);
 var pairs = combiner(names, avgs);
 document.write(JSON.stringify(pairs));
 
-// Functional
-
-function grabGrabAtt(attName) {
-	function rv (item) {
-		return item[attName];
-	}
-	return rv;
+// Imperative
+function grabNames(arr) {
+  var names = [];
+  for (var i = arr.length - 1; i >= 0; i--) {
+    names.push(arr[i].name);
+  }
+  return names;
 }
 
-function add(a, b){
-	return a + b;
+
+function grabPoints(arr) {
+  var points = [];
+  for (var i = arr.length - 1; i >= 0; i--) {
+    points.push(arr[i].points);
+  }
+  return points;
 }
 
-function avgAcrossArray(arr) {
-	return average(arr.reduce(add), arr.length);
+
+function avgAllSubArrays(arr) {
+  var subAvgs = [];
+  for (var i = 0; i < arr.length; i++) {
+    subAvgs.push(average(totalAcrossArray(arr[i]), arr[i].length));
+  }
+
+  return subAvgs;
 }
+
+
+function totalAcrossArray(arr) {
+  var total = 0;
+
+  for (var i = arr.length - 1; i >= 0; i--) {
+    total = total + arr[i]
+  }
+
+  return total;
+}
+
 
 function average(total, count) {
-	return total/count;
+  return total/count;
 }
 
-function combiner(arr1, arr2) {
-	function combmap(e, i) {
-		return [e, arr2[i]];
-	}
-	var result = arr1.map(combmap);
-	return result;
+
+function combiner(names, averages) {
+  var combined = [];
+
+  for (var i = names.length - 1; i >= 0; i--) {
+    combined.push([names[i], averages[i]]);
+  }
+
+  return combined;
 }

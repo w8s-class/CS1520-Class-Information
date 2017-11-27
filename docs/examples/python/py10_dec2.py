@@ -1,18 +1,18 @@
 from functools import wraps
 
-def off_by_one(original_function):
-	def new_function(x, y):
-		return original_function(x, y) + 1
-	return new_function
+# def off_by_one(original_function):
+# 	def new_function(x, y):
+# 		return original_function(x, y) + 1
+# 	return new_function
 
-@off_by_one
-def add(x, y):
-	""" THIS IS MY TEST DOCSTRING """
-	return x + y
+# @off_by_one
+# def add(x, y):
+# 	""" THIS IS MY TEST DOCSTRING """
+# 	return x + y
 
-print(add(2, 2))
-print(add.__name__)
-print(add.__doc__)
+# print(add(2, 2))
+# print(add.__name__)
+# print(add.__doc__)
 
 def off_by_one_W(original_function):
 	@wraps(original_function)
