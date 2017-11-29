@@ -201,6 +201,12 @@ ISBN-13: 9780133776096
 |    |                                                       | [MDN Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)     |  |
 |    |                                                       | JavaScript examples: [js18](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js18_functional_loop.html) |  |
 |    |                                                       | [js19](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js19_player_points.html)                        |  |
+|    |                                                       | [js19-imperative](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js19_imp.js)                        |  |
+|    |                                                       | [js19-functional](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js19_func.js)                        |  |
+|    |                                                       | [js19-monday-imperative](https://w8s-class.github.io/CS1520-Class-Information/examples/js/monday-class.js)                        |  |
+|    |                                                       | [js19-monday-functional](https://w8s-class.github.io/CS1520-Class-Information/examples/js/monday-class-func.js)                        |  |
+|    |                                                       | [js19-tuesday-imperative](https://w8s-class.github.io/CS1520-Class-Information/examples/js/tuesday-imp.js)                        |  |
+|    |                                                       | [js19-tuesday-functional](https://w8s-class.github.io/CS1520-Class-Information/examples/js/tuesday-func.js)                        |  |
 |    |                                                       | [js20](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js20_closure_motivation.html)                   |  |
 |    |                                                       | [js21](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js21_closure.html)                              |  |
 | 13 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                            |  |
