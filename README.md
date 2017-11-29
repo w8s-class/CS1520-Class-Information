@@ -221,11 +221,13 @@ ISBN-13: 9780133776096
 |    |                                                       | Python examples: [py10](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py10_dec2.py)              |
 |    |                                                       | [py11](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py_11vararg.py)                             |
 | 15 | Responsive design, Backus–Naur form                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/responsive.html)                                          |
-|    |                                                       | Google Responsive Design Basics                                                                                         |
-|    |                                                       | MDN viewports                                                                                                           |
-|    |                                                       | Viewports blog post                                                                                                     |
-|    |                                                       | MDN Media queries                                                                                                       |
-|    |                                                       | CSS examples: cs1 cs2 cs3                                                                                               |
+|    |                                                       | [Google Responsive Design Basics](https://developers.google.com/web/fundamentals/design-and-ux/responsive/)                                                                                         |
+|    |                                                       | [MDN viewports](https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport)                                                                                                           |
+|    |                                                       | [Viewports blog post](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)                                                                                                     |
+|    |                                                       | [MDN Media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)                                                                                                       |
+|    |                                                       | CSS examples: [cs1](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs1_resp_inline.html)| 
+|||[cs2](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs2_resp_link.html)| 
+|||[cs3](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs3_resp_import.html)|                                                                                                 |
 | 16 | Progressive web apps, Javascript service workers      | slides                                                                                                                  |
 |    |                                                       | Google PWA tutorial                                                                                                     |
 |    |                                                       | MDN Service worker                                                                                                      |
