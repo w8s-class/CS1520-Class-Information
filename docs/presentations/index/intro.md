@@ -25,5 +25,6 @@
 * [REST](rest.html)
 * [Web Security](security.html)
 * [Auth](auth.html)
-* [Functional](functional.html)
-* [Responsive](responsive.html)
+* [Functional Programming](functional.html)
+* [Responsive Web Design](responsive.html)
+* [Progressive Web Applications](pwa.html)

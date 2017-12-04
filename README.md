@@ -228,11 +228,12 @@ ISBN-13: 9780133776096
 |    |                                                       | CSS examples: [cs1](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs1_resp_inline.html)             |  |
 |    |                                                       | [cs2](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs2_resp_link.html)                             |  |
 |    |                                                       | [cs3](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs3_resp_import.html)                           |  |
-| 16 | Progressive web apps, Javascript service workers      | slides                                                                                                                  |  |
-|    |                                                       | Google PWA tutorial                                                                                                     |  |
-|    |                                                       | MDN Service worker                                                                                                      |  |
-|    |                                                       | MDN Promise                                                                                                             |  |
-|    |                                                       | PWA examplea: pw1                                                                                                       |  |
+| 16 | Progressive web apps, Javascript service workers      | [slides](https://w8s-class.github.io/CS1520-Class-Information/pwa.html)                                                                                                                  |  |
+|    |                                                       | [Google PWA tutorial](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)                                                                                                     |  |
+|    |                                                       | [MDN Service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)                                                                                                      |  |
+|    |                                                       | [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+|    |                                                       | [MDN Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) |                                                    |  |
+|    |                                                       | PWA examplea: [pw1](https://w8s-class.github.io/CS1520-Class-Information/examples/pwa/pwa1.zip)                                                                                                       |  |
 
 ## Course Policies
 
