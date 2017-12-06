@@ -71,8 +71,13 @@ self.addEventListener('activate', function(e) {
   return self.clients.claim();
 });
 
+// self.addEventListener('fetch', function(event) {
+//   console.log(event.request.url);
+// });
+
 self.addEventListener('fetch', function(e) {
   console.log('[Service Worker] Fetch', e.request.url);
+  // if (event.request.method != 'GET') return;
   var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
   if (e.request.url.indexOf(dataUrl) > -1) {
     /*
@@ -82,14 +87,21 @@ self.addEventListener('fetch', function(e) {
      * network" strategy:
      * https://jakearchibald.com/2014/offline-cookbook/#cache-then-network
      */
-    e.respondWith(
-      caches.open(dataCacheName).then(function(cache) {
-        return fetch(e.request).then(function(response){
-          cache.put(e.request.url, response.clone());
-          return response;
-        });
-      })
-    );
+    e.respondWith(async function() {
+      // Try to get the response from a cache.
+      const cache = await caches.open(dataCacheName);
+      const cachedResponse = await cache.match(e.request);
+
+      if (cachedResponse) {
+        // If we found a match in the cache, return it, but also
+        // update the entry in the cache in the background.
+        e.waitUntil(cache.add(e.request.clone()));
+        return cachedResponse;
+      }
+
+      // If we didn't find a match in the cache, use the network.
+      return fetch(e.request);
+    }());
   } else {
     /*
      * The app is asking for app shell files. In this scenario the app uses the
