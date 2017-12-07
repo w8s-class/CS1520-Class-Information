@@ -96,7 +96,7 @@ req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
 -###-
 
-### `XMLHttpRequest.response`
+### `XMLHttpRequest.onreadystatechange`
 
 * Attribute to which we assign an event listener
     * This will associate the function with the occurrence of the `readystatechange` event
