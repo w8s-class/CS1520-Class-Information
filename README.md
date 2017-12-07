@@ -90,8 +90,8 @@ ISBN-13: 9780133776096
 
 **Final:**
 
-* Dec. 11 (Lecture 2 - Monday Class) from 12p-2p 
-* Dec. 12 (Lecture 1 Tuesday/Thursday Class) 6p-8p.
+* Dec. 11 (Lecture 2 - Monday Class) from 12p-1:50p 
+* Dec. 12 (Lecture 1 Tuesday/Thursday Class) 6p-7:50p.
 
 
 | #  | Topics                                                | Materials                                                                                                               |
