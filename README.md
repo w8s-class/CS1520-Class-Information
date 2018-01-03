@@ -216,7 +216,7 @@ ISBN-13: 9780133776096
 
 ### Announcements
 
-The instructor and TA will periodically post announcements to the course website. It is every student's responsibility to regularly monitor these announcements.
+The instructor and TA will periodically post announcements to the course websites (GitHub, Slack, CourseWeb). It is every student's responsibility to regularly monitor these announcements.
 
 ### Academic Integrity
 
