@@ -11,6 +11,17 @@
 | Recitation Section 1 | 30649        | SENSQ 5505   | W 6:00-6:50 PM    |
 | Recitation Section 2 | 30650        | SENSQ 5502   | W 7:00-7:50 PM    |
 
+**Special Note**
+
+Due to MLK and Spring Break, our class is one class short of a full semester. As a means to recover that time, we will meet 30 minutes earlier on six lectures. Dates proposed for early-start lectures are:
+
+* 1/22/2018
+* 2/5/2018
+* 2/12/2018
+* 3/19/2018
+* 3/26/2018
+* 4/16/2018
+
 ### Instructor 
 
 Todd Waits
