@@ -27,9 +27,11 @@ No need to address me as `Professor`. You can call me Todd.
 
 **APPEND `[CS1520]` TO ALL EMAIL COMMUNICATION SUBJECT LINES.** I will lose track of emails that do not include that in the subject. 
 
-| Office | Hours    |
-|:-------|:---------|
-| 6148   | M 5p-6p  |
+| Office     | Hours   |
+|:-----------|:--------|
+| SENSQ 6148 | M 5p-6p |
+
+\* And by appointment as scheduling permits.
 
 ### TA
 
