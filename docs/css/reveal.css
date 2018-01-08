@@ -1372,6 +1372,8 @@ body {
 
 .element-bkg {
   background-color: rgba(0, 0, 0, 0.3); }
+  .element-bkg a {
+    color: #78b9e6 !important; }
 
 .column-left {
   float: left;

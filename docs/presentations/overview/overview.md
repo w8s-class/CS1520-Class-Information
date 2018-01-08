@@ -25,12 +25,12 @@
 
 -###-
 
-### How to Email 
+## How to Email 
 
 <!-- .slide: class="element-bkg" -->
 <!-- .slide: data-background-image="http://0.media.dorkly.cvcdn.com/92/72/77a6f1576e187ef11ec91b7e179e54e1.gif" -->
 
-* Prefix all email subjects with <span class="fragment highlight-green">[CS1520]</span>
+* Prefix all email subjects with <span class="fragment highlight-orange">[CS1520]</span>
 * Address all emails to both the instructor and the TA
     * Assume that if it is not documented (in chat or email), it did not happen. 
 
@@ -46,7 +46,7 @@ Note:
 
 -###-
 
-### Course Information
+## Course Information
 
 * Course Website <https://github.com/w8s-class/CS1520-Class-Information>
 * Review the Course Information and Policies
