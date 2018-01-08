@@ -29,6 +29,16 @@
 		document.write(this.jacks.output, "<br />");
 	}
 
+	TV.prototype.props = function() {
+        document.write("Here is your TV from an object method: <br />");
+        document.write("Method Brand: ", this.brand,"<br />");
+        document.write("Method Size: ", this.size, "<br />");
+        document.write("Method Input Jacks: ");
+        document.write(this.jacks.input, "<br />");
+        document.write("Method Output Jacks: ");
+        document.write(this.jacks.output, "<br />");
+    }
+
 </script>
 </head>
 <body>
@@ -53,6 +63,11 @@
 	{
 		document.write("My TV is a TV");
 	}
+
+    document.write("<br /><br /><br />");
+	my_tv.props();
+    document.write("<br /><br /><br />");
+	your_tv.props();
    
 </script>
 </body>
