@@ -110,5 +110,8 @@ span.italics {font-style: italic;}
 * Create github user
 * Join Slack chat
     * I will post the invite link to CourseWeb
-    * Message me and give me your github username!
+    * Message me **on Slack** with any information that is important to interact with you
+        * Preferred pronouns, preferred name, etc.
+        * Special accommodations in accordance with university policy
+        * your github username
 * Join github class group
