@@ -2,6 +2,7 @@
 
 * [Slides](https://w8s-class.github.io/CS1520-Class-Information/)
 * [Assignments](https://w8s-class.github.io/CS1520-Class-Information/assignments/)
+* [Examples](https://w8s-class.github.io/CS1520-Class-Information/examples/)
 
 ## Course Information
 
