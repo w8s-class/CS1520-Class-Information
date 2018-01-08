@@ -97,10 +97,10 @@ Note:
 So are all languages interpreted???
 
 * Conclusions:
-	* Interpreted vs compiled is more about how languages are used vs how they are
+	* Interpreted vs compiled is more about how languages are used vs how they are built
 	* Speed is typically traded off to go with interpreted
 	* So why so popular??
-		* They're more fun! (as well find out…)
+		* They're more fun! (as we'll find out...)
 * Side note:  why all the focus on the JVM here?
 	* It's what you're all used to for one
 	* It's been heavily optimized over a number of years, so a great target
@@ -109,7 +109,7 @@ So are all languages interpreted???
 
 ## Scripted vs Interpreted Languages
 
-* Interpreted languages are still compiled to bytecode, and interpreted in a VM, scripted languages will not need to be compiled.
+* Interpreted languages are still compiled to bytecode dynamically, and interpreted in a VM, scripted languages will not need to be compiled.
 * This line is very blurred nowadays.
 * People use the terms interchangeably.
 * [StackOverflow Answer](https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language)
@@ -149,7 +149,7 @@ Note: Does a script tag mean Javascript? Any language the browser can understand
 
 * Added `await`/`async` features
 * Previously, ES added classes, modules, iterators, generators, etc.
-* Browser support is spotting for ES5 (4 versions old)
+* Browser support is spotty for ES5 (4 versions old)
 * ES5 is more consistent with what we recognize as Javascript.
 
 -###-
@@ -200,7 +200,7 @@ Source: [StackOverflow](https://stackoverflow.com/a/5793730)
 * `<=`,`>=`
 * `&&`, `||`
 * `!`
-* && and || are short circuited
+* `&&` and `||` are short circuited
 
 -###-
 
@@ -215,7 +215,7 @@ Source: [StackOverflow](https://stackoverflow.com/a/5793730)
 
 ## Implications of dynamic typing in Javascript
 
-* The + operator:
+* The `+` operator:
 	* If one operand is a string value, the other will be coerced into a string and the two strings will be concatenated
 
 -###-
@@ -224,7 +224,7 @@ Source: [StackOverflow](https://stackoverflow.com/a/5793730)
 
 * Numeric operators:
 	* If one operand is a string value and it can be coerced to a number (e.g., "5"), it will be
-	* If string is non-numeric, result is NaN (NotaNumber)
+	* If string is non-numeric, result is `NaN` (`NotaNumber`)
 	* We can also explicitly convert the string to a number using parseInt and parseFloat
 
 -###-
@@ -267,7 +267,7 @@ Note:
 	* Because of this, function definitions should be in the head HTML element
 ```html
 <head>
-	<script>function ... </script>
+	<script>function foo(param) {...} </script>
 </head>
 ```
 
@@ -326,7 +326,7 @@ var C = ["we", "can", 50, "mix", 3.5, "types"];
 	* *Unlike Java, this attribute is mutable*
 * In Javascript it does not necessarily represent the number of items or even memory locations in the array
 * Actual memory allocation is dynamic and occurs when necessary
-* An array with length = 1000 may in fact only have memory allocated for only 5 elements
+* An array with length = 1000 may in fact only have memory allocated for 5 elements
 * When accessed, empty elements are `undefined`
 
 -###-
@@ -423,7 +423,7 @@ function TV(brand, size, injacks, outjacks) {
 	this.jacks.input = injacks;
 	this.jacks.output = outjacks;
 }
-...
+//...
 var my_tv = new TV("Samsung", 46, 5, 2);
 ```
 

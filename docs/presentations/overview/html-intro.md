@@ -68,10 +68,17 @@ Multiline comment
 ## Modern Use of HTML
 
 * HTML is used to present the structure of a document
-    * What/where text should be displayed
-    * Where images should be placed
+    * What text should be displayed
+    * The hierarchical structure of the information
+    * Where images should be placed in context of content
+
+-###-
+
+## HTML and CSS
+
 * It is often used in conjunction with Cascading Style Sheets (CSS), which describe the presentation of the document
     * Colors, fonts, etc.
+    * Layout of content
 
 -###-
 
@@ -102,11 +109,6 @@ span.italics {font-style: italic;}
 
 * Create github user
 * Join Slack chat
-    * email me [me@toddwaits.org](mailto:me@toddwaits.org) for an invite link
-    * Message me!
+    * I will post the invite link to CourseWeb
+    * Message me and give me your github username!
 * Join github class group
-* Create a repo with:
-    * `index.html`
-    * Use html tags to introduce yourself
-    * Style with CSS
-    * Have more than one commit

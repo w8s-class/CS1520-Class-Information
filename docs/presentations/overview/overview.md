@@ -12,9 +12,9 @@
 
 * Todd Waits
     * Email: me@toddwaits.org
-    * Slack: <https://cs1520-fall2017.slack.com>
+    * Slack: <https://cs1520-spring2018.slack.com>
     * <https://appear.in>
-    * Office: TBD
+    * Office: 6148
 
 -###-
 
@@ -42,6 +42,7 @@ Note:
 * Things email is bad for:
     * Help with lecture material/projects
     * Come to office hours!
+    * Make an appointment if that does not work.
 
 -###-
 
@@ -62,7 +63,7 @@ Note:
 
 -###-
 
-## Tentative Syllabus
+## Syllabus
 
 * Interpreted languages <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
 * The DOM <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
