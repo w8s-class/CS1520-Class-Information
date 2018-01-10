@@ -23,7 +23,7 @@ Due to MLK and Spring Break, our class is one class short of a full semester. As
 * 3/26/2018
 * 4/16/2018
 
-**Special Note by TA **
+**Special Note by TA**
 
 No recitation on the first week (Jan 10).
 
