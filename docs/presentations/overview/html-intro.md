@@ -101,6 +101,59 @@ span.italics {font-style: italic;}
 
 -###-
 
+## The `id` Attribute
+
+* `id` allows you target a specific instance of an element with CSS and JavaScript.
+
+```html
+<!-- IDs should be unique on a page-->
+<span id="unique"></span>
+<span id="wrong"></span>
+<span id="wrong"></span>
+```
+
+-###-
+
+## The `class` Attribute
+
+* `class` allows you target a group of elements with CSS and JavaScript.
+
+```html
+<!-- IDs should be unique on a page-->
+<!-- Classes can repeat and be applied to different elements-->
+<span id="unique" class="custom"></span>
+<span id="wrong" class="custom"></span>
+<span id="wrong" class="custom"></span>
+<div class="custom"></div> 
+```
+
+-###-
+
+## Targeting Selectors with CSS
+
+```html
+<span id="unique" class="custom">Test</span> 
+```
+
+```css
+span { /* CSS selectors with no period or octothorpe are targeting html elements */
+    color: red;
+}
+
+#unique { /* CSS selector beginning with an octothorpe target IDs */
+    color: blue;
+}
+
+.custom { /* CSS selector beginning with a period target classes */
+    color: green;
+}
+```
+
+Note:
+* You can combine selectors `span.custom {}` to only apply styles to element `span` with class `custom`
+
+-###-
+
 # Assignment
 
 -###-
