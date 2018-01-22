@@ -14,14 +14,9 @@
 
 **Special Note**
 
-Due to MLK and Spring Break, our class is one class short of a full semester. As a means to recover that time, we will meet 30 minutes earlier on six lectures. Dates proposed for early-start lectures are:
+Due to MLK and Spring Break, our class is one class short of a full semester. As a means to recover that time, we will make three recitations ***required***. Dates proposed for early-start lectures are:
 
-* 1/22/2018
-* 2/5/2018
-* 2/12/2018
-* 3/19/2018
-* 3/26/2018
-* 4/16/2018
+I will work with Jeong to identify the subject and dates for the required recitations.
 
 **Special Note by TA**
 
@@ -105,7 +100,7 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [js5](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js5_arrays.html)               |
 |    |           |                                                       | [js6](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js6_objects.html)              |
 |    |           |                                                       | [js7](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js7_more_objects.html)         |
-| 2  | 1/8/2018  | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                 |
+| 2  | 1/22/2018 | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                 |
 |    |           |                                                       | [MDN Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)                                               |
 |    |           |                                                       | [MDN DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)                                       |
 |    |           |                                                       | [MDN Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)                                                       |

@@ -59,6 +59,7 @@
                                     <li>B(B6-E6);S(H3-J3);A(A1-A5)</li>
                                 </ul>
                             </li>
+                            <li>Use a regex function to validate the strings.</li>
                         </ul>
                     </li>
                     <li>After gathering the first player's name and ship placement, your game should prompt the second player for their name and ship placement (for example, lets assume the second player is Bob).</li>
@@ -95,7 +96,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>At any point in time, a player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with their ship placements.</li>
+                    <li>At any point in time, the current player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with their ship placements.</li>
                     <li>The game continues until all of one player's ships have been sunk, at which point the other player wins the game.
                         <ul>
                             <li>Once a winner has been established, your game should compute the winner's score
@@ -112,7 +113,7 @@
                                             <li>24 - (2 * 4)</li>
                                         </ul>
                                     </li>
-                                    <li>Your game should keep track of the names and scores of the 10 players with the highest scores in local storage.
+                                    <li>Your game should keep track of the names and scores of the 10 highest scores in local storage.
                                         <ul>
                                             <li>If 10 players have all achieved the max score (24), no further updates to local storage are required.</li>
                                         </ul>
@@ -132,7 +133,7 @@
 
 
                 <h2>Grading Criteria</h2>
-                <p>We will download a zip archive of the repo and run the HTML/JS file created locally in the browser.</p>
+                <p>We will download a zip archive of the repo and run the HTML/JS file created locally in the Chrome browser.</p>
                 
                 <ul>
                     <li>This project will require extensive manipulation of the DOM to enable the game to run as described.</li>
@@ -145,12 +146,16 @@
                     <li>Turns proceed as described:  <strong>20%</strong></li>
                     <li>Game boards are displayed properly:  <strong>20%</strong></li>
                     <li>Event handling is processed as described:  <strong>15%</strong></li>
-                    <li>Ship placement strings are correctly parsed:  <strong>15%</strong></li>
+                    <li>Ship placement strings are correctly validated using regex: <strong>5%</strong></li>
+                    <li>Ship placement strings are correctly parsed:  <strong>10%</strong></li>
                     <li>Score saving works appropriately:  <strong>15%</strong></li>
                     <li>Clear and readable presentation:  5%</li>
-                    <li>Utilization of RegEx and Javascript topics covered in class: 10%</li>
+                    <li>Utilization of Javascript topics covered in class: 10%
+                        <ul>
+                            <li>i.e. Functions, Dynamic DOM manipulation, EventHandling, type checking, etc.</li>
+                        </ul>
+                    </li>
                 </ul>
-
                 <p>Late assignments will receive zero credit.</p>
             </div>
         </div>
