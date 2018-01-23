@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 class="foo">Big Deal</h1>
+<p class="foo">Testing</p>
+<div class="parent"></div>
+
+<script type="text/javascript">
+    var allFoos = document.querySelectorAll(".foo");
+
+    for (var x = 0 ; x < allFoos.length ; x ++) {
+        allFoos[x].innerHTML = 'Nope';
+    }
+
+    var letters = ['-','A','B','C','D','E','F','G','H','I','J'];
+    var parent = document.querySelector(".parent");
+    if (parent.hasChildNodes()){
+        var children = parent.childNodes;
+        for (var i = 0; i < children.length; i++) {
+            parent.removeChild(children[i]);
+        }
+    }
+    var table  = document.createElement('table');
+    table.setAttribute('id', 'table')
+    parent.appendChild(table);
+    for (var i = 1; i < 11 ; i++) {
+        var row = document.createElement('tr');
+        for (var j = 1; j < 11; j++ ) {
+            var cell = document.createElement('td');
+            cell.innerHTML = letters[i] + j;
+            if (j % 2 === 0){
+                cell.setAttribute('style', 'cursor:pointer; background-color:#c2c2c2;');
+            } else {
+                cell.setAttribute('style', 'cursor:pointer;');
+            }
+            cell.addEventListener('click', function(e) {
+                alert('You clicked: ' + e.currentTarget.innerHTML);
+            })
+            row.appendChild(cell);
+        }
+        document.querySelector("#table").appendChild(row);
+    }
+</script>
+</body>
+</html>
