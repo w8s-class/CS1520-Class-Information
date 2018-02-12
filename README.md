@@ -82,6 +82,8 @@ ISBN-13: 9780133776096
 
 **Final:**
 
+* Apr. 23 - During Class (2 hr 30 min)
+
 * Week of Apr.23
 
 | #  | Date      | Topics                                                | Materials                                                                                                               |
@@ -115,14 +117,14 @@ ISBN-13: 9780133776096
 | 3  | 1/22/2018 | Web Storage                                           | [slides](https://w8s-class.github.io/CS1520-Class-Information/storage.html)                                             |
 |    |           |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                             |
 |    |           |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)         |
-| 4  | 1/22/2018 | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                               |
+| 4  | 2/5/2018 | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                               |
 |    |           |                                                       | [MDN Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)                    |
 |    |           |                                                       | Javascript examples:                                                                                                    |
 |    |           |                                                       | [js13](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js13_regex.html)                                |
 |    |           |                                                       | [js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)                           |
-| 5  | 1/29/2018 | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
+| 5  | 2/12/2018 | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
 |    |           |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                              |
-| 6  | 2/5/2018  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
+| 6  | 2/12/2018  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
 |    |           |                                                       | Tutorial                                                                                                                |
 |    |           |                                                       | [Language reference](https://docs.python.org/3/reference/index.html)                                                    |
 |    |           |                                                       | [Standard library](https://docs.python.org/3/library/index.html)                                                        |
@@ -135,7 +137,7 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo.py">)                                 |
 |    |           |                                                       | [py8](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py8_dec.py)                                  |
 |    |           |                                                       | [py9](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py9_context.py)                              |
-| 7  | 2/12/2018 | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                               |
+| 7  | 2/19/2018 | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                               |
 |    |           |                                                       | [Installation](http://flask.pocoo.org/docs/0.12/installation/)                                                          |
 |    |           |                                                       | [Python 3 note](http://flask.pocoo.org/docs/0.12/python3/#python3-support)                                              |
 |    |           |                                                       | [Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/)                                                              |
@@ -146,13 +148,13 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [fl4](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl4_login.py)                                 |
 |    |           |                                                       | [fl5](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl5_redirect.py)                              |
 |    |           |                                                       | [fl6](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl6_session_login.py)                         |
-| 8  | 2/12/2018 | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
+| 8  | 2/26/2018 | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
 |    |           |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                         |
 |    |           |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                                 |
 |    |           |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)            |
 |    |           |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                        |
 |    |           |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                                |
-| 9  | 2/19/2018 | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
+| 9  | 2/26/2018 | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
 |    |           |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
 |    |           |                                                       | [Flask-SQLAlchemy quickstart](http://flask-sqlalchemy.pocoo.org/2.3/quickstart/)                                        |
 |    |           |                                                       | [Flask-SQLAlchemy user's guide](http://flask-sqlalchemy.pocoo.org/2.3/)                                                 |
@@ -170,7 +172,7 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [sqlalchemy1](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/sqlalchemy1.zip)                      |
 |    |           |                                                       | [fl11](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl11_flaskr.zip)                             |
 |    |           |                                                       | [fl12](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl12_minitwit.zip)                           |
-| 10 | 2/26/2018 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
+| 10 | 3/12/2018 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
 |    |           |                                                       | [MDN AJAX portal](https://developer.mozilla.org/en-US/docs/AJAX)                                                        |
 |    |           |                                                       | [MDN AJAX quickstart](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)                                    |
 |    |           |                                                       | [MDN JS Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)                                       |
