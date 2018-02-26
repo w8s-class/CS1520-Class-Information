@@ -21,10 +21,10 @@ def loopity_loop(length):
 
 
 @time
-def loopity_loop_comp(length):
-    new_arr = [x*2 for x in range(length)]
+def loopity_loop_comp(length, multiplier):
+    new_arr = [x*multiplier for x in range(length)]
     return sum(new_arr)
 
 
 print('For %d' % loopity_loop(100000))
-print('Comp %d' % loopity_loop_comp(100000))
+print('Comp %d' % loopity_loop_comp(100000, 3))
