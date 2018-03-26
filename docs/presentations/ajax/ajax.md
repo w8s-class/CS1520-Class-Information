@@ -102,7 +102,6 @@ req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     * This will associate the function with the occurrence of the `readystatechange` event
         * This event fires in several places throughout the the execution (each time the state changes)
         * We can check the `XMLHttpRequest.readyState` to see what, if anything, we will do to handle the event
-    * Note that this attribute should be set before starting the request
 
 Note:
 * js15
@@ -111,6 +110,12 @@ Note:
     * `python -m http.server`
 * Example
     * js16
+
+-###-
+
+### `XMLHttpRequest.onreadystatechange`
+
+* Note that this attribute should be set before starting the request
 
 -###-
 
