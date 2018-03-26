@@ -148,13 +148,13 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [fl4](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl4_login.py)                                 |
 |    |           |                                                       | [fl5](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl5_redirect.py)                              |
 |    |           |                                                       | [fl6](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl6_session_login.py)                         |
-| 8  | 2/26/2018 | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
+| 8  | 3/12/2018 | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
 |    |           |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                         |
 |    |           |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                                 |
 |    |           |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)            |
 |    |           |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                        |
 |    |           |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                                |
-| 9  | 2/26/2018 | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
+| 9  | 3/19/2018 | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
 |    |           |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
 |    |           |                                                       | [Flask-SQLAlchemy quickstart](http://flask-sqlalchemy.pocoo.org/2.3/quickstart/)                                        |
 |    |           |                                                       | [Flask-SQLAlchemy user's guide](http://flask-sqlalchemy.pocoo.org/2.3/)                                                 |
@@ -172,7 +172,7 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [sqlalchemy1](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/sqlalchemy1.zip)                      |
 |    |           |                                                       | [fl11](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl11_flaskr.zip)                             |
 |    |           |                                                       | [fl12](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl12_minitwit.zip)                           |
-| 10 | 3/12/2018 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
+| 10 | 3/26/2018 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
 |    |           |                                                       | [MDN AJAX portal](https://developer.mozilla.org/en-US/docs/AJAX)                                                        |
 |    |           |                                                       | [MDN AJAX quickstart](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)                                    |
 |    |           |                                                       | [MDN JS Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)                                       |
@@ -180,14 +180,14 @@ ISBN-13: 9780133776096
 |    |           |                                                       | [js15](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js15_ajax.html)                                 |
 |    |           |                                                       | [js16](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js16_ajax_in_action.zip)                        |
 |    |           |                                                       | [js17](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js17_ajax_poll.zip)                             |
-| 11 | 3/12/2018 | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                                |
+| 11 | 3/26/2018 | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                                |
 |    |           |                                                       | [Extended REST example](https://github.com/w8s-class/flask_api_sample/tree/sqlalchemy)                                  |
 |    |           |                                                       | [PayPal's REST API documentation](https://developer.paypal.com/docs/api/overview/)                                      |
 |    |           |                                                       | [Flask-RESTful documenation](http://flask-restful.readthedocs.io/en/latest/api.html)                                    |
 |    |           |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                           |
 |    |           |                                                       | [Flask-RESTful quickstart](http://flask-restful.readthedocs.io/en/latest/quickstart.html)                               |
 |    |           |                                                       | Flask examples: [fl13](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl13_restful.zip)            |
-| 12 | 3/26/2018 | Functional programming                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/functional.html)                                          |
+| 12 | 4/2/2018  | Functional programming                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/functional.html)                                          |
 |    |           |                                                       | [MDN Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)           |
 |    |           |                                                       | [MDN Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)     |
 |    |           |                                                       | [MDN Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)     |
