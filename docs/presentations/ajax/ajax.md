@@ -108,7 +108,7 @@ Note:
 * js15
 * Note that it won't work running in the local browser, ask why
     * need an HTTP server to handle the request.
-    * have demo version up at http://people.cs.pitt.edu/~nlf4/cs1520/demo/js15_ajax.html
+    * `python -m http.server`
 * Example
     * js16
 
