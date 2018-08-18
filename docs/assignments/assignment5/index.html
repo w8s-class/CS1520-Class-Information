@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Money on my Mind, and my mind on my REST API</title>
     <link rel="stylesheet" type="text/css" href="../../css/vendor/bootstrap.min.css">
 </head>
+
 <body>
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">Money on my Mind, and my mind on my REST API</h1>
             <p class="lead">Assignment Five</p>
-            <p class="lead">Due: Friday, April 20 at 11:59.999999 pm</p>
+            <p class="lead">Due: Friday, December 7 at 11:59.999999 pm</p>
             <p class="lead">200 Points</p>
             <hr class="my-4">
             <p>To gain experience with building RESTful APIs and using functional programming.</p>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -29,10 +31,13 @@
             </div>
             <div class="col-md-9">
                 <h2 id="high-leveldescription:">High-level description:</h2>
-                <p>You will write a very simple budget application for a single user. Your application should support several budget categories, and a set monthly limit for each category (e.g., $700 for rent, $200 for food, $100 for gas, etc.). The application should allow the user to enter purchases and present an up to date list of the user&#8217;s remaining budgeted amount in each category (e.g., you have $0/$700 left for rent, you are $20 over your food budget of $200, and you have $44/$100 left for gas), and the amount spent on uncategorized purchases. You can represent all server-side data as Python data structures, do not need to use SQLAlchemy.</p>
+                <p>You will write a very simple budget application for a single user. Your application should support several budget categories, and a set monthly limit for each category (e.g., $700 for rent, $200 for food, $100 for gas, etc.). The application
+                    should allow the user to enter purchases and present an up to date list of the user&#8217;s remaining budgeted amount in each category (e.g., you have $0/$700 left for rent, you are $20 over your food budget of $200, and you have $44/$100
+                    left for gas), and the amount spent on uncategorized purchases. You can represent all server-side data as Python data structures, do not need to use SQLAlchemy.</p>
                 <h2 id="specifications:">Specifications:</h2>
                 <ol>
-                    <li>You must build a RESTful API for accessing your budget category and purchase resources. Specifically, users should be able to perform HTTP GETs, POSTs, and DELETEs on &#8220;/cats&#8221; to get a list of budget categories, add a new category, and delete a category (respectively), and also perform HTTP GETs, PUTs, and DELETEs to &#8220;/purchases&#8221; to get a list of individual purchases by the user and to add a new purchase.
+                    <li>You must build a RESTful API for accessing your budget category and purchase resources. Specifically, users should be able to perform HTTP GETs, POSTs, and DELETEs on &#8220;/cats&#8221; to get a list of budget categories, add a new
+                        category, and delete a category (respectively), and also perform HTTP GETs, PUTs, and DELETEs to &#8220;/purchases&#8221; to get a list of individual purchases by the user and to add a new purchase.
                         <ul>
                             <li>All data must be transmitted using JSON.</li>
                         </ul>
@@ -46,12 +51,14 @@
                             <li>Use Array.map(), Array.reduce(), and/or Array.filter() to writing succinct code to perform your budget analysis.</li>
                         </ul>
                     </li>
-                    <li>The user should always have the ability to add a new purchase (specifying the amount spent, what it was spent on, the date that it was spent, and the category it should be counted towards) or category (specifying name and limit), and also always have the ability to delete any existing category.
+                    <li>The user should always have the ability to add a new purchase (specifying the amount spent, what it was spent on, the date that it was spent, and the category it should be counted towards) or category (specifying name and limit), and
+                        also always have the ability to delete any existing category.
                         <ul>
                             <li>Deleting an existing category should remove the category designation for the purchases. It should not delete the purchases.</li>
                         </ul>
                     </li>
-                    <li>You do not need to regularly poll the server for updates. However, once user requests any changes (e.g., add a purchase, add a category, delete a category), your application should fetch updated information via the RESTful API, and recompute the status of each of the user&#8217;s budget categories.</li>
+                    <li>You do not need to regularly poll the server for updates. However, once user requests any changes (e.g., add a purchase, add a category, delete a category), your application should fetch updated information via the RESTful API, and
+                        recompute the status of each of the user&#8217;s budget categories.</li>
                     <li>Because we are not storing the data using SQLAlchemy, you do not need to persist data across server instances.
                         <ul>
                             <li>If the server is killed (i.e., Ctrl+C issued), all category/purchase data can be forgotten.</li>
@@ -65,7 +72,8 @@
                     <li>You must name the main flask file for your site &#8220;budget.py&#8221;, and place it in the root directory of your repository.</li>
                     <li>You must be able to run your application by setting the FLASK_APP environment variable to your budget.py and running &#8220;flask run&#8221;</li>
                     <li>You must fill out <a href="../errata/readme.html" target="_blank">README.md</a>.</li>
-                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub repository at that time will be considered your submission for this assignment.</li>
+                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
+                        repository at that time will be considered your submission for this assignment.</li>
                 </ul>
                 <h2 id="additionalnoteshints:">Additional Notes/Hints:</h2>
                 <ul>
@@ -90,4 +98,5 @@
         </div>
     </div>
 </body>
+
 </html>

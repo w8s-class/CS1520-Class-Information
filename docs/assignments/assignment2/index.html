@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>You Sunk My Battleship!</title>
     <link rel="stylesheet" type="text/css" href="../../css/vendor/bootstrap.min.css">
 </head>
+
 <body>
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">You Sunk my Battleship</h1>
             <p class="lead">Assignment Two</p>
-            <p class="lead">Due: Friday, February 9 at 11:59.999999 pm</p>
+            <p class="lead">Due: Friday, September 28 at 11:59.999999 pm</p>
             <p class="lead">100 Points</p>
             <hr class="my-4">
             <p>Gain experience building interactive, client-side web applications using JavaScript and the DOM.</p>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -29,9 +31,10 @@
             </div>
             <div class="col-md-9">
                 <h2>Battleship!</h2>
-                
-                <p class="lead">You will be implementing the game of Battleship to be played with the web browser. This assignment is to demonstrate an understanding of how to utilize Javascript to collect, persist, and manipulate data, and to respond to user interactions to dynamically change the DOM.</p>
-                
+
+                <p class="lead">You will be implementing the game of Battleship to be played with the web browser. This assignment is to demonstrate an understanding of how to utilize Javascript to collect, persist, and manipulate data, and to respond to user interactions
+                    to dynamically change the DOM.</p>
+
                 <ul>
                     <li>For this version, you will assume that only one user is viewing the page that presents your game at a time (e.g., the two players are using a laptop that they pass back and forth between turns).</li>
                     <li><a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">Wikipedia's Battleship</a> entry lays out the rules.</li>
@@ -52,7 +55,8 @@
                 <ul>
                     <li>When the page is loaded, your game should begin by asking the first player for her name (for example, lets assume that the first player is Alice), and a string representing her ship placements.
                         <ul>
-                            <li>Your game should be flexible in accepting the syntax of a ship placement string. Specifically, it should accept strings of the following forms as equivalent, with each resulting in an aircraft carrier placed on A1, A2, A3, A4, A5; a battleship at B6, C6, D6, E6; and a submarine at H3, I3, J3:
+                            <li>Your game should be flexible in accepting the syntax of a ship placement string. Specifically, it should accept strings of the following forms as equivalent, with each resulting in an aircraft carrier placed on A1, A2, A3,
+                                A4, A5; a battleship at B6, C6, D6, E6; and a submarine at H3, I3, J3:
                                 <ul>
                                     <li>A:A1-A5;B:B6-E6; S:H3-J3</li>
                                     <li>A(A1-A5); B(B6-E6); S(H3-J3);</li>
@@ -74,7 +78,8 @@
                                             <li>At the start of the first player's first turn, the top grid will be completely empty, and the bottom grid will show only the location of the first player's ships</li>
                                         </ul>
                                     </li>
-                                    <li>On the bottom grid, each space occupied by part of an aircraft carrier should contain an "A", each space occupied by part of a battleship should contain a "B", each space occupied by part of a submarine should contain an "S".</li>
+                                    <li>On the bottom grid, each space occupied by part of an aircraft carrier should contain an "A", each space occupied by part of a battleship should contain a "B", each space occupied by part of a submarine should contain
+                                        an "S".</li>
                                 </ul>
                             </li>
                             <li>The player is then free to click a space into top grid to "fire" at.
@@ -84,19 +89,22 @@
                                     <li>If the player clicks on a space where no part of any of the other player's ships was placed, the shot is a miss, and the space should be colored white.</li>
                                     <li>If some part of one of the other player's ships was placed in the clicked space, the shot is a hit, and the space should be colored red.
                                         <ul>
-                                            <li>If this hit represents the final portion of a ship (i.e., the 5th hit on an aircraft carrier, the 4th hit on a battleship, or the 3rd hit on a submarine), the player should be alerted as to which of the other player's ships they have sunk.</li>
+                                            <li>If this hit represents the final portion of a ship (i.e., the 5th hit on an aircraft carrier, the 4th hit on a battleship, or the 3rd hit on a submarine), the player should be alerted as to which of the other
+                                                player's ships they have sunk.</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li>After the player has clicked on their target space and the hit or miss has been reported, the player's turn is ended and the other player's turn should begin with a popup (e.g., "Click to begin Bob's turn").
                                 <ul>
-                                    <li><em><strong>Note:</strong></em> that this will require blanking the page before the alert is created to prevent Bob from seeing Alice's ship placement (and vice-versa), and will require a rearranging of the page after the alert is dismissed so that Bob's target grid appears at the top of the page, and his ship placement appears on the bottom.</li>
+                                    <li><em><strong>Note:</strong></em> that this will require blanking the page before the alert is created to prevent Bob from seeing Alice's ship placement (and vice-versa), and will require a rearranging of the page after
+                                        the alert is dismissed so that Bob's target grid appears at the top of the page, and his ship placement appears on the bottom.</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li>At any point in time, the current player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with their ship placements.</li>
+                    <li>At any point in time, the current player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with
+                        their ship placements.</li>
                     <li>The game continues until all of one player's ships have been sunk, at which point the other player wins the game.
                         <ul>
                             <li>Once a winner has been established, your game should compute the winner's score
@@ -121,35 +129,36 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li> 
+                    </li>
                 </ul>
 
                 <h2>Submission Guidelines</h2>
                 <ul>
                     <li><strong>**DO NOT SUBMIT**</strong> any IDE package files.</li>
                     <li>You must name the main page for your game "battleship.html", and place it in the root directory of your repository.</li>
-                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due.  At the deadline, the repositories will automatically be copied for grading.  Whatever is present in your GitHub repository at that time will be considered your submission for this assignment.</li>
+                    <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
+                        repository at that time will be considered your submission for this assignment.</li>
                 </ul>
 
 
                 <h2>Grading Criteria</h2>
                 <p>We will download a zip archive of the repo and run the HTML/JS file created locally in the Chrome browser.</p>
-                
+
                 <ul>
                     <li>This project will require extensive manipulation of the DOM to enable the game to run as described.</li>
-                    <li>Your game does not need to persist across page refreshes.  It is acceptable for a page refresh to restart the game.</li>
+                    <li>Your game does not need to persist across page refreshes. It is acceptable for a page refresh to restart the game.</li>
                     <li>While you are not going to be heavily graded on the style and design of your game, it should be presented in a clear and readable manner.</li>
                 </ul>
 
                 <h3>Breakdown</h3>
                 <ul>
-                    <li>Turns proceed as described:  <strong>20%</strong></li>
-                    <li>Game boards are displayed properly:  <strong>20%</strong></li>
-                    <li>Event handling is processed as described:  <strong>15%</strong></li>
+                    <li>Turns proceed as described: <strong>20%</strong></li>
+                    <li>Game boards are displayed properly: <strong>20%</strong></li>
+                    <li>Event handling is processed as described: <strong>15%</strong></li>
                     <li>Ship placement strings are correctly validated using regex: <strong>5%</strong></li>
-                    <li>Ship placement strings are correctly parsed:  <strong>10%</strong></li>
-                    <li>Score saving works appropriately:  <strong>15%</strong></li>
-                    <li>Clear and readable presentation:  5%</li>
+                    <li>Ship placement strings are correctly parsed: <strong>10%</strong></li>
+                    <li>Score saving works appropriately: <strong>15%</strong></li>
+                    <li>Clear and readable presentation: 5%</li>
                     <li>Utilization of Javascript topics covered in class: 10%
                         <ul>
                             <li>i.e. Functions, Dynamic DOM manipulation, EventHandling, type checking, etc.</li>
@@ -161,4 +170,5 @@
         </div>
     </div>
 </body>
+
 </html>
