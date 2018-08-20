@@ -1,3 +1,9 @@
+# Course Information
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
+-###-
+
 ## Disclaimers
 
 * These notes are intended for use by students in CS1520 at the University of Pittsburgh.  They are provided free of charge and may not be sold in any shape or form.
@@ -7,14 +13,14 @@
 
 ## Instructor Info
 
-<!-- .slide: class="element-bkg" -->
-<!-- .slide: data-background-image="https://i.makeagif.com/media/5-24-2015/QYib8h.gif" -->
+<!-- .slide: class="element-bkg" data-background-image="https://i.makeagif.com/media/5-24-2015/QYib8h.gif" -->
 
-* Todd Waits
-    * Email: me@toddwaits.org
-    * Slack: <https://cs1520-spring2018.slack.com>
-    * <https://appear.in>
-    * Office: 6148
+### Todd Waits
+
+* Email: [me@toddwaits.org](mailto:me@toddwaits.org)
+* Slack: <https://cs1520-spring2018.slack.com>
+* <https://appear.in>
+* Office: 6148
 
 -###-
 
@@ -25,14 +31,14 @@
 
 -###-
 
-## How to Email 
+## How to Email
 
 <!-- .slide: class="element-bkg" -->
 <!-- .slide: data-background-image="http://0.media.dorkly.cvcdn.com/92/72/77a6f1576e187ef11ec91b7e179e54e1.gif" -->
 
 * Prefix all email subjects with <span class="fragment highlight-orange">[CS1520]</span>
 * Address all emails to both the instructor and the TA
-    * Assume that if it is not documented (in chat or email), it did not happen. 
+    * Assume that if it is not documented (in chat or email), it did not happen.
 
 Note:
 
@@ -64,6 +70,9 @@ Note:
 -###-
 
 ## Syllabus
+<!-- .slide: class="flexit" -->
+<!-- .element: class="flex-col flex-full"-->
+
 
 * Interpreted languages <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
 * The DOM <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
@@ -77,9 +86,9 @@ Note:
 * Functional Programming <!-- .element: class="fragment highlight-blue" data-fragment-index="0" -->
 * Web Security
 
-<!-- .element: class="column-left" style="font-size:0.8em;"-->
+<!-- .element: class="flex-col flex-headroom" style="font-size:0.8em;"-->
 
 * Javascript <!-- .element: class="fragment current-visible highlight-blue" data-fragment-index="0" -->
 * Python <!-- .element: class="fragment current-visible highlight-green" data-fragment-index="1" -->
 
-<!-- .element: class="column-right" -->
+<!-- .element: class="flex-col flex-headroom" -->

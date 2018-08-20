@@ -1,7 +1,3 @@
-# Functional Programming
-
--###-
-
 ## Challenge
 
 ```javascript
@@ -53,7 +49,7 @@ Note:
 
 * Mutate any shared state or mutable arguments
     * Covered by having immutable data...
-* Don't produce any observable output, e.g.,  
+* Don't produce any observable output, e.g.,
     * Thrown exceptions
     * Triggered events
     * I/O to devices

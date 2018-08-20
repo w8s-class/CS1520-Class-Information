@@ -1,7 +1,3 @@
-# Storage
-
--###-
-
 ## Javascript File I/O
 
 <!-- .slide: class="element-bkg" -->
@@ -15,7 +11,7 @@ Tell me a story about Javascript and File I/O
 
 * There is no File I/O in Javascript
 
-Note: 
+Note:
 * Why?
 	* Running on the browser, not the host machine
 	* Sandboxing
@@ -48,6 +44,12 @@ Note:
 
 -###-
 
+# `localStorage`
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
+-###-
+
 ## `localStorage`
 
 * `localStorage.length`
@@ -74,6 +76,12 @@ Note:
 
 -###-
 
+# `sessionStorage`
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
+-###-
+
 ## `sessionStorage`
 
 * Has the same API as `localStorage`
@@ -84,7 +92,7 @@ Note:
 * Why would you use sessionStorage as opposed to simple variable storage?
 
 
-Note: 
+Note:
 * `sessionStorage` survives multiple page loads
 * "Opening a page in a new tab or window will cause a new session to be initiated, which differs from how session cookies work."
 * Gulp task that failed due to in-memory variables.

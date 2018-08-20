@@ -1,7 +1,3 @@
-# Web Security
-
--###-
-
 ## The CIA
 
 * Confidentiality

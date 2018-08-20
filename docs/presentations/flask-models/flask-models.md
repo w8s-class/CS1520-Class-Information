@@ -1,7 +1,3 @@
-# Developing Models in Flask
-
--###-
-
 ## Database Overview
 
 * Our models are going to represent the state of a database that contains all of the data used by our web application
@@ -158,7 +154,7 @@ Here it comes!!!
 * An extension, so must be imported on its own:
 
 ```python
-from flask_sqlalchemy import SQLAlchemy 
+from flask_sqlalchemy import SQLAlchemy
 ```
 
 * Must be tied to the flask app at initialization
@@ -175,7 +171,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True)
     email = db.Column(db.String(120), unique=True)
-    
+
     def __repr__(self):
         return "<User {}>".format(repr(self.username))
 ```
@@ -358,7 +354,7 @@ one-to-one, add `uselist=False` to `relationship()`
     * Must use something like `.all()` to access the list of data.
 
 Note:
-* A query object equivalent to a dynamic user.addresses relationship can be created using Address.query.with_parent(user) 
+* A query object equivalent to a dynamic user.addresses relationship can be created using Address.query.with_parent(user)
 
 -###-
 

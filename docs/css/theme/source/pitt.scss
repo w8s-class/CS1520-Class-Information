@@ -1,0 +1,168 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@import url(../../lib/font/roboto/roboto.css);
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+$gray: #A4A4A4;
+$white: #fff;
+$pittYellow: #cdb87c;
+$pittBlue: #1c2957;
+$mainColor: $pittBlue;
+$headingColor: $pittBlue;
+$mainFontSize: 42px;
+$mainFont: 'Roboto',
+Arial,
+sans-serif;
+$headingFont: 'Roboto',
+Arial,
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: darken($pittYellow, 30%);
+$linkColorHover: lighten( $linkColor, 15%);
+$selectionBackgroundColor: lighten( $linkColor, 25%);
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+div.header {
+    font-size: .4em;
+    margin-left: 1em;
+    margin-top: -.5em;
+}
+
+section {
+    text-align: left;
+}
+
+section:not(.title-slide) {
+    font-size: .8em;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-style: normal;
+        font-weight: 400;
+        text-transform: none;
+        margin-bottom: .6em;
+    }
+    ul>li {
+        ul {
+            font-size: .9em;
+        }
+    }
+    pre {
+        width: 100%
+    }
+    img {
+        max-height: 85%;
+        max-width: 85%;
+    }
+    &.element-bkg {
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.3);
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $white !important
+        }
+        a {
+            color: lighten($pittYellow, 10%);
+        }
+    }
+}
+
+section.has-dark-background {
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+}
+
+section.title-slide {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+    h1 {
+        width: 75%;
+        font-size: 1.5em;
+        margin-top: 3em;
+    }
+    .speakers {
+        h6 {
+            font-size: .75em;
+            margin: 0;
+        }
+    }
+    .address {
+        font-size: 0.5em;
+        margin-top: 5em;
+        p {
+            margin: 0;
+            color: $gray;
+        }
+    }
+}
+
+section.section-title {
+    h1 {
+        width: 80%;
+        // font-size: 1.5em;
+        margin-top: 3em;
+    }
+}
+
+.reveal .progress {
+    background-color: $white !important;
+}
+
+.deemphasis {
+    opacity: 0.7;
+}
+
+.flexit {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.flex-full {
+    width: 100% !important;
+}
+
+.flex-col {
+    width: 44%;
+    margin: 0 5% 0 0 !important;
+}
+
+.flex-headroom {
+    margin-top: 1em !important;
+}

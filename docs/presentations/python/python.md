@@ -1,7 +1,3 @@
-# Python
-
--###-
-
 ## Benevolent Dictator for Life
 
 ![Guido](https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg)
@@ -151,7 +147,7 @@ False
 
 * Can be `"double quoted"`
 * or `'single quoted'`
-* or 
+* or
 
 ```python
 """TRIPLE
@@ -170,7 +166,7 @@ QUOTED"""
 * Python has sanely behaved math operators (precedence, associativity, etc.)
 
 ```python
-a=2+3 
+a=2+3
 b=2+3*4
 c = (2 + 3) * 4
 ```
@@ -390,7 +386,7 @@ lower = [name.lower() for name in names if name == "TODD"]
 ```python
 result = []
 for name in sequence:
-    if condition: 
+    if condition:
         result.append(expression)
 ```
 
@@ -420,21 +416,21 @@ classes = { 'Waits': 'CS1520', 'Ramirez': 'CS1520', 'Frank': 'CS1401' }
 
 Note:
 ```python
-class Fib:                                        
-    def __init__(self, max):                      
+class Fib:
+    def __init__(self, max):
         self.max = max
 
-    def __iter__(self):                          
+    def __iter__(self):
         self.a = 0
         self.b = 1
         return self
 
-    def __next__(self):                          
+    def __next__(self):
         fib = self.a
         if fib > self.max:
-            raise StopIteration                  
+            raise StopIteration
         self.a, self.b = self.b, self.a + self.b
-        return fib 
+        return fib
 ```
 
 
@@ -506,7 +502,7 @@ Note:
 
 ```python
 numbers = [1,2,3,4]
-squares = (x*x for x in nums) 
+squares = (x*x for x in nums)
 
 for s in squares:
     print(s, end=' ')
@@ -652,5 +648,5 @@ Note:
         * Containers
         * Iterators
         * Context Managers
-    * Class variables 
+    * Class variables
     * And many more!!!

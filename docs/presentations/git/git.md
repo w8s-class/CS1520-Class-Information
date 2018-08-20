@@ -1,6 +1,8 @@
-# An introduction to version control systems with Git
+# An Introduction to Version Control Systems with Git
 
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
+-###-
 
 ##  Version Control Systems
 
@@ -11,7 +13,7 @@
     * Subversion
 * We will focus on Git
 
-
+-###-
 
 ##  Why use Version Control?
 
@@ -22,28 +24,28 @@
     * Synchronization
     * Collaboration
 
-
+-###-
 
 ## Local Version Control Systems
 
 ![Local Version Control Systems](images/git/local-vcs.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## Centralized Version Control Systems
 
 ![Centralized Version Control Systems](images/git/central-vcs.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## Distributed Version Control Systems
 
 ![Distributed Version Control Systems](images/git/distributed-vcs.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## The basic Git workflow
 
@@ -51,14 +53,14 @@
 * Stage the files, adding snapshots to your staging area
 * Commit your changes to your local copy of the repository
 
-
+-###-
 
 ## The basic Git workflow
 
 ![Basic Git Workflow](images/git/workflow.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## The lifecycle of a file in Git
 
@@ -67,14 +69,14 @@
 ![Git File Lifecycle](images/git/lifecycle.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## Example repository
 
 ![Git Sample Repo](images/git/sample-repo.png)
 <!-- .element: class="img_height" -->
 
-
+-###-
 
 ## Gitting started
 
@@ -83,17 +85,17 @@
     * `$ git config --global user.email "jdoe@example.com"`
 * Set other configuration options
     * `$ git config --global color.ui true`
-* Get help      
+* Get help
     * `$ git help <verb>`
 
-
+-###-
 
 ## Creating a new repository
 
 * `$ git init`
 * Creates a new (empty) repository in the current directory
 
-
+-###-
 
 ## Copying a repository
 
@@ -101,14 +103,14 @@
     * `$ git clone <repository>`
     * Creates a copy of *repository* in the current directory
 
-
+-###-
 
 ## Staging Files
 
 * As you work, you will create new files and modify existing files, when you are satisfied with your changes, you can stage them for commit with:
     * `$ git add <file_pattern>`
 
-
+-###-
 
 ## Committing changes
 
@@ -116,7 +118,7 @@
 * Include a commit message describing the new version
 * `$ git commit -m msg`
 
-
+-###-
 
 ## Checking working directory status
 
@@ -126,14 +128,14 @@
     * File modifications not yet staged for commit
     * File additions and modifications staged for commit
 
-
+-###-
 
 ## Overviewing commit history
 
 * `$ git log`
 * Lists commits made to the current repository
 
-
+-###-
 
 ## Handy command - comparing versions
 
@@ -145,7 +147,7 @@
 * `$ git diff <commit_id_1> <commit_id_2>`
     * Show changes between two commits
 
-
+-###-
 
 ## What we've covered here...
 

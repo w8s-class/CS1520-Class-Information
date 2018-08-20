@@ -1,7 +1,3 @@
-# HTTP and Networking
-
--###-
-
 ## Steps to Look at a Page
 
 * Step 1: Get a computer
@@ -19,7 +15,9 @@ Note:
 
 -###-
 
-## Gimme X
+# Gimme X
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 Note:
 * How do you say "Gimme X", theres a protocol for asking for things, its HTTP
@@ -178,7 +176,7 @@ Accept-Ranges: bytes
 
 * Attaches data with the request that should be handled by the specified resource
     * The result of a web form
-    * A new entry to add to a database 
+    * A new entry to add to a database
 
 -###-
 
@@ -209,7 +207,7 @@ Accept-Ranges: bytes
 ## Breaks in Practice
 
 <!-- .slide: class="element-bkg" -->
-<!-- .slide: data-background-image="https://media.tenor.com/images/06681b2ec4eb5ac1873c90d01f9a097e/tenor.gif " -->
+<!-- .slide: data-background-image="https://media.tenor.com/images/06681b2ec4eb5ac1873c90d01f9a097e/tenor.gif" -->
 
 * `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`
 * The URL **query string** can be used to affect server state

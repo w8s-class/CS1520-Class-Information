@@ -1,7 +1,3 @@
-# Progressive Web Applications
-
--###-
-
 ## Twitter Lite
 
 * [April 2017 Launch](https://lite.twitter.com/content/lite-twitter/en.html)
@@ -33,56 +29,56 @@
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Linkable 
+* Linkable
   * As another characteristic inherited from websites, a well-designed website should use the URI to indicate the current state of the application. This will enable the web app to retain or reload its state when the user bookmarks or shares the app’s URL.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Responsive 
+* Responsive
   * A progressive web app’s UI must fit the device’s form factor and screen size.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* App-like 
+* App-like
   * A progressive web app should look like a native app and be built on the application shell model, with minimal page refreshes.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Connectivity-independent 
+* Connectivity-independent
   * It should work in areas of low connectivity or offline (our favorite characteristic).
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Re-engageable 
+* Re-engageable
   * Mobile app users are more likely to reuse their apps, and progressive web apps are intended to achieve the same goals through features such as push notifications.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Installable 
+* Installable
   * A progressive web app can be installed on the device’s home screen, making it readily available.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Fresh 
+* Fresh
   * When new content is published and the user is connected to the Internet, that content should be made available in the app.
 
 -###-
 
 ## [PWA Characteristics](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/#characteristics-of-a-progressive-web-app)
 
-* Safe 
+* Safe
   * Because a progressive web app has a more intimate user experience and because all network requests can be intercepted through service workers, it is imperative that the app be hosted over HTTPS to prevent man-in-the-middle attacks.
 
 -###-

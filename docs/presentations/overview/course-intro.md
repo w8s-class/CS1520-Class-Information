@@ -1,4 +1,5 @@
 # Programming Languages for Web Applications
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 -###-
 
@@ -42,14 +43,16 @@ Note:
 
 ## [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
 
+<!-- .slide: class="flexit" -->
+<!-- .element: class="flex-col flex-full"-->
+
 * 1980: proposed ENQUIRE as a hypertext documentation system for CERN in Switzerland
 * 1989: proposed implementing a hypermedia system on top of the Internet, inventing the Web
 * 1990: wrote the first web browser (called WorldWideWeb)
 
-<!-- .element: class="column-left" style="font-size:0.8em;"-->
+<!-- .element: class="flex-col flex-headroom" style="font-size:0.8em;"-->
 
 ![Sir Tim Berners-Lee](images/overview/Sir_Tim_Berners-Lee.jpg)
-<!-- .element: class="column-right" -->
 
 -###-
 

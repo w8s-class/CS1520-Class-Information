@@ -1,7 +1,3 @@
-# Flask Templates
-
--###-
-
 ## Jinja2 templating language
 
 * Jinja templates are simply text files
@@ -42,14 +38,14 @@
 ```
 <!--{% endraw %}-->
 
--###- 
+-###-
 
 ## Using Jinja templates within Flask
 
 * The `render_template(template_name, arguments ... )` function is used to grab a template file, and pass data to be used in generating a view of the page (e.g., `name`)
 * By convention, Flask will look for templates in a directory simply called `templates`
 * In addition to `arguments`, the `session` and `request` Flask vars can be referenced in templates
-And, additionally, others we have yet to discuss 
+And, additionally, others we have yet to discuss
 
 Note:
 * fl7

@@ -1,7 +1,3 @@
-# Regular Expressions
-
--###-
-
 ## Regex
 
 <!-- .slide: class="element-bkg" -->
@@ -135,7 +131,7 @@ var re = /snipe/g;
 * `[0-9+-\/*]`
 	* What does this match?
 
-Note: 
+Note:
 * Will find nothing (case sensitive
 * Will match math expressions (\/ escapes the /, though not necessary in chrome, assumed since it is in a character class)
 * Matches:

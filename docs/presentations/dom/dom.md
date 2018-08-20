@@ -1,4 +1,6 @@
-# The DOM and event-driven programming
+# The DOM and Event-Driven Programming
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 -###-
 
@@ -107,7 +109,9 @@ Note: [js8](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js8
 
 -###-
 
-## What the f### was that?!
+# What The F\0054\0036\0044 Was That?!
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 -###-
 
@@ -147,7 +151,7 @@ Note:
 
 ```html
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
-</script> 
+</script>
 ```
 
 [CDN Versions of JQuery](https://code.jquery.com/)
@@ -183,7 +187,7 @@ var els = $("#wrapper p");
 
 * E.g., `elt.addEventListener('click',clickTheBox, false);`
     * `useCapture` parameter
-* Consider table entries (td elements).  
+* Consider table entries (td elements).
     * They're contained within table rows
     * Which are contained within tables
     * Which are contained within the body of the document
@@ -209,4 +213,3 @@ Note:
 Note the lowest element in the DOM won't be affected by useCapture, only visited once, hence it gets its own phase
 
 * [js11](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js11_capture_dom.html)
-

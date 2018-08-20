@@ -1,7 +1,3 @@
-# Authentication
-
--###-
-
 ## Access control vs. authentication
 
 * We want to control how users can interact with information

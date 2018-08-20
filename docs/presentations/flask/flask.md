@@ -1,12 +1,8 @@
-# Flask
-
--###-
-
 ## What is Flask?
 
 * A micro web framework written in Python
 * First release was in 2010
-    * Current version (0.12) was released in Dec 2016
+    * Current version (1.0.2) was released in May 2018
 * Currently powers LinkedIn and Pinterest (parts at least)
 
 -###-

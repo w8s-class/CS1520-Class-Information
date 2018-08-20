@@ -1,7 +1,3 @@
-# REST
-
--###-
-
 ## Beatiful
 
 > When the web was designed the designers did a really good job
@@ -12,7 +8,7 @@
 
 ## What properties does the web exhibit?
 
-* Resources exist and can be globally identified? 
+* Resources exist and can be globally identified?
     * URLs
 * Representations of these resources are exchanged by clients and servers
     * HTML pages, JSON

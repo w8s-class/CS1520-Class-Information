@@ -1,5 +1,7 @@
 # AJAX
 
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
 -###-
 
 ## Where we stand so far

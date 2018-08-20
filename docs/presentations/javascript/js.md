@@ -1,8 +1,6 @@
-# Javascript
-
--###-
-
 # Du-du-duuuuummmm!
+
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 -###-
 
@@ -92,7 +90,7 @@
 	* Optimized IR is turned into machine code
 * Tools exist to run LLVM IR on the JVM
 
-Note: 
+Note:
 
 So are all languages interpreted???
 
@@ -169,7 +167,7 @@ Started as a requirement in languages like FORTRAN or BASIC when:
 10 V1=100
 20 PRINTV1
 ```
-and 
+and
 ```fortran
 10V1=100
 20PRINTV1
@@ -271,7 +269,7 @@ Note:
 </head>
 ```
 
--###- 
+-###-
 
 ## Javascript Functions
 
@@ -309,7 +307,7 @@ Note: js4
 var A = new Array("hello", 2, "you");
 ```
 ```javascript
-// Using the new operator and a constructor with a 
+// Using the new operator and a constructor with a
 //    single numeric argument
 var B = new Array(50);
 ```

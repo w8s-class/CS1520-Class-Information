@@ -1,7 +1,3 @@
-# Responsive Web Design
-
--###-
-
 ## Make it work, but small...
 
 * You've built your RESTful API, and have it running with a server-side app
