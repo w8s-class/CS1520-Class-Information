@@ -46,7 +46,7 @@ Note:
 
 # `localStorage`
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 
@@ -78,7 +78,7 @@ Note:
 
 # `sessionStorage`
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 

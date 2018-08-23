@@ -17,7 +17,7 @@ Note:
 
 # Gimme X
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 Note:
 * How do you say "Gimme X", theres a protocol for asking for things, its HTTP

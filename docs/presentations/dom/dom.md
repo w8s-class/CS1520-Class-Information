@@ -1,6 +1,6 @@
 # The DOM and Event-Driven Programming
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 
@@ -111,7 +111,7 @@ Note: [js8](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js8
 
 # What The F\0054\0036\0044 Was That?!
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 

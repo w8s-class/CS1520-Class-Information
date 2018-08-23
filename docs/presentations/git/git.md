@@ -1,6 +1,6 @@
 # An Introduction to Version Control Systems with Git
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 

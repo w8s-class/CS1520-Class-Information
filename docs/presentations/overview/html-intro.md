@@ -1,6 +1,6 @@
 # HTML
 
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 
@@ -131,7 +131,7 @@ span.italics {font-style: italic;}
 -###-
 
 # CSS
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 

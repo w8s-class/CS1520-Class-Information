@@ -1,5 +1,5 @@
 # Programming Languages for Web Applications
-<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
 
 -###-
 
