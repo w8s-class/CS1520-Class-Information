@@ -1,5 +1,7 @@
 # HTML
 
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
 -###-
 
 ## HTML
@@ -26,9 +28,9 @@
 ## HTML Tag Basics
 
 * Most tags are pairs, start and end tags:
-    
+
 ```html
-<p> 
+<p>
   This text would be considered a paragraph
 </p>
 <em> This text would be emphasized </em>
@@ -37,7 +39,7 @@
 * Comments have their own start and end tags:
 
 ```html
-<!-- This is an HTML comment --> 
+<!-- This is an HTML comment -->
 <!--
 Multiline comment
 -->
@@ -48,7 +50,7 @@ Multiline comment
 ## HTML Tag Basics
 
 * There are also self closing tags
-    
+
 ```html
 <br /> <!-- The br tag inputs a line break -->
 ```
@@ -58,7 +60,7 @@ Multiline comment
 ## HTML Tag Basics
 
 * Tags also have attributes
-    
+
 ```html
 <a href="http://example.com">click here!</a>
 ```
@@ -92,7 +94,7 @@ span.italics {font-style: italic;}
 ```
 
 * Emphasis tag
-    
+
 ```html
 <em>this will be italicized</em>
 ```
@@ -124,15 +126,19 @@ span.italics {font-style: italic;}
 <span id="unique" class="custom"></span>
 <span id="wrong" class="custom"></span>
 <span id="wrong" class="custom"></span>
-<div class="custom"></div> 
+<div class="custom"></div>
 ```
+-###-
+
+# CSS
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
 
 -###-
 
 ## Targeting Selectors with CSS
 
 ```html
-<span id="unique" class="custom">Test</span> 
+<span id="unique" class="custom">Test</span>
 ```
 
 ```css

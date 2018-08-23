@@ -269,6 +269,24 @@ body {
   .backgrounds {
     background-color: #fff; } }
 
+.reveal .slides section .fragment.highlight-red.visible {
+  color: #D13130; }
+
+.reveal .slides section .fragment.highlight-green.visible {
+  color: #42B251; }
+
+.reveal .slides section .fragment.highlight-blue.visible {
+  color: #5083BD; }
+
+.reveal .slides section .fragment.highlight-current-red.current-fragment {
+  color: #D13130; }
+
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+  color: #42B251; }
+
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+  color: #5083BD; }
+
 div.header {
   font-size: .4em;
   margin-left: 1em;
@@ -298,7 +316,8 @@ section:not(.title-slide) {
     max-width: 85%; }
   section:not(.title-slide).element-bkg {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em; }
     section:not(.title-slide).element-bkg h1,
     section:not(.title-slide).element-bkg h2,
     section:not(.title-slide).element-bkg h3,

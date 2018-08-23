@@ -18,6 +18,9 @@ $pittYellow: #cdb87c;
 $pittBlue: #1c2957;
 $mainColor: $pittBlue;
 $headingColor: $pittBlue;
+$red: #D13130;
+$green: #42B251;
+$blue: #5083BD;
 $mainFontSize: 42px;
 $mainFont: 'Roboto',
 Arial,
@@ -38,6 +41,32 @@ $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 // Theme template ------------------------------
 @import "../template/theme";
+// ---------------------------------------------
+// Fragment Overrides --------------------------
+.reveal .slides section .fragment.highlight-red.visible {
+    color: $red;
+}
+
+.reveal .slides section .fragment.highlight-green.visible {
+    color: $green;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible {
+    color: $blue;
+}
+
+.reveal .slides section .fragment.highlight-current-red.current-fragment {
+    color: $red;
+}
+
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+    color: $green;
+}
+
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+    color: $blue;
+}
+
 // ---------------------------------------------
 div.header {
     font-size: .4em;
@@ -77,6 +106,7 @@ section:not(.title-slide) {
     &.element-bkg {
         color: $white;
         background-color: rgba(0, 0, 0, 0.3);
+        padding: 1em;
         h1,
         h2,
         h3,
