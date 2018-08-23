@@ -162,6 +162,8 @@ Note:
 
 # Assignment
 
+<!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
+
 -###-
 
 ## Assignment 1
