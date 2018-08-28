@@ -39,15 +39,15 @@ And by appointment.
 
 ### TA
 
-Jeong-Min Lee
+TA-TBD
 
-* TA website: http://cs.pitt.edu/~jlee/teaching/cs1520
-* Email: jlee@cs.pitt.edu
-* GitHub: jel158
+* TA website: TBD
+* Email: TBD
+* GitHub: TBD
 
 | Office | Hours              |
 |:-------|:-------------------|
-| 5324   | Tuesday 4:00-5:00pm |
+| TBD   | TBD |
 
 And by appointment.
 
