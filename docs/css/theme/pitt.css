@@ -312,8 +312,8 @@ section:not(.title-slide) {
   section:not(.title-slide) pre {
     width: 100%; }
   section:not(.title-slide) img {
-    max-height: 85%;
-    max-width: 85%; }
+    max-height: 500px;
+    max-width: 90%; }
   section:not(.title-slide).element-bkg {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
