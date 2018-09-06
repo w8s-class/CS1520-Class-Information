@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>You Sunk My Battleship!</title>
+    <title>The Name of the Game is Connect Four!</title>
     <link rel="stylesheet" type="text/css" href="../../css/vendor/bootstrap.min.css">
 </head>
 
 <body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">You Sunk my Battleship</h1>
+            <h1 class="display-3">The Name of the Game is Connect Four</h1>
             <p class="lead">Assignment Two</p>
             <p class="lead">Due: Friday, September 28 at 11:59.999999 pm</p>
             <p class="lead">100 Points</p>
@@ -30,114 +30,122 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <h2>Battleship!</h2>
+                <h2>Connect Four!</h2>
 
-                <p class="lead">You will be implementing the game of Battleship to be played with the web browser. This assignment is to demonstrate an understanding of how to utilize Javascript to collect, persist, and manipulate data, and to respond to user interactions
-                    to dynamically change the DOM.</p>
+                <p class="lead">You will be implementing the game, <a href="https://www.youtube.com/watch?v=KN3nohBw_CE">Connect Four</a>, to be played in the web browser. This assignment is to demonstrate an understanding of how to utilize JavaScript to collect, persist,
+                    and manipulate data, and to respond to user interactions to dynamically change the DOM.</p>
 
                 <ul>
                     <li>For this version, you will assume that only one user is viewing the page that presents your game at a time (e.g., the two players are using a laptop that they pass back and forth between turns).</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">Wikipedia's Battleship</a> entry lays out the rules.</li>
-                    <li>Your game will be built on a 10x10 grids, with rows labeled 1-10 and columns labeled A-J.</li>
-                    <li>We will assume that players will place <strong>3</strong> game pieces
+                    <li><a href="https://en.wikipedia.org/wiki/Connect_Four">Wikipedia&rsquo;s Connect Four</a> entry lays out the rules.</li>
+                    <li>Your game will be built on a 7x6 grids, with rows labeled 1-6 and columns labeled A-G.</li>
+                    <li>Each player has 21 tokens.
+
                         <ul>
-                            <li>an aircraft carrier (5 spaces long)</li>
-                            <li>a battleship (4 spaces long)</li>
-                            <li>a submarine (3 spaces long).</li>
+                            <li>Player one&rsquo;s tokens are red.</li>
+                            <li>Player two&rsquo;s tokens are black.</li>
                         </ul>
                     </li>
-                    <li>These pieces can be placed either horizontally or vertically, and cannot overlap.</li>
+                    <li>The tokens cannot overlap.</li>
+                    <li>The game will have to be aware of how many tokens of the same color are touching, and how many remain to reach four.</li>
+                    <li>The player selects the column to drop the token. You do not need to animate the drop.</li>
                 </ul>
 
                 <h2>Specifications</h2>
                 <p class="lead">These are the base requirements for making the page work. You can enhance. You cannot use external libraries like jQuery for this project.</p>
 
                 <ul>
-                    <li>When the page is loaded, your game should begin by asking the first player for her name (for example, lets assume that the first player is Alice), and a string representing her ship placements.
+                    <li>When the page is loaded, your game should begin by asking the first player for her name (for example, lets assume that the first player is Alice), and a string representing their birthday. The board should not be displayed.
+
                         <ul>
-                            <li>Your game should be flexible in accepting the syntax of a ship placement string. Specifically, it should accept strings of the following forms as equivalent, with each resulting in an aircraft carrier placed on A1, A2, A3,
-                                A4, A5; a battleship at B6, C6, D6, E6; and a submarine at H3, I3, J3:
+                            <li>Your game should be flexible in accepting the multiple date formats.
+
                                 <ul>
-                                    <li>A:A1-A5;B:B6-E6; S:H3-J3</li>
-                                    <li>A(A1-A5); B(B6-E6); S(H3-J3);</li>
-                                    <li>B(B6-E6);S(H3-J3);A(A1-A5)</li>
+                                    <li><code>MM/DD/YYYY</code></li>
+                                    <li><code>M/D/YYYY</code></li>
+                                    <li><code>M/D/YY</code></li>
+                                    <li><code>MM-DD-YYYY</code></li>
+                                    <li><code>M-D-YYYY</code></li>
+                                    <li><code>M-D-YY</code></li>
+                                    <li><code>MMM. DD, YYYY</code></li>
+                                    <li><code>MMM. D, YYYY</code></li>
+                                    <li><code>MMM. D, YY</code></li>
+                                    <li><code>MMMMMM DD, YYYY</code> - <em>i.e. January, February, etc.</em></li>
+                                    <li><code>MMMMMM DD, YYYY</code> - <em>i.e. January, February, etc.</em></li>
+                                    <li><code>MMMMMM D, YY</code> - <em>i.e. January, February, etc.</em></li>
                                 </ul>
                             </li>
-                            <li>Use a regex function to validate the strings.</li>
+                            <li>Use a regex function to validate the strings, and split the string into three variables representing Day, Month, and Year.</li>
+                            <li>Set the player&rsquo;s birthday attribute as a JavaScript Date object constructed from the three variables.</li>
                         </ul>
                     </li>
-                    <li>After gathering the first player's name and ship placement, your game should prompt the second player for their name and ship placement (for example, lets assume the second player is Bob).</li>
-                    <li>With this starting info in hand, your game should begin the first player's turn
+                    <li>After gathering the first player&rsquo;s name and birthday, your game should prompt the second player for their name and birthday (for example, lets assume the second player is Bob).</li>
+                    <li>The player who takes the first turn is the oldest.</li>
+                    <li>A timer should be displayed at the top of the page tracking the duration of the game. The timer does not start until the first player confirms the start of their first turn.</li>
+                    <li>With this starting information in hand, your game should begin the first player&rsquo;s turn
+
                         <ul>
-                            <li>At the start of a turn, your game should pop up an alert indicating whose turn it is (e.g., "Click OK to begin Alice's turn").</li>
-                            <li>After the prompt is dismissed, your game should render 2 10x10 grids, one at the top of the window, and the other just below it, closer to the bottom of the browser window.
+                            <li>At the start of a turn, your game should pop up an alert indicating whose turn it is by name (e.g., &ldquo;Click OK to begin Alice&rsquo;s turn&rdquo;).</li>
+                            <li>After the prompt is dismissed, your game should render one 7x6 grid created dynamically with JavaScript.
+
                                 <ul>
-                                    <li>Both grids should have a light blue background.</li>
-                                    <li>The top grid should represent the current players target (i.e., the grid where the other player's ships reside), while the bottom represents the current player's ship deployment.
-                                        <ul>
-                                            <li>At the start of the first player's first turn, the top grid will be completely empty, and the bottom grid will show only the location of the first player's ships</li>
-                                        </ul>
-                                    </li>
-                                    <li>On the bottom grid, each space occupied by part of an aircraft carrier should contain an "A", each space occupied by part of a battleship should contain a "B", each space occupied by part of a submarine should contain
-                                        an "S".</li>
+                                    <li>The grid should have a yellow background and blue border.</li>
+                                    <li>Empty cells should have a white circle using the image from the starter repo located at <code>/images/white-circle.png</code>.</li>
                                 </ul>
                             </li>
-                            <li>The player is then free to click a space into top grid to "fire" at.
+                            <li>The count of remaining tokens for player one should be displayed on the left of the board.</li>
+                            <li>The count of remaining tokens for player two should be displayed on the right of the board.</li>
+                            <li>The player is then free to click a column to place their token.
+
                                 <ul>
-                                    <li>Clicks on the lower grid should have no effect.</li>
-                                    <li>The game should pop up an alert to inform the player whether the shot was a hit or a miss.</li>
-                                    <li>If the player clicks on a space where no part of any of the other player's ships was placed, the shot is a miss, and the space should be colored white.</li>
-                                    <li>If some part of one of the other player's ships was placed in the clicked space, the shot is a hit, and the space should be colored red.
+                                    <li>Clicks on the cells should have no effect.</li>
+                                    <li>When a player places a token, the cell the token occupies should contain a circle referencing the player&rsquo;s token color: <code>/images/red-circle.png</code> and <code>/images/black-circle.png</code>.</li>
+                                    <li>The game should pop up an alert to inform the player how many tokens are left to reach a connect four (e.g. &ldquo;Alice needs two tokens to Connect Four!&rdquo;).
+
                                         <ul>
-                                            <li>If this hit represents the final portion of a ship (i.e., the 5th hit on an aircraft carrier, the 4th hit on a battleship, or the 3rd hit on a submarine), the player should be alerted as to which of the other
-                                                player's ships they have sunk.</li>
+                                            <li>The count should only count viable options.</li>
+                                            <li>For example, if a player places two tokens (2 tokens left), but the connect four is blocked by the other player, the count should reset to the count of the next best possible connect 4 (e.g. &ldquo;Alice needs
+                                                three tokens to Connect Four!&rdquo;).</li>
                                         </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li>After the player has clicked on their target space and the hit or miss has been reported, the player's turn is ended and the other player's turn should begin with a popup (e.g., "Click to begin Bob's turn").
-                                <ul>
-                                    <li><em><strong>Note:</strong></em> that this will require blanking the page before the alert is created to prevent Bob from seeing Alice's ship placement (and vice-versa), and will require a rearranging of the page after
-                                        the alert is dismissed so that Bob's target grid appears at the top of the page, and his ship placement appears on the bottom.</li>
+                                    <li>If the player clicks on a column where no tokens can be placed, an alert should tell them the column is full.</li>
+                                    <li>Once a token is placed, the remaining tokens should be decremented by one.</li>
+                                    <li>After the player has placed their token, and the token count alert has been displayed, the player&rsquo;s turn is ended and the other player&rsquo;s turn should begin with a popup (e.g., &ldquo;Click to begin Bob&rsquo;s
+                                        turn&rdquo;).
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li>At any point in time, the current player's top grid should display all the hits(red spaces) and misses (white spaces) that they have fired, while the bottom grid shows all of the hits and misses their opponents have fired along with
-                        their ship placements.</li>
-                    <li>The game continues until all of one player's ships have been sunk, at which point the other player wins the game.
+                    <li>The game continues until one player achieves a Connect Four. The player who achieves a Connect Four is alerted with a message that they won (i.e. &ldquo;Congratulations! Alice won in <code>insert game duration here</code>!&rdquo;).
                         <ul>
-                            <li>Once a winner has been established, your game should compute the winner's score
-                                <ul>
-                                    <li>Score is computed as: 24 - (2 points for each hit against them)
-                                        <ul>
-                                            <li>10 points for sinking the opponent's aircraft carrier</li>
-                                            <li>8 points for sinking the opponent's battleship</li>
-                                            <li>6 points for sinking the opponent's submarine</li>
-                                        </ul>
-                                    </li>
-                                    <li>If Alice won the game while Bob was able to sink her submarine and land a single hit on her battle ship, but did not hit her aircraft carrier at all, Alice score would be 16
-                                        <ul>
-                                            <li>24 - (2 * 4)</li>
-                                        </ul>
-                                    </li>
-                                    <li>Your game should keep track of the names and scores of the 10 highest scores in local storage.
-                                        <ul>
-                                            <li>If 10 players have all achieved the max score (24), no further updates to local storage are required.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li>Your game should keep track of the names and game durations of the 10 fastest games in local storage.</li>
+                            <li>Only update local storage if 10 slots have not been filled, or a duration is beats any time currently tracked in local storage.</li>
+                            <li>When the game is over, remove the board and display the top 10 list.</li>
+                            <li>Empty values should render <code>&lt;Empty&gt;</code>.</li>
+                            <li>Include a button to start a new game.</li>
+                            <li>Starting a new game removes the score listing.</li>
                         </ul>
                     </li>
                 </ul>
 
                 <h2>Submission Guidelines</h2>
                 <ul>
-                    <li><strong>**DO NOT SUBMIT**</strong> any IDE package files.</li>
-                    <li>You must name the main page for your game "battleship.html", and place it in the root directory of your repository.</li>
+                    <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
+                    <li>You must name the main page for your game <code>battleship.html</code>, and place it in the root directory of your repository.</li>
                     <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
                         repository at that time will be considered your submission for this assignment.</li>
+                    <li>Files included in the starter repo:
+
+                        <ul>
+                            <li><code>README.md</code></li>
+                            <li><code>/css</code> directory</li>
+                            <li><code>/js</code> directory</li>
+                            <li><code>/images/white-circle.png</code></li>
+                            <li><code>/images/red-circle.png</code></li>
+                            <li><code>/images/black-circle.png</code></li>
+                        </ul>
+                    </li>
                 </ul>
 
 
@@ -147,25 +155,28 @@
                 <ul>
                     <li>This project will require extensive manipulation of the DOM to enable the game to run as described.</li>
                     <li>Your game does not need to persist across page refreshes. It is acceptable for a page refresh to restart the game.</li>
-                    <li>While you are not going to be heavily graded on the style and design of your game, it should be presented in a clear and readable manner.</li>
+                    <li>While you are not going to be heavily graded on the style and design of your game, * it should be presented in a clear and readable manner.</li>
                 </ul>
 
                 <h3>Breakdown</h3>
                 <ul>
-                    <li>Turns proceed as described: <strong>20%</strong></li>
-                    <li>Game boards are displayed properly: <strong>20%</strong></li>
-                    <li>Event handling is processed as described: <strong>15%</strong></li>
-                    <li>Ship placement strings are correctly validated using regex: <strong>5%</strong></li>
-                    <li>Ship placement strings are correctly parsed: <strong>10%</strong></li>
-                    <li>Score saving works appropriately: <strong>15%</strong></li>
+                    <li>Turns proceed as described: 20%</li>
+                    <li>Game board is displayed properly: 20%</li>
+                    <li>Event handling is processed as described: 15%</li>
+                    <li>Birthday strings are correctly validated using regex: 5%</li>
+                    <li>Birthday strings are correctly parsed with regex and date object created according to specification: 10%</li>
+                    <li>Score saving works appropriately: 15%</li>
                     <li>Clear and readable presentation: 5%</li>
                     <li>Utilization of Javascript topics covered in class: 10%
+
                         <ul>
                             <li>i.e. Functions, Dynamic DOM manipulation, EventHandling, type checking, etc.</li>
                         </ul>
                     </li>
                 </ul>
-                <p>Late assignments will receive zero credit.</p>
+
+
+                <p><em>Late assignments will receive zero credit.</em></p>
             </div>
         </div>
     </div>
