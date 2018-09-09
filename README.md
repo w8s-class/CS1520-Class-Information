@@ -52,6 +52,8 @@ Maher Khan
 
 And by appointment.
 
+* [Recitation Materials](https://github.com/maher460/Pitt-CS1520-Recitations)
+
 ### Optional Textbook
 
 [Programming the World Wide Web, 8th Ed.](https://www.amazon.com/Programming-World-Wide-Web-8th/dp/0133775984)
