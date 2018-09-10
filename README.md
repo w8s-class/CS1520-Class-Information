@@ -6,11 +6,12 @@
 
 ## Course Information
 
-| Class                | Class Number  | Location | Time           |
-|:---------------------|:--------------|:---------|:---------------|
-| Lecture 1            | 28660 & 28663 | A115     | M 5:30-8:15 PM |
-| Recitation Section 1 |               |          |                |
-| Recitation Section 2 |               |          |                |
+| Class                | Class Number  | Location | Time              |
+|:---------------------|:--------------|:---------|:------------------|
+| Lecture 1            | 28660 & 28663 | A115     | M 5:30-8:15 PM    |
+| Lecture 2            | 19582 & 19581 | CL G24   | T/Th 6:00-7:15 PM |
+| Recitation Section 1 |               |          |                   |
+| Recitation Section 2 |               |          |                   |
 
 
 ### Instructor
@@ -34,6 +35,7 @@ Do not address me as `Doctor`. You can call me `Mr. Waits` or `Todd`.
 | Office     | Hours   |
 |:-----------|:--------|
 | SENSQ 6148 | M 4p-5p |
+| SENSQ 6148 | T 4p-5p |
 
 And by appointment.
 
