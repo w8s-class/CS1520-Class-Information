@@ -172,8 +172,7 @@ Note:
 
 ```javascript
 // Javascript
-var wrapper = document.getElementById("wrapper"),
-    els = wrapper.querySelectorAll("p");
+var els = document.querySelectorAll("#wrapper p");
 ```
 
 ```javascript
