@@ -41,17 +41,20 @@ And by appointment.
 
 ### TA
 
-TA-TBD
+Maher Khan
 
-* TA website: TBD
-* Email: TBD
-* GitHub: TBD
+* Email: [maherkhan@pitt.edu](mailto:maherkhan@pitt.edu)
+* GitHub: [maher460](https://www.github.com/maher460)
+* LinkedIn: [maherkhan](https://www.linkedin.com/in/maherkhan/)
 
-| Office | Hours              |
-|:-------|:-------------------|
-| TBD   | TBD |
+| Office     | Hours              |
+|:-----------|:-------------------|
+| SENSQ 5802 |      Th 3p-5p      |
+| SENSQ 5802 |      F 6p-8p       |
 
 And by appointment.
+
+* [Recitation Materials](https://github.com/maher460/Pitt-CS1520-Recitations)
 
 ### Optional Textbook
 
