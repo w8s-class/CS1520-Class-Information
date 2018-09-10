@@ -6,12 +6,14 @@
 
 ## Course Information
 
-| Class                | Class Number  | Location | Time              |
-|:---------------------|:--------------|:---------|:------------------|
-| Lecture 1            | 28660 & 28663 | A115     | M 5:30-8:15 PM    |
-| Lecture 2            | 19582 & 19581 | CL G24   | T/Th 6:00-7:15 PM |
-| Recitation Section 1 |               |          |                   |
-| Recitation Section 2 |               |          |                   |
+| Class                | Class Number  | Location            | Time               |
+|:---------------------|:--------------|:--------------------|:-------------------|
+| Lecture 1            | 28660 & 28663 | A115                | M 5:30-8:15 PM     |
+| Lecture 2            | 19582 & 19581 | CL G24              | T/Th 6:00-7:15 PM  |
+| Recitation Section 1 | 28664 & 28661 | 5505 Sennott Square | F 4:00 - 4:50 PM   |
+| Recitation Section 2 | 28665 & 28662 | 5505 Sennott Square | F 5:00 - 5:50 PM   |
+| Recitation Section 3 | 19588 & 19590 | 5502 Sennott Square | F 10:00 - 10:50 AM |
+| Recitation Section 4 | 19589 & 19591 | 205 Lawrence Hall   | Th 7:30 - 8:20 PM  |
 
 
 ### Instructor
@@ -41,7 +43,9 @@ And by appointment.
 
 ### TA
 
-Maher Khan
+#### Maher Khan
+
+*Monday Section*
 
 * Email: [maherkhan@pitt.edu](mailto:maherkhan@pitt.edu)
 * GitHub: [maher460](https://www.github.com/maher460)
@@ -55,6 +59,10 @@ Maher Khan
 And by appointment.
 
 * [Recitation Materials](https://github.com/maher460/Pitt-CS1520-Recitations)
+
+#### Debarun Das
+
+*Tuesday/Thursday Section*
 
 ### Optional Textbook
 
