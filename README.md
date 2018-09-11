@@ -88,11 +88,13 @@ We will rely on online resources and library documentation (linked below).
 
 **Midterm**
 
-* Oct. 16, 2018 (Tuesday) - First half of Class (1 hr 15 min)
+* *Monday Section* Oct. 16, 2018 (Tuesday) - First half of Class (1 hr 15 min)
+* *Tuesday Section* Oct. 11, 2018 (Thursday) - 1 hr 15 min
 
 **Final:**
 
-* Dec. 10, 2018 (Monday) - During Regular Class Schedule (2 hr 30 min)
+* *Monday Section* Dec. 10, 2018 (Monday) - During Regular Class Schedule (2 hr 30 min)
+* *Tuesday Section* Dec. 11, 2018 (Tuesday) - During Regular Class Schedule (2 hr 30 min)
 
 | #  | Date       | Topics                                                | Materials                                                                                                               |
 |:---|:-----------|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
