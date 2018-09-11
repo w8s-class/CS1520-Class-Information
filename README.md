@@ -34,10 +34,10 @@ Do not address me as `Doctor`. You can call me `Mr. Waits` or `Todd`.
 
 #### Office Hours
 
-| Office     | Hours   |
-|:-----------|:--------|
-| SENSQ 6148 | M 4p-5p |
-| SENSQ 6148 | T 4p-5p |
+| Office     | Hours         |
+|:-----------|:--------------|
+| SENSQ 6148 | M 4p-5p       |
+| SENSQ 6148 | T 4:30p-5:30p |
 
 And by appointment.
 
