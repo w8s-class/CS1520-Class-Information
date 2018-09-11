@@ -84,6 +84,16 @@ We will rely on online resources and library documentation (linked below).
 | Programming Projects | 45%              |
 | Participation        | 5%               |
 
+### Participation
+
+I've received several questions regarding how the participation grade is determined.
+
+I will post a video and accompanying quiz each week about a topic we are learning. The videos will be 10-20 minutes long. The quiz will be no more than five questions, and the final question will always be soliciting two questions from you. You can take the quiz as many times as necessary to get it right.
+
+The most critical part of the quiz for me is where you ask two questions. It helps me guage where we are at with the content, and helps me clarify the content of the slides and assignments.
+
+Additional participation consideration is given to students who participate in class and communicate on Slack and via email.
+
 ## Schedule
 
 **Midterm**
