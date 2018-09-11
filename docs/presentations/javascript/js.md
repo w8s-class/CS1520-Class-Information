@@ -374,9 +374,12 @@ function compare(a, b) {
 
 ## Javascript is an object-based language
 
-* <span class="fragment highlight-red">**NOT** object-oriented</span>
-* It has and uses objects, but does not support some features necessary for object-oriented languages
-* E.g., Class inheritance and polymorphism are not supported (As far as we are concerned)
+* ~~**NOT** object-oriented~~
+* JavaScirpt meets the [rudimentary definition of object-oriented languages](https://medium.com/@andrea.chiarelli/is-javascript-a-true-oop-language-c87c5b48bdf0)
+* It has and uses objects, but does not support some features necessary for object-oriented languages *in ways you would expect in other, more traditional OOP languages*.
+* ~~E.g., Class inheritance and polymorphism are not supported (As far as we are concerned)~~
+
+*Slide updated Sep. 11, 2018*
 
 -###-
 
@@ -420,6 +423,8 @@ function TV(brand, size, injacks, outjacks) {
 	this.jacks = new Object();
 	this.jacks.input = injacks;
 	this.jacks.output = outjacks;
+
+	// notice lack of return statement
 }
 //...
 var my_tv = new TV("Samsung", 46, 5, 2);
@@ -429,3 +434,49 @@ Note:
 
 * js6
 * js7
+
+-###-
+
+## Adding Functions to an Object
+
+```javascript
+function TV(brand, size, injacks, outjacks) {
+	// ... See previous slide for implementation
+}
+//...
+var my_tv = new TV("Samsung", 46, 5, 2);
+
+TV.prototype.howManyJacks = function() {
+	return this.jacks.input + this.jacks.output;
+}
+
+my_tv.howManyJacks(); // outputs 7
+
+```
+
+-###-
+
+## Object Inheritance
+
+```javascript
+function TV(brand, size, injacks, outjacks) {
+	this.brand = brand;
+	this.size = size;
+	this.jacks = new Object();
+	this.jacks.input = injacks;
+	this.jacks.output = outjacks;
+}
+
+function HdTv(brand, size, injacks, outjacks, location) {
+	TV.call(this, brand, size, injacks, outjacks);
+
+	this.location = location;
+}
+
+var hiDef = new HdTv("Samsung", 46, 5, 2, "Hallway");
+
+```
+
+Note:
+
+* <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance>
