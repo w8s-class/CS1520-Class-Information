@@ -115,22 +115,6 @@ Note: [js8](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js8
 
 -###-
 
-## Event-Driven Programming
-
-* Would have been nice to be able to see the base page and then trigger the alerts somehow…
-    * Maybe a click
-    * Or even hovering the mouse over a portion of the page
-* This is the basic idea of event-driven programming
-* The flow of the program is determined by user actions
-* Our applications with *listen* for events to occur, and then run specified functions when they do
-
-Note:
-
-* [js9](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js9_more_dom.html)
-* [js10](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js10_danger_dom.html)
-
--###-
-
 ## Well, this sucks!
 
 * Either traverse the entire structure or use an ID
@@ -179,6 +163,28 @@ var els = document.querySelectorAll("#wrapper p");
 // JQuery
 var els = $("#wrapper p");
 ```
+
+-###-
+
+# Event-Driven Programming
+
+<!-- .slide: class="section-title" data-background="lib/images/section-bkg.png" -->
+
+-###-
+
+## Event-Driven Programming
+
+* Would have been nice to be able to see the base page and then trigger the alerts somehow...
+    * Maybe a click
+    * Or even hovering the mouse over a portion of the page
+* This is the basic idea of event-driven programming
+* The flow of the program is determined by user actions
+* Our applications with *listen* for events to occur, and then run specified functions when they do
+
+Note:
+
+* [js9](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js9_more_dom.html)
+* [js10](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js10_danger_dom.html)
 
 -###-
 
