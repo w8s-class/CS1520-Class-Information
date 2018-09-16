@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <style>
+        #title {
+            transition: left 1s ease-out;
+            left: 0;
+        }
+        
+        #title:hover {
+            cursor: pointer;
+        }
+        
+        .delete {
+            color: red;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .click {
+            font-size: 6em;
+        }
+        
+        #title.hover {
+            position: relative;
+            top: 0;
+            left: 30px;
+        }
+        
+        table thead tr td {
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+    </style>
+    <script>
+        var superlative = "Radical";
+
+        function buildTable(rows, columns) {
+            var table = document.createElement('table');
+            for (var i = 0; i < rows; i++) {
+                var row = document.createElement('tr');
+                row.classList.add('row-' + i);
+                for (var c = 0; c < columns; c++) {
+                    var col = document.createElement('td');
+                    col.classList.add('cell-' + i + '-' + c);
+                    row.appendChild(col);
+                }
+                table.appendChild(row);
+            }
+
+            table.classList.add('board', 'grid', 'small', 'happy');
+
+            return table;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>DOM Examples</h1>
+    <p id="cool" class="delete">Duped</p>
+    <div id="wrapper">
+        <script>
+            document.write("<h2>Our " + superlative + " Paragraphs</h2>");
+        </script>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <script>
+            document.write("The " + superlative + " End");
+        </script>
+    </div>
+
+    <div id="table-wrapper">
+        <p>This is the table</p>
+    </div>
+
+    <script>
+        var pList = document.querySelectorAll('#wrapper p');
+
+        for (var i = 0; i < pList.length; i++) {
+            pList[i].innerHTML = "Paragraph #" + (i + 1);
+        }
+        console.log(pList);
+
+        var t = buildTable(6, 7);
+        console.log(t)
+        document.getElementById("table-wrapper").appendChild(t);
+
+        document.querySelector('h1').addEventListener('click', function(e) {
+            t.classList.add('hide');
+        }, false);
+    </script>
+
+
+</body>
+
+</html>
