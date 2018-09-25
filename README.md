@@ -64,6 +64,13 @@ And by appointment.
 
 *Tuesday/Thursday Section*
 
+* Email: DED59@pitt.edu
+
+| Office     | Hours              |
+|:-----------|:-------------------|
+| SENSQ 6410 |      Th 4p-6p      |
+| SENSQ 6410 |   F 11:30a-1:30p   |
+
 ### Optional Textbook
 
 [Programming the World Wide Web, 8th Ed.](https://www.amazon.com/Programming-World-Wide-Web-8th/dp/0133775984)
