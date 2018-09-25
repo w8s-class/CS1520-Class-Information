@@ -1,15 +1,18 @@
 ## Benevolent Dictator for Life
 
+<!-- .slide: class="flexit" -->
+<!-- .element: class="flex-col flex-full"-->
+
 ![Guido](https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg)
 
-<!-- .element: class="column-left" -->
+<!-- .element: class="flex-col"-->
 
 * [Guido van Rossum](http://neopythonic.blogspot.com/2016/04/kings-day-speech.html) started development on Python in 1989 as a project to keep him busy over the holiday break when his office was closed
 * Worked for Google from 2005-2013, and currently works at Dropbox
     * Both employers had him spend 50% of his time working on Python
 * Favorite Exception is KeyboardInterrupt()
 
-<!-- .element: class="column-right" style="font-size:0.7em;" -->
+<!-- .element: class="flex-col flex-headroom" style="font-size:0.8em;"-->
 
 -###-
 
@@ -25,8 +28,8 @@
 
 * 3.0 is a backwards-***incompatible***
     * Because of this Python 2.7 is still actively used by many
-* 3.6 is the current latest version of Python
-    * We will be using 3.x versions of Python in this course!
+* 3.7 is the current latest version of Python
+    * We will be using 3.7 versions of Python in this course!
     * Be aware of the difference when checking online resources and running Python code on your computer!
 
 Note:
@@ -401,7 +404,7 @@ Note:
 { x.upper() for x in names } # set
 
 classes = { 'Waits': 'CS1520', 'Ramirez': 'CS1520', 'Frank': 'CS1401' }
-{ name:class for name, class in classes.items() if class == 'CS1520' } # dict
+{ name:course for name, course in classes.items() if course == 'CS1520' } # dict
 ```
 
 -###-
