@@ -73,49 +73,75 @@ Note:
 
 ## Getting an HTTP Request to a Webserver
 
-* Physical Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
-* Data Link Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
-* Network Layer <!-- .element: class="fragment highlight-orange" data-fragment-index="2" -->
-* Transport Layer <!-- .element: class="fragment highlight-yellow" data-fragment-index="1" -->
-* Session Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
-* Presentation Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
-* Application Layer <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
+<!-- .slide: class="flexit" -->
+<!-- .element: class="flex-col flex-full"-->
 
-<!-- .element: class="column-left" -->
+![OSI Model](https://www.webopedia.com/imagesvr_ce/8023/7-layers-of-osi-icon.jpg)
 
-* Application <!-- .element: class="fragment highlight-cyan" data-fragment-index="0" -->
-* Transport <!-- .element: class="fragment highlight-yellow" data-fragment-index="1" -->
-* Internet <!-- .element: class="fragment highlight-orange" data-fragment-index="2" -->
-* Link Layer <!-- .element: class="fragment highlight-magenta" data-fragment-index="3" -->
+<!-- .element: class="flex-col"-->
 
-<!-- .element: class="column-right" -->
+* Handling the Request
+* Encoding the Packets
+* Traversing the Network
+* Physical World Transportation
 
-Note:
-* Physical Layer
-    * "Ethernet cables and Token Ring networks. Additionally, hubs and other repeaters are standard network devices that function at the Physical layer, as are cable connectors."
-* Data Link Layer
-    * the Data Link layer checks for physical transmission errors and packages bits into data "frames".
-* Network Layer
-    * When data arrives at the Network layer, the source and destination addresses contained inside each frame are examined to determine if the data has reached its final destination. If the data has reached the final destination, this Layer 3 formats the data into packets delivered up to the Transport layer. Otherwise, the Network layer updates the destination address and pushes the frame back down to the lower layers.
-* Transport Layer
-    * Different transport protocols may support a range of optional capabilities including error recovery, flow control, and support for re-transmission. (TCP, ftp, utp)
-    * FTP vs HTTP
-        * Given all details on this page. What makes FTP faster:
-            * No added meta-data in the sent files, just the raw binary
-            * Never chunked encoding "overhead"
-        * What makes HTTP faster:
-            * reusing existing persistent connections make better TCP performance
-            * pipelining makes asking for multiple files from the same server faster
-            * (automatic) compression makes less data get sent
-            * no command/response flow minimizes extra round-trips
-* Session Layer
-    * manages the sequence and flow of events that initiate and tear down network connections.
-* Presentation Layer
-    * handles syntax processing of message data such as format conversions and encryption / decryption
+<!-- .element: class="flex-col flex-headroom" style="font-size:0.8em;"-->
+
+-##-
+
+## Handling the Request
+
 * Application Layer
     * The Application layer supplies network services to end-user applications
     * Client side: Browser
     * Server side: Nginx, backend application
+* Presentation Layer
+    * handles syntax processing of message data such as format conversions and encryption / decryption
+* Session Layer
+     * manages the sequence and flow of events that initiate and tear down network connections.
+
+-##-
+
+## Encoding the Packets
+
+* Transport Layer
+    * Different transport protocols may support a range of optional capabilities including error recovery, flow control, and support for re-transmission.
+
+Note:
+* Different Protocols:
+    * TCP, ftp, utp
+
+-##-
+
+## Transport Layer: FTP vs HTTP
+
+* What circumstances makes FTP faster than HTTP?
+    * No added meta-data in the sent files, just the raw binary
+    * Never chunked encoding "overhead"
+* What makes HTTP faster:
+    * reusing existing persistent connections make better TCP performance
+    * pipelining makes asking for multiple files from the same server faster
+    * (automatic) compression makes less data get sent
+    * no command/response flow minimizes extra round-trips
+
+-##-
+
+## Traversing the Network
+
+* Network Layer
+    * Data contains source and destination addresses in each packet
+    * Determines if data is at final destination
+        * Either delivers data to transport layer to deliver to higher level of abstractions
+        * Or delivers data back to the data link and physical layers to go to the next destination.
+
+-##-
+
+## Physical World Transportation
+
+* Data Link Layer
+    * the Data Link layer checks for physical transmission errors and packages bits into data "frames".
+* Physical Layer
+    * "Ethernet cables and Token Ring networks. Additionally, hubs and other repeaters are standard network devices that function at the Physical layer, as are cable connectors."
 
 -###-
 
