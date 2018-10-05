@@ -111,7 +111,7 @@ Additional participation consideration is given to students who participate in c
 **Final:**
 
 * *Monday Section* Dec. 13, 2018 (Thursday) - 4:00PM - 5:50PM (1 hr 50 min)
-* *Tuesday Section **Pending Confirmation*** Dec. 11, 2018 (Tuesday) - 6:00PM - 7:50PM (1 hr 50 min)
+* *Tuesday Section* Dec. 13, 2018 (Tuesday) - 6:00PM - 7:50PM (1 hr 50 min)
 
 | #  | Date       | Topics                                                | Materials                                                                                                               |
 |:---|:-----------|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
