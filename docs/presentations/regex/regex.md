@@ -161,10 +161,10 @@ Note:
 
 * `\w`
 	* Any alphanumeric character
-	* `[A-Za-z0-9]`
+	* `[A-Za-z0-9_]`
 * `\W`
 	* Non-alphanumeric
-	* `[^A-Za-z0-9]`
+	* `[^A-Za-z0-9_]`
 
 -###-
 
