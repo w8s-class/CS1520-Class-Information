@@ -2,19 +2,19 @@
 <html>
 
 <head>
-    <title>Chatty Kathy</title>
+    <title>Treat Yo Self</title>
     <link rel="stylesheet" type="text/css" href="../../css/vendor/bootstrap.min.css">
 </head>
 
-<body style="text-decoration:line-through">
+<body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Chatty Kathy</h1>
-            <p class="lead">Assignment Four</p>
-            <p class="lead">Due: Friday, November 16 at 11:59.999999 pm</p>
-            <p class="lead">200 Points</p>
-            <hr class="my-4">
-            <p>To gain experience using AJAX and JSON by building a website to host and manage multiple chat rooms.</p>
+            <h1 id="Treat-Yo-Self">Treat Yo Self</h1>
+            <p>Assignment 4</p>
+            <p>Due: Friday, November 9 at 11:59.999999 pm</p>
+            <p>200 Points</p>
+            <hr />
+            <p>Build a web application using the Flask web application framework to manage salon staff, patrons, and schedules.</p>
         </div>
     </div>
 
@@ -25,74 +25,154 @@
                     <a class="list-group-item list-group-item-action" href="../assignment1/index.html">Assignment One</a>
                     <a class="list-group-item list-group-item-action" href="../assignment2/index.html">Assignment Two</a>
                     <a class="list-group-item list-group-item-action" href="../assignment3/index.html">Assignment Three</a>
-                    <a class="list-group-item list-group-item-action disabled" href="#">Assignment Four</a>
+                    <a class="list-group-item list-group-item-action active" href="../assignment4/index.html">Assignment Four</a>
                     <a class="list-group-item list-group-item-action disabled" href="#">Assignment Five</a>
                 </div>
             </div>
             <div class="col-md-9">
-                <h2 id="high-leveldescription:">High-level description:</h2>
-                <p>You will be writing a website to host and manage chat rooms.</p>
-                <h2 id="specifications:">Specifications:</h2>
-                <ol>
-                    <li>When visiting the page for the first time, users should be given the chance to create an account or login</li>
-                    <li>Once successfully logged in, the user should be given a list of possible chat rooms to join, or a message stating that none currently exist. The user should also have the option to create a new chat room.</li>
-                    <li>Once in a chat room, the user should be shown the history of messages for that chat room, as well as be kept up to date as messages are sent to the chat room. The user should also have the option to post a new message to the chat room.
-                        The user should further be given a way to leave the chat room.
-                        <ul>
-                            <li>Users can be in only one chat room at a time.</li>
-                            <li>Logging out does not cause the user to exit the chatroom. When the user logs in, they should land in the chat room they were in before logging out.</li>
-                            <li>A link should exist for the user to leave the chatroom.</li>
-                            <li>You must use AJAX and JSON to update the list of messages posted to the chat room, and to post new messages to the chat room.</li>
-                            <li>All AJAX chat updates should send only <em>new</em> messages to the user. The user should not receive the full list of chat messages with every AJAX update as this could grow quite large over time.</li>
-                            <li>You must be sure that your application does not display &#8220;phantom&#8221; messages to the user.
-                                <ul>
-                                    <li>I.e., All users in the same chat room should see the same messages in the same order and new messages should always appear at the end of the chat log, never in the middle of the chat log.</li>
-                                </ul>
-                            </li>
-                            <li>You should take a polling approach to ensure that new messages are always available to the user. Your application should have a 1 second time between polls.</li>
-                        </ul>
-                    </li>
-                    <li>Once a user leaves the chat room, they should again be shown a list of potential chat rooms to join (or a message if none exist).
-                        <ul>
-                            <li>The user should also have the option to delete any chat rooms that they created.
-                                <ul>
-                                    <li>Any users still in a room when it is deleted should be shown a message informing them that the room was deleted and be again presented with the list of available chat rooms (or a message if none exist).</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>The user should always (on every page) be presented with away to log out while they are logged in.</li>
-                    <li>All data for your application should be stored in an SQLite database named &#8220;chat.db&#8221; using SQLAlchemy&#8217;s ORM and the Flask-SQLAlchemy extension.</li>
-                    <li>You must build your website using JavaScript, JSON, AJAX, Python 3.5 or greater, Flask 0.12, SQLAlchemy, and the Flask-SQLAlchemy extension.</li>
-                </ol>
-                <h2 id="submissionguidelines:">Submission Guidelines:</h2>
+                <h2 id="Treat-Yo-Self">Treat Yo Self</h2>
+                <p>Use the Flask and Flask-SQLAlchemy to create a portal for Treat Yo Self Salon. There are three classifications of users for the site: the Owner, Stylists and Patrons. The salon has one owner, multiple stylists, and multiple patrons.</p>
+                <p>Stylists work Tuesday through Saturday, from 10am to 8p.</p>
+                <p>Stylists only offer one service: a haircut. Each haircut takes 1 hour and starts on the hour.</p>
+                <p>Patrons can make an appointment with any stylist. On a stylist&rsquo;s page, patrons can see available appointment time slots for the stylists. They can cancel appointments they have made.</p>
+
+                <h2 id="Specifications">Specifications</h2>
+                <p>These are the base requirements for making the web application. You can enhance.</p>
+
+                <h3 id="Dependencies">Dependencies</h3>
                 <ul>
-                    <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
-                    <li>Do not include chat.db in your submitted repository.</li>
-                    <li>You must name the main flask file for your site &#8220;chat.py&#8221;, and place it in the root directory of your repository.</li>
-                    <li>You must be able to run your application by setting the FLASK_APP environment variable to your chat.py and running &#8220;flask run&#8221;</li>
-                    <li>You must be able to initialize your database by setting the FLASK_APP environment variable to your chat.py and running &#8220;flask initdb&#8221;</li>
-                    <li>You must fill out <a href="../errata/readme.html" target="_blank">README.md</a>.</li>
+                    <li>Python 3.7</li>
+                    <li>Flask 1.0.2
+                        <ul>
+                            <li><code>pip install Flask==1.0.2</code></li>
+                        </ul>
+                    </li>
+                    <li>Flask-SQLAlchemy 2.3.2
+                        <ul>
+                            <li><code>pip install Flask-SQLAlchemy==2.3.2</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 id="Managing-Users">Managing Users</h3>
+                <ul>
+                    <li>Each user (Owner, Stylist, or Patron) should have a username and password.
+                        <ul>
+                            <li>All passwords will be stored in plain text.</li>
+                        </ul>
+                    </li>
+                    <li>Patrons are free to register for their own account.</li>
+                    <li>Stylist accounts must be created by the Owner (it is fine for the Owner to set passwords for the Stylist).</li>
+                    <li>If a user is logged in, no matter what page they are on, they should have access to a logout link.</li>
+                </ul>
+
+                <h3 id="Owner">Owner</h3>
+                <ul>
+                    <li>Should be able to login with the username <code>owner</code> and password <code>pass</code>.</li>
+                    <li>Once logged in, the Owner should be presented with a link to create new Stylist accounts, and a list for each stylist and their scheduled appointments for the next week.
+                        <ul>
+                            <li>For each appointment, the name of the Patron, date and time of the appointment.</li>
+                            <li>If no appointments are scheduled for a stylist, a message should be displayed informing the Owner of this explicitly.</li>
+                        </ul>
+                    </li>
+                    <li>On a Stylist&rsquo;s profile page, the owner can see a list of all future (based on the current day) appointments for the next week including date and time, and patron&rsquo;s name. Any time slot that does not have an appointment should
+                        explicitly indicate it.</li>
+                    <li>On a Patron&rsquo;s profile page, the owner can see a list of all future appointments (based on the day) the patron has, including date and time, and stylist.</li>
+                </ul>
+
+                <h3 id="Stylist">Stylist</h3>
+                <ul>
+                    <li>Once logged in, Stylists should directed to their profile page.
+                        <ul>
+                            <li>They should see a list of all future (based on the day) appointments for the next week.</li>
+                            <li>including date and time,</li>
+                            <li>patron&rsquo;s name.</li>
+                            <li>Any time slot that does not have an appointment should explicitly indicate it.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 id="Patron">Patron</h3>
+                <ul>
+                    <li>Once logged in, Patrons should be presented with a list of Stylists who work at the Salon.
+                        <ul>
+                            <li>On a Stylist&rsquo;s page, a patron can view a list of all future (based on the day) appointments.
+                                <ul>
+                                    <li>Any available appointment slot should indicate it is available.</li>
+                                    <li>Clicking an available slot should take them to a page with a form to request an appointment.</li>
+                                    <li>Any time slot that is taken by a different patron than the one logged in should just say <code>Booked</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>On the Patron&rsquo;s profile page, they can see a list of all of their upcoming appointments including today&rsquo;s.
+                        <ul>
+                            <li>Patron&rsquo;s should be able to cancel any of their own appointments.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 id="Data-Management">Data Management</h3>
+                <ul>
+                    <li>To ease bootstrapping and testing of your application, hardcode the Owner’s username and password in your app to be <code>owner</code> and <code>pass</code>.</li>
+                    <li>All other data for your application should be stored in a SQLite database named <code>salon.db</code> using SQLAlchemy’s ORM and the Flask-SQLAlchemy extension.</li>
+                </ul>
+
+                <h2 id="Submission-Guidelines">Submission Guidelines</h2>
+                <ul>
+                    <li><strong>DO NOT SUBMIT</strong>
+                        <ul>
+                            <li>any IDE package files.</li>
+                            <li><code>*.pyc</code>, <code>__pychache__</code></li>
+                            <li><code>salon.db</code></li>
+                        </ul>
+                    </li>
+                    <li>You must name the main page for your game <code>salon.py</code>, and place it in the root directory of your repository.</li>
                     <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
                         repository at that time will be considered your submission for this assignment.</li>
+                    <li>You must be able to run your application by setting the <code>FLASK_APP</code> environment variable to your <code>salon.py</code> and running <code>flask run</code></li>
+                    <li>You must be able to initialize your database by setting the <code>FLASK_APP</code> environment variable to your <code>salon.py</code> and running <code>flask initdb</code></li>
+                    <li>Add a <code>requirements.txt</code> file containing the installed dependencies for your project. Make sure to add that file to source control.
+                        <ul>
+                            <li>Run <code>pip freeze &gt; requirements.txt</code> from the root of your project with your <code>virtualenv</code> activated.</li>
+                            <li>Be sure to use a <code>virtualenv</code> otherwise this list will get ridiculously long.</li>
+                        </ul>
+                    </li>
+                    <li>Files included in the starter repo:
+                        <ul>
+                            <li><code>README.md</code></li>
+                            <li><code>salon.py</code></li>
+                        </ul>
+                    </li>
                 </ul>
-                <h2 id="additionalnoteshints:">Additional Notes/Hints:</h2>
+
+                <h3 id="Additional-Notes%2FHints">Additional Notes/Hints</h3>
                 <ul>
-                    <li>You may find the use of profiles (https://support.google.com/chrome/answer/2364824) helpful for testing multiple users logging in to the chat site at the same time.</li>
+                    <li>You may find it handy to use the HTML <code>date</code> input type for appointment scheduling.</li>
+                    <li>I recommend creating a development bootstrapping script that allows you to delete and recreate a database with an Owner, Stylists, and Patrons, with some appointments to make development and debugging easier.</li>
                     <li>While you are not going to be heavily graded on the style and design of your web site, it should be presented in a clear and readable manner.</li>
                 </ul>
-                <h2 id="gradingrubric:">Grading Rubric:</h2>
+
+                <h2 id="Grading-Criteria">Grading Criteria</h2>
+                <p>We will download a zip archive of the repo and run the <code>salon.py</code> Flask application via <code>flask run</code> in a terminal/console using a <code>virtualenv</code> with the dependencies from your <code>requirements.txt</code>                    installed in Python version 3.7.</p>
+
+                <h3 id="Breakdown">Breakdown</h3>
                 <ul>
-                    <li>User management (account creation/login/logout) works as specified: 10%</li>
-                    <li>List of available chat rooms shown: 10%</li>
-                    <li>Leaving a chat room works as specified: 10%</li>
-                    <li>Posting new messages to a chat room works as specified: 15%</li>
-                    <li>Polled updates performed as specified: 15%</li>
-                    <li>AJAX working as specified: 20%</li>
-                    <li>SQLAlchemy data model quality: 10%</li>
+                    <li>Owner login set correctly: 5%</li>
+                    <li>Patron registration: 5%</li>
+                    <li>Stylist account creation: 5%</li>
+                    <li>Login works appropriately: 15%</li>
+                    <li>Logout always available and works: 5%</li>
+                    <li>Owner page displays as specified: 15%</li>
+                    <li>Stylist page displays as specified: 15%</li>
+                    <li>Patron page displays as specified: 5%</li>
+                    <li>Patron create appointment works: 10%</li>
+                    <li>Patron cancel appointment works: 10%</li>
                     <li>Clear and readable presentation: 5%</li>
-                    <li>Submission/readme: 5%</li>
+                    <li>Submission/info sheet: 5%</li>
                 </ul>
+
+                <p><em>Late assignments will receive zero credit.</em></p>
             </div>
         </div>
     </div>
