@@ -87,7 +87,7 @@ Note:
 
 <!-- .element: class="flex-col flex-headroom" style="font-size:0.8em;"-->
 
--##-
+-###-
 
 ## Handling the Request
 
@@ -100,7 +100,7 @@ Note:
 * Session Layer
      * manages the sequence and flow of events that initiate and tear down network connections.
 
--##-
+-###-
 
 ## Encoding the Packets
 
@@ -111,7 +111,7 @@ Note:
 * Different Protocols:
     * TCP, ftp, utp
 
--##-
+-###-
 
 ## Transport Layer: FTP vs HTTP
 
@@ -124,7 +124,7 @@ Note:
     * (automatic) compression makes less data get sent
     * no command/response flow minimizes extra round-trips
 
--##-
+-###-
 
 ## Traversing the Network
 
@@ -134,7 +134,7 @@ Note:
         * Either delivers data to transport layer to deliver to higher level of abstractions
         * Or delivers data back to the data link and physical layers to go to the next destination.
 
--##-
+-###-
 
 ## Physical World Transportation
 
