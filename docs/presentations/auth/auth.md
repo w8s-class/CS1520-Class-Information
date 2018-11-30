@@ -25,7 +25,7 @@
 
 ## General approaches to authentication
 
-* Using multiple of these together leads to two-factor authentication
+* Using multiple of these together leads to multi-factor authentication (MFA)
 * Password authentication is (currently) the most widely-used authentication approach
 
 -###-

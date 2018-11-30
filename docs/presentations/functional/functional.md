@@ -238,3 +238,22 @@ Note:
 Note:
 * More within JavaScript:
     * Underscore.js
+
+
+-###-
+
+## `Array.filter()`
+
+* `Array.map(callback [, thisArg])`
+* `callback` is, again, a reference to a function that will be called for every item in the array being reduced
+* However, in this case, the result produced by each call is a boolean value that determines whether or not the item will be added to the result array.
+
+-###-
+
+## `callback` for `Array.filter()`
+
+* The `callback` for `Array.filter()` is only passed 3 arguments:
+    * Current value
+    * Current index
+    * Array
+* `thisArg` allows you to set what should be referenced by the `this` keyword within `callback`

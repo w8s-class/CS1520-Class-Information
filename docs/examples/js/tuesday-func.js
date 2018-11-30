@@ -1,57 +1,23 @@
-data = [{"name":"Crosby","age":28,"points":[0,0,0,1,1,0]},{"name":"Malkin","age":29,"points":[1,1,0,0,0,0]},{"name":"Letang","age":29,"points":[1,0,1,0,1]}];
+data = [{ "name": "Crosby", "age": 28, "points": [0, 0, 0, 1, 1, 0] }, { "name": "Malkin", "age": 29, "points": [1, 1, 0, 0, 0, 0] }, { "name": "Letang", "age": 29, "points": [1, 0, 1, 0, 1] }];
 
-var names = data.map(getAttr("name"));
-var scores = data.map(getAttr("points"));
-var averages = scores.map(getAverages);
-var pairs = averages.map(whenTwoBecomeOne(names));
+// output
+var pairs = data.filter(checkAge(28)).map(combiner)
 document.write(JSON.stringify(pairs));
 
-console.log(names);
-console.log(scores);
-console.log(averages);
-console.log(pairs);
-
-function getAttr(attr) {
-    function mapGetAttr(item) {
-        return item[attr];
+function checkAge(age) {
+    return function(item, idx, arr) {
+        return item.age < age;
     }
-    return mapGetAttr;
 }
 
-function getAverages(arr) {
-    return average(arr.reduce(sum), arr.length);
+function combiner(item, idx, arr) {
+    return [item.name, item.points.reduce(totalAcrossArray, 0) / item.points.length];
+}
+// Imperative
+function avgAllSubArrays(item, idx, arr) {
+    return item.reduce(totalAcrossArray, 0) / item.length;
 }
 
-function sum(a, b) {
-    return a+b;
+function totalAcrossArray(agg, item, idx, arr) {
+    return agg + item;
 }
-
-function average(total, count) {
-    return total/count;
-}
-
-function whenTwoBecomeOne(nameArr) {
-  function congregation(item, index) {
-    return [nameArr[index],item];
-  }
-  return congregation;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Functional Example</title>
+    <title>Functional Example</title>
 </head>
+
 <body>
-	<h2>Imperative result:</h2>
-	<script type="text/javascript" src="js19_imp.js"></script>
+    <h2>Imperative result:</h2>
+    <script type="text/javascript" src="js19_imp.js"></script>
 
-	<h2>Monday Imperative result:</h2>
-	<script type="text/javascript" src="monday-class.js"></script>
+    <!-- <h2>Monday Imperative result:</h2>
+	<script type="text/javascript" src="monday-class.js"></script> -->
 
-	<h2>Tuesday Imperative result:</h2>
+    <!-- <h2>Tuesday Imperative result:</h2>
 	<script type="text/javascript" src="tuesday-imp.js"></script>
-	
-	<h2>Functional result:</h2>
-	<script type="text/javascript" src="js19_func.js"></script>
+	 -->
+    <h2>Functional result:</h2>
+    <script type="text/javascript" src="js19_func.js"></script>
 
-	<h2>Monday Functional result:</h2>
-	<script type="text/javascript" src="monday-class-func.js"></script>
+    <!-- <h2>Monday Functional result:</h2>
+    <script type="text/javascript" src="monday-class-func.js"></script> -->
 
-	<h2>Tuesday Functional result:</h2>
-	<script type="text/javascript" src="tuesday-func.js"></script>
-	
+    <h2>Tuesday Functional result:</h2>
+    <script type="text/javascript" src="tuesday-func.js"></script>
+
     <!--
     <h2>Functional result (using map and reduce):</h2>
 	<script type="text/javascript" src="js19_func_mr.js"></script>
-	-->
+    -->
+    <p>
+        <script>
+            var ex = [];
+
+            function funcMaker(m) {
+                return function() {
+                    document.write(m);
+                };
+            }
+            for (var i = 0; i < 5; i++) {
+                ex[i] = funcMaker(i);
+            }
+            for (var j = 0; j < 5; j++) {
+                ex[j]();
+            }
+        </script>
+    </p>
 </body>
+
 </html>
