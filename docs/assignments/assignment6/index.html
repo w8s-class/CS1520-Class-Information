@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Office Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../../css/vendor/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Box Office Dashboard</h1>
+            <p class="lead">Assignment Six</p>
+            <p class="lead">Due: Friday, December 7 at 11:59.999999 pm</p>
+            <p class="lead">100 Points</p>
+            <hr class="my-4">
+            <p>Add <code>BasicAuth</code> to the <code>Flask</code> server and use <code>Array.map</code>, <code>Array.reduce</code>, and <code>Array.filter</code> to create a dashboard to display data about box office earnings for movies of 2018.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../assignment1/index.html">Assignment One</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment2/index.html">Assignment Two</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment3/index.html">Assignment Three</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment4/index.html">Assignment Four</a>
+                    <a class="list-group-item list-group-item-action" href="../assignment5/index.html">Assignment Five</a>
+                    <a class="list-group-item list-group-item-action active" href="../assignment6/index.html">Assignment Six</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2 id="Box-Office-Data-Viz-ing">Box Office Data Viz-ing</h2>
+
+                <p>Using the starter repository, modify the application so users can make sense of the box office earnings for 2018. The server is currently open to any arbitrary visitor; Protect the server&rsquo;s routes using <code>BasicAuth</code>. Using
+                    <code>map</code>, <code>reduce</code>, and <code>filter</code>, populate the <code>Top 10 Highest Grossing Films</code>, <code>Top 10 by Studio</code>, and <code>Top 10 by Opening Weekend Gross</code> for the authenticated user.</p>
+
+                <h2 id="Specifications">Specifications</h2>
+
+                <p>These are the base requirements for making the page work. You can enhance.</p>
+
+                <h3 id="Dependencies">Dependencies</h3>
+
+                <ul>
+                    <li>Python 3.7</li>
+                    <li>Flask 1.0.2
+
+                        <ul>
+                            <li><code>pip install Flask==1.0.2</code></li>
+                        </ul>
+                    </li>
+                    <li>Flask RESTful 0.3.6
+
+                        <ul>
+                            <li><code>pip install Flask-RESTful==0.3.6</code></li>
+                        </ul>
+                    </li>
+                    <li><em>Note</em>: Do not use any authentication plug-ins for Flask.
+
+                        <ul>
+                            <li>You may use <code>passlib</code>, <code>bcrypt</code>, or the built-in functions: <code>from werkzeug.security import generate_password_hash, check_password_hash</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <h3 id="Data-Persistence">Data Persistence</h3>
+
+                <ul>
+                    <li>This application will rely on native Python data structures, and will not be persisted to the database.</li>
+                    <li>The authorized users is a list of dictionary objects. Currently the password is just plain text. It should be a hashed password.</li>
+                    <li>The movies list is a list of dictionary objects.</li>
+                </ul>
+
+
+                <h3 id="BasicAuth">BasicAuth</h3>
+
+                <ul>
+                    <li>Implement the <code>BasicAuth</code> decorator we covered in class including the helper functions to authenticate the user for the page.</li>
+                    <li>BasicAuth will store the authentication on the HTTP request. There is no need to implement login or logout functions or pages.</li>
+                    <li>Hash the password using the method of your choice noting the restrictions above.</li>
+                </ul>
+
+
+                <h3 id="API-Routes">API Routes</h3>
+
+                <ul>
+                    <li>There are two routes for the movie collection and movie items.
+
+                        <ul>
+                            <li><code>/api/movies</code></li>
+                            <li><code>/api/movies/&lt;int:movie_id&gt;</code></li>
+                        </ul>
+                    </li>
+                    <li>There is no need to add additional routes for this assignment.</li>
+                </ul>
+
+
+                <h3 id="base.html"><code>base.html</code></h3>
+
+                <ul>
+                    <li>The <code>base.html</code> has an <code>XmlHttpRequest</code> in place to call the collection route to get all movies and populate a table on the page with all movies.</li>
+                    <li>Do not make new calls to the server to get additional data.</li>
+                    <li>All data must be sliced and sorted using JavaScript.</li>
+                    <li>Do not use any loops (<code>for</code>, <code>while</code>, etc.).</li>
+                </ul>
+
+
+                <h4 id="Top-10-Highest-Grossing-Films">Top 10 Highest Grossing Films</h4>
+
+                <ul>
+                    <li>Sort the list of movies (highest total gross first) without modifying the original movies array order, and display the Title and Total Gross of the top 10 highest grossing films (<code>#gross-movies</code>).</li>
+                    <li>Calculate the average gross of the films displayed and display it in <code>#gross-average</code>.</li>
+                </ul>
+
+
+                <h4 id="Top-10-by-Studio">Top 10 by Studio</h4>
+
+                <ul>
+                    <li>Display the top 10 (or as many as are available) ordered by highest total gross by studio (<code>#studio-movies</code>).</li>
+                    <li>Populate the <code>#studio-select</code> with all unique studios.</li>
+                    <li>Upon changing studio selection, update the list and name of the studio being displayed (<code>#studio-name</code>).</li>
+                    <li>Calculate the average gross of the films displayed and display it in <code>#studio-average</code>.</li>
+                </ul>
+
+
+                <h4 id="Top-10-by-Opening-Weekend-Gross">Top 10 by Opening Weekend Gross</h4>
+
+                <ul>
+                    <li>Sort the list of movies (highest opening gross first) without modifying the original movies array order, and display the Title and Opening Gross of the top 10 highest grossing films (<code>#opening-movies</code>).</li>
+                    <li>Calculate the average gross of the films displayed and display it in <code>#opening-average</code>.</li>
+                </ul>
+
+
+                <h2 id="Submission-Guidelines">Submission Guidelines</h2>
+
+                <ul>
+                    <li><strong>DO NOT SUBMIT</strong> any IDE package files.</li>
+                    <li>You must name the main page for your game <code>connect4.py</code>, and place it in the root directory of your repository.</li>
+                    <li>
+                        <p>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
+                            repository at that time will be considered your submission for this assignment.</p>
+                    </li>
+                    <li>
+                        <p>Files included in the starter repo:</p>
+
+                        <ul>
+                            <li><code>/README.md</code></li>
+                            <li><code>/dashboard.py</code></li>
+                            <li><code>/templates/base.html</code></li>
+                            <li><code>/requirements.txt</code></li>
+                            <li><code>/static/main.css</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <h2 id="Grading-Criteria">Grading Criteria</h2>
+
+                <p>We will download a zip archive of the repo and run the <code>dashboard.py</code> file in a terminal/console using Python version 3.7 (<code>export FLASK_APP='connect4.py' flask run</code>).</p>
+
+                <h3 id="Breakdown">Breakdown</h3>
+
+                <ul>
+                    <li>BasicAuth uses hashed passwords: 10%</li>
+                    <li>BasicAuth decorator and helper functions: 5%</li>
+                    <li>Top 10 Highest Grossing Films ordered and presented correctly: 10%</li>
+                    <li>Top 10 by Studio ordered and presented correctly: 10%</li>
+                    <li>Top 10 by Opening Weekend Gross ordered and presented correctly: 10%</li>
+                    <li>Use of <code>map</code>, <code>reduce</code>, <code>filter</code>: 10%</li>
+                    <li>Use of <code>sort</code> without mutating original array: 10%</li>
+                    <li>Use of closure to manage Top 10 studio filtering: 10%</li>
+                    <li>No loops: 10%</li>
+                    <li>Calculated averages using functional programming: 5%</li>
+                    <li>Clear and readable presentation: 5%</li>
+                    <li>Submission/info sheet: 5%</li>
+                </ul>
+
+
+                <p><em>Late assignments will receive zero credit.</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
