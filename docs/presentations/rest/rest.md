@@ -109,6 +109,21 @@ DELETE  http://localhost/projects
 
 -###-
 
+## Collection Methods and Status Code Returns
+
+Collection: `http://localhost/projects`
+
+```markdown
+Method    Code  Result
+------    ----  --------------------
+GET       200   Success
+POST      201   Success (Created)
+PUT       202   Success (Updated)
+DELETE    204   Success (No Content)
+```
+
+-###-
+
 ## Interface to an item in a collection
 
 * `http://example.com/resources/item37`
@@ -122,9 +137,25 @@ DELETE  http://localhost/projects
 ## Interface to an item in a collection
 
 * `POST`
-    * Not generally used
+    * Not generally used, updates parts of an item
 * `DELETE`
     * Delete the addressed member of the collection.
+
+-###-
+
+##
+
+Item: `http://localhost/projects/<project_id>`
+
+```markdown
+Method    Code       Result
+------    ----       --------------------
+GET       200        Success
+POST      202        Success (Updated)
+PUT       201        Success (Created)
+          202        Success (Updated)
+DELETE    204        Success (No Content)
+```
 
 -###-
 
