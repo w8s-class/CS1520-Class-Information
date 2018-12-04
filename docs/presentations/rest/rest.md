@@ -143,7 +143,7 @@ DELETE    204   Success (No Content)
 
 -###-
 
-##
+## Item Methods and Status Code Returns
 
 Item: `http://localhost/projects/<project_id>`
 
