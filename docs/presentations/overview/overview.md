@@ -18,7 +18,7 @@
 ### Todd Waits
 
 * Email: [me@toddwaits.org](mailto:me@toddwaits.org)
-* Slack: <https://cs1520-fall2018.slack.com>
+* Slack: <https://cs1520-spring2019.slack.com>
 * <https://appear.in>
 * Office: 6148
 

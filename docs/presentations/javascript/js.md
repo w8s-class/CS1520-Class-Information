@@ -374,12 +374,8 @@ function compare(a, b) {
 
 ## Javascript is an object-based language
 
-* ~~**NOT** object-oriented~~
 * JavaScirpt meets the [rudimentary definition of object-oriented languages](https://medium.com/@andrea.chiarelli/is-javascript-a-true-oop-language-c87c5b48bdf0)
 * It has and uses objects, but does not support some features necessary for object-oriented languages *in ways you would expect in other, more traditional OOP languages*.
-* ~~E.g., Class inheritance and polymorphism are not supported (As far as we are concerned)~~
-
-*Slide updated Sep. 11, 2018*
 
 -###-
 

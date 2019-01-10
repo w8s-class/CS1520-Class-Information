@@ -8,20 +8,15 @@
 
 | Class                | Class Number  | Location            | Time               |
 |:---------------------|:--------------|:--------------------|:-------------------|
-| Lecture 1            | 28660 & 28663 | A115                | M 5:30-8:15 PM     |
-| Lecture 2            | 19582 & 19581 | CL G24              | T/Th 6:00-7:15 PM  |
-| Recitation Section 1 | 28664 & 28661 | 5505 Sennott Square | F 4:00 - 4:50 PM   |
-| Recitation Section 2 | 28665 & 28662 | 5505 Sennott Square | F 5:00 - 5:50 PM   |
-| Recitation Section 3 | 19588 & 19590 | 5502 Sennott Square | F 10:00 - 10:50 AM |
-| Recitation Section 4 | 19589 & 19591 | 205 Lawrence Hall   | Th 7:30 - 8:20 PM  |
-
+| Lecture              | 27815         | CL G24              | T/Th 6:00-8:30 PM  |
+| Recitation Section 1 | 27816         | 5505 Sennott Square | W 6:00 - 6:50 PM   |
+| Recitation Section 2 | 27817         | 5505 Sennott Square | W 7:00 - 7:50 PM   |
 
 ### Instructor
 
 Todd Waits
 
 * Email: [me@toddwaits.org](mailto:toddwaits.org)
-* Pitt Email: [tow16@pitt.edu](mailto:tow16@pitt.edu)
 * GitHub: [w8s](https://www.github.com/w8s)
 * Twitter: [@toddwaits](https://twitter.com/toddwaits)
 * Web: <http://www.toddwaits.org>
@@ -34,44 +29,17 @@ Do not address me as `Doctor`. You can call me `Mr. Waits` or `Todd`.
 
 #### Office Hours
 
-| Office     | Hours         |
-|:-----------|:--------------|
-| SENSQ 6148 | M 4p-5p       |
-| SENSQ 6148 | T 4:30p-5:30p |
+| Office     | Hours          |
+|:-----------|:---------------|
+| SENSQ 6148 | Th 4:30p-5:30p |
 
 And by appointment.
 
 ### TA
 
-#### Maher Khan
+#### Yue Dai
 
-*Monday Section*
-
-* Email: [maherkhan@pitt.edu](mailto:maherkhan@pitt.edu)
-* GitHub: [maher460](https://www.github.com/maher460)
-* LinkedIn: [maherkhan](https://www.linkedin.com/in/maherkhan/)
-
-| Office     | Hours              |
-|:-----------|:-------------------|
-| SENSQ 5802 |      Th 3p-5p      |
-| SENSQ 5802 |      F 6p-8p       |
-
-And by appointment.
-
-* [Recitation Materials](https://github.com/maher460/Pitt-CS1520-Recitations)
-
-#### Debarun Das
-
-*Tuesday/Thursday Section*
-
-* Email: DED59@pitt.edu
-
-| Office     | Hours              |
-|:-----------|:-------------------|
-| SENSQ 6410 |      Th 4p-6p      |
-| SENSQ 6410 |   F 11:30a-1:30p   |
-
-* [Recitation Materials](https://github.com/debarundas1/Pitt-CS1520_Recitations)
+*Forthcoming*
 
 ### Optional Textbook
 
@@ -107,13 +75,11 @@ Additional participation consideration is given to students who participate in c
 
 **Midterm**
 
-* *Monday Section* Oct. 16, 2018 (Tuesday) - First half of Class (1 hr 15 min)
-* *Tuesday Section* Oct. 11, 2018 (Thursday) - 1 hr 15 min
+* March 7, 2019 During Class (1 hr 15 min)
 
 **Final:**
 
-* *Monday Section* Dec. 13, 2018 (Thursday) - 4:00PM - 5:50PM (1 hr 50 min)
-* *Tuesday Section* Dec. 13, 2018 (Thursday) - 6:00PM - 7:50PM (1 hr 50 min)
+* *Tentative* April 25, 2019 - During Class (2 hr 30 min)
 
 | #  | Date       | Topics                                                | Materials                                                                                                               |
 |:---|:-----------|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
