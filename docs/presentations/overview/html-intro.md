@@ -160,6 +160,30 @@ Note:
 
 -###-
 
+## CSS Specificity
+
+1. Inline Syles (`<p style="color: red">`)
+2. IDs (`<p id="unique">`)
+3. Classes, attributes and pseudo-classes (`<p class="attention">`)
+4. Elements and psuedo-elemnts (`<p>`)
+
+Note:
+* Psuedo classes are things like `:hover`
+* Psuedo elements are things like `:before`
+
+-###-
+
+## Calculating Specificity
+
+* Starting at zero:
+    1. Add 1000 for a style attribute
+    2. Add 100 for each ID
+    3. Add 10 for each attribute, class or psuedo-class
+    4. Add 1 for each element, or psuedo-element.
+* Given three conflicting rules, the rule with the *greater* level of specificity will be applied.
+
+-###-
+
 # Assignment
 
 <!-- .slide: class="section-title" data-background="/lib/images/section-bkg.png" -->
