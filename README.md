@@ -83,12 +83,12 @@ Additional participation consideration is given to students who participate in c
 
 | #  | Date       | Topics                                                | Materials                                                                                                               |
 |:---|:-----------|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
-| 0  | 8/27/2018  | Introduction to the course                            | [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                        |
+| 0  | 1/10/2019  | Introduction to the course                            | [Goals of the course](https://w8s-class.github.io/CS1520-Class-Information/course-overview.html)                        |
 |    |            |                                                       | Brief HTML/CSS overview slides                                                                                          |
 |    |            |                                                       | [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)                                                           |
 |    |            |                                                       | [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                                                             |
 |    |            |                                                       | [Example Source](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/html)                  |
-| 1  | 9/10/2018  | Introduction to client-side scripting with Javascript | [slides](https://w8s-class.github.io/CS1520-Class-Information/js.html)                                                  |
+| 1  | 1/17/2019  | Introduction to client-side scripting with Javascript | [slides](https://w8s-class.github.io/CS1520-Class-Information/js.html)                                                  |
 |    |            |                                                       | [MDN JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)                                                       |
 |    |            |                                                       | [js1](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js1_basic.html)                |
 |    |            |                                                       | [js2](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js2_vars_types.html)           |
@@ -97,7 +97,7 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [js5](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js5_arrays.html)               |
 |    |            |                                                       | [js6](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js6_objects.html)              |
 |    |            |                                                       | [js7](https://github.com/w8s-class/CS1520-Class-Information/tree/master/docs/examples/js/js7_more_objects.html)         |
-| 2  | 9/17/2018  | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                 |
+| 2  | 1/24/2019  | The DOM and Event-driven Programming                  | [slides](https://w8s-class.github.io/CS1520-Class-Information/dom.html)                                                 |
 |    |            |                                                       | [MDN Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)                                               |
 |    |            |                                                       | [MDN DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)                                       |
 |    |            |                                                       | [MDN Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)                                                       |
@@ -109,18 +109,16 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [js9](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js9_more_dom.html)                               |
 |    |            |                                                       | [js10](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js10_danger_dom.html)                           |
 |    |            |                                                       | [js11](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js11_capture_dom.html)                          |
-| 3  | 9/17/2018  | Web Storage                                           | [slides](https://w8s-class.github.io/CS1520-Class-Information/storage.html)                                             |
+| 3  | 1/24/2019  | Web Storage                                           | [slides](https://w8s-class.github.io/CS1520-Class-Information/storage.html)                                             |
 |    |            |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                             |
 |    |            |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)         |
-| 4  | 9/24/2018  | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                               |
+| 4  | 1/31/2019  | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                               |
 |    |            |                                                       | [MDN Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)                    |
 |    |            |                                                       | Javascript examples:                                                                                                    |
 |    |            |                                                       | [js13](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js13_regex.html)                                |
 |    |            |                                                       | [js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)                           |
-| 5  | 10/1/2018  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
-|    |            |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                              |
-| 6  | 10/8/2018  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
-|    |            |                                                       | Tutorial                                                                                                                |
+| 5  | 2/7/2019   | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
+|    | 2/14/2019  |                                                       | Tutorial                                                                                                                |
 |    |            |                                                       | [Language reference](https://docs.python.org/3/reference/index.html)                                                    |
 |    |            |                                                       | [Standard library](https://docs.python.org/3/library/index.html)                                                        |
 |    |            |                                                       | Python examples: [py1](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py1_intro.py)               |
@@ -132,7 +130,9 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo.py">)                                 |
 |    |            |                                                       | [py8](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py8_dec.py)                                  |
 |    |            |                                                       | [py9](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py9_context.py)                              |
-| 7  | 10/16/2018 | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                               |
+| 6  | 2/21/2019  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
+|    |            |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                              |
+| 7  | 2/28/2019  | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                               |
 |    |            |                                                       | [Installation](http://flask.pocoo.org/docs/0.12/installation/)                                                          |
 |    |            |                                                       | [Python 3 note](http://flask.pocoo.org/docs/0.12/python3/#python3-support)                                              |
 |    |            |                                                       | [Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/)                                                              |
@@ -143,14 +143,8 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [fl4](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl4_login.py)                                 |
 |    |            |                                                       | [fl5](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl5_redirect.py)                              |
 |    |            |                                                       | [fl6](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl6_session_login.py)                         |
-| 8  | 10/22/2018 | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
-|    |            |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                         |
-|    |            |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                                 |
-|    |            |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)            |
-|    |            |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                        |
-|    |            |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                                |
-| 9  | 10/22/2018 | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
-|    |            |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
+| 8  | 3/7/2019   | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
+|    | 3/21/2019  |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
 |    |            |                                                       | [Flask-SQLAlchemy quickstart](http://flask-sqlalchemy.pocoo.org/2.3/quickstart/)                                        |
 |    |            |                                                       | [Flask-SQLAlchemy user's guide](http://flask-sqlalchemy.pocoo.org/2.3/)                                                 |
 |    |            |                                                       | [SQLAlchemy column types](http://docs.sqlalchemy.org/en/latest/core/types.html)                                         |
@@ -167,7 +161,13 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [sqlalchemy1](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/sqlalchemy1.zip)                      |
 |    |            |                                                       | [fl11](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl11_flaskr.zip)                             |
 |    |            |                                                       | [fl12](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl12_minitwit.zip)                           |
-| 10 | 10/29/2018 | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
+| 9  | 3/21/2019  | Using Templates to Generate Views in Flask            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-templates.html)                                     |
+|    |            |                                                       | [Jinja2 docs](http://jinja.pocoo.org/docs/2.9/)                                                                         |
+|    |            |                                                       | [Template Inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance)                                 |
+|    |            |                                                       | Flask examples: [fl7](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl7_templates.zip)            |
+|    |            |                                                       | [fl8](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl8_adv_templates.zip)                        |
+|    |            |                                                       | [fl9](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl9_flash.zip)                                |
+| 10 | 3/28/2019  | AJAX, XML, JSON                                       | [slides](https://w8s-class.github.io/CS1520-Class-Information/ajax.html)                                                |
 |    |            |                                                       | [MDN AJAX portal](https://developer.mozilla.org/en-US/docs/AJAX)                                                        |
 |    |            |                                                       | [MDN AJAX quickstart](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)                                    |
 |    |            |                                                       | [MDN JS Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)                                       |
@@ -175,14 +175,14 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [js15](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js15_ajax.html)                                 |
 |    |            |                                                       | [js16](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js16_ajax_in_action.zip)                        |
 |    |            |                                                       | [js17](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js17_ajax_poll.zip)                             |
-| 11 | 11/5/2018  | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                                |
+| 11 | 4/4/2019   | REST, Building RESTful APIs with Flask                | [slides](https://w8s-class.github.io/CS1520-Class-Information/rest.html)                                                |
 |    |            |                                                       | [Extended REST example](https://github.com/w8s-class/flask_api_sample/tree/sqlalchemy)                                  |
 |    |            |                                                       | [PayPal's REST API documentation](https://developer.paypal.com/docs/api/overview/)                                      |
 |    |            |                                                       | [Flask-RESTful documenation](http://flask-restful.readthedocs.io/en/latest/api.html)                                    |
 |    |            |                                                       | [Flask-RESTful installation](http://flask-restful.readthedocs.io/en/latest/installation.html)                           |
 |    |            |                                                       | [Flask-RESTful quickstart](http://flask-restful.readthedocs.io/en/latest/quickstart.html)                               |
 |    |            |                                                       | Flask examples: [fl13](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl13_restful.zip)            |
-| 12 | 11/12/2018 | Functional programming                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/functional.html)                                          |
+| 12 | 4/11/2019  | Functional programming                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/functional.html)                                          |
 |    |            |                                                       | [MDN Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)           |
 |    |            |                                                       | [MDN Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)     |
 |    |            |                                                       | [MDN Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)     |
@@ -196,10 +196,10 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [js19-tuesday-functional](https://w8s-class.github.io/CS1520-Class-Information/examples/js/tuesday-func.js)             |
 |    |            |                                                       | [js20](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js20_closure_motivation.html)                   |
 |    |            |                                                       | [js21](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js21_closure.html)                              |
-| 13 | 11/19/2018 | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                            |
+| 13 | 4/18/2019  | Web security                                          | [slides](https://w8s-class.github.io/CS1520-Class-Information/security.html)                                            |
 |    |            |                                                       | [XSS Wikipedia article](https://en.wikipedia.org/wiki/Cross-site_scripting)                                             |
 |    |            |                                                       | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)                                                      |
-| 14 | 11/19/2018 | Authentication                                        | [slides](https://w8s-class.github.io/CS1520-Class-Information/auth.html)                                                |
+| 14 | 4/18/2019  | Authentication                                        | [slides](https://w8s-class.github.io/CS1520-Class-Information/auth.html)                                                |
 |    |            |                                                       | [MDN HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)                             |
 |    |            |                                                       | [Base64 Encoding](https://en.wikipedia.org/wiki/Base64)                                                                 |
 |    |            |                                                       | [Flask Basic Authentication](https://flask-basicauth.readthedocs.io/en/latest/)                                         |
@@ -207,7 +207,7 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [OpenID](http://openid.net/)                                                                                            |
 |    |            |                                                       | Python examples: [py10](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py10_dec2.py)              |
 |    |            |                                                       | [py11](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py_11vararg.py)                             |
-| 15 | 11/26/2018 | Responsive design                                     | [slides](https://w8s-class.github.io/CS1520-Class-Information/responsive.html)                                          |
+| 15 | TBD        | Responsive design                                     | [slides](https://w8s-class.github.io/CS1520-Class-Information/responsive.html)                                          |
 |    |            |                                                       | [Google Responsive Design Basics](https://developers.google.com/web/fundamentals/design-and-ux/responsive/)             |
 |    |            |                                                       | [MDN viewports](https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport)                                             |
 |    |            |                                                       | [Viewports blog post](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)                        |
@@ -215,7 +215,7 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | CSS examples: [cs1](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs1_resp_inline.html)             |
 |    |            |                                                       | [cs2](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs2_resp_link.html)                             |
 |    |            |                                                       | [cs3](https://w8s-class.github.io/CS1520-Class-Information/examples/css/cs3_resp_import.html)                           |
-| 16 | 12/3/2018  | Progressive web apps, Javascript service workers      | [slides](https://w8s-class.github.io/CS1520-Class-Information/pwa.html)                                                 |
+| 16 | TBD        | Progressive web apps, Javascript service workers      | [slides](https://w8s-class.github.io/CS1520-Class-Information/pwa.html)                                                 |
 |    |            |                                                       | [Google PWA tutorial](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)                        |
 |    |            |                                                       | [MDN Service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)                               |
 |    |            |                                                       | [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)                 |
