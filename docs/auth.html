@@ -58,6 +58,9 @@
             'text': 'CS/COE 1520',
             'link': '.'
         }, {
+            'text': 'Print',
+            'link': '?print-pdf&showNotes=true'
+        }, {
             'text': 'Todd Waits',
             'link': 'http://www.toddwaits.org'
         }]
@@ -68,6 +71,8 @@
         Reveal.initialize({
             center: false,
             controls: false,
+            slideNumber: true,
+            pdfSeparateFragments: false,
             dependencies: [{
                 src: 'plugin/markdown/marked.js'
             }, {

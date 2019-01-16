@@ -16,3 +16,4 @@ docs/js/reveal.min.js
 *.db
 __pycache__
 .vscode
+*.code-workspace

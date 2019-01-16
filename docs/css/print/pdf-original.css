@@ -23,52 +23,6 @@ html {
 	overflow: visible;
 }
 
-/* Pitt Custom Changes */
-
-footer {
-	display: none !important;
-}
-
-div.pdf-page > div.slide-background {
-	display:none !important;
-}
-
-section:not(.title-slide).element-bkg {
-    color: #1c2957;
-    background-color: transparent;
-	padding: 0; 
-}
-section:not(.title-slide).element-bkg h1,
-section:not(.title-slide).element-bkg h2,
-section:not(.title-slide).element-bkg h3,
-section:not(.title-slide).element-bkg h4,
-section:not(.title-slide).element-bkg h5,
-section:not(.title-slide).element-bkg h6 {
-	color: #1c2957 !important; 
-}
-section:not(.title-slide).element-bkg a {
-	  color: #dbcca1; 
-}
-
-section.has-dark-background,
-section.has-dark-background h1,
-section.has-dark-background h2,
-section.has-dark-background h3,
-section.has-dark-background h4,
-section.has-dark-background h5,
-section.has-dark-background h6 {
-  color: #1c2957; }
-
-section.title-slide h1,
-section.title-slide h2,
-section.title-slide h3,
-section.title-slide h4,
-section.title-slide h5,
-section.title-slide h6 {
-  color: #1c2957; }
-
-/* End Custom Changes
-
 /* Remove any elements not needed in print. */
 .nestedarrow,
 .reveal .controls,
