@@ -39,7 +39,13 @@ And by appointment.
 
 #### Yue Dai
 
-*Forthcoming*
+| Office     | Hours          |
+|:-----------|:---------------|
+| SENSQ 5106 | Wed 3:00p-5:00p|
+
+email: yud42@pitt.edu
+
+And by appointment.
 
 ### Optional Textbook
 
