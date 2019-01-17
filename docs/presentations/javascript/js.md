@@ -143,11 +143,12 @@ Note: Does a script tag mean Javascript? Any language the browser can understand
 
 -###-
 
-## ECMAScript 2017
+## ECMAScript 2017 and 2018
 
-* Added `await`/`async` features
+* *2017* Added `await`/`async` features
+* *2018* rest/spread properties, asynchronous iteration, Promise.prototype.finally() and additions to RegExp.
 * Previously, ES added classes, modules, iterators, generators, etc.
-* Browser support is spotty for ES5 (4 versions old)
+* Browser support is modstly complete for ES5 (2009 - 4 versions old)
 * ES5 is more consistent with what we recognize as Javascript.
 
 -###-
