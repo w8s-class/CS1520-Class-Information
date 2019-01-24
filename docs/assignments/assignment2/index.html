@@ -11,7 +11,7 @@
         <div class="container">
             <h1 class="display-3">The Name of the Game is Connect Four</h1>
             <p class="lead">Assignment Two</p>
-            <p class="lead">Due: Friday, February 8 at 11:59.999999 pm</p>
+            <p class="lead">Due: Friday, February 15 at 11:59.999999 pm</p>
             <p class="lead">100 Points</p>
             <hr class="my-4">
             <p>Gain experience building interactive, client-side web applications using JavaScript and the DOM.</p>
@@ -56,27 +56,23 @@
                 <p class="lead">These are the base requirements for making the page work. You can enhance. You cannot use external libraries like jQuery for this project.</p>
 
                 <ul>
-                    <li>When the page is loaded, your game should begin by asking the first player for her name (for example, lets assume that the first player is Alice), and a string representing their birthday. The board should not be displayed.
+                    <li>When the page is loaded, your game should begin by asking the first player for her name (for example, let's assume that the first player is Alice), and a string representing their birthday. The board should not be displayed.
 
                         <ul>
                             <li>Your game should be flexible in accepting the multiple date formats.
 
                                 <ul>
-                                    <li><code>MM/DD/YYYY</code></li>
-                                    <li><code>M/D/YYYY</code></li>
-                                    <li><code>M/D/YY</code></li>
-                                    <li><code>MM-DD-YYYY</code></li>
-                                    <li><code>M-D-YYYY</code></li>
-                                    <li><code>M-D-YY</code></li>
-                                    <li><code>MMM. DD, YYYY</code></li>
-                                    <li><code>MMM. D, YYYY</code></li>
-                                    <li><code>MMM. D, YY</code></li>
-                                    <li><code>MMMMMM DD, YYYY</code> - <em>i.e. January, February, etc.</em></li>
-                                    <li><code>MMMMMM DD, YYYY</code> - <em>i.e. January, February, etc.</em></li>
-                                    <li><code>MMMMMM D, YY</code> - <em>i.e. January, February, etc.</em></li>
+                                    <li><code>MM/DD/YYYY</code> - <em>i.e. 01/01/2019</em></li>
+                                    <li><code>M/D/YYYY</code> - <em>i.e. 1/1/2019</em></li>
+                                    <li><code>MM-DD-YYYY</code> - <em>i.e. 01-01-2019</em></li>
+                                    <li><code>M-D-YYYY</code> - <em>i.e. 1-1-2019</em></li>
+                                    <li><code>MMM. DD, YYYY</code> - <em>i.e. Jan. 01, 2019</em></li>
+                                    <li><code>MMM. D, YYYY</code> - <em>i.e. Jan. 1, 2019</em></li>
+                                    <li><code>MMMMMM DD, YYYY</code> - <em>i.e. January 01, 2019</em></li>
+                                    <li><code>MMMMMM D, YYYY</code> - <em>i.e. January 1, 2019</em></li>
                                 </ul>
                             </li>
-                            <li>Use a regex function to validate the strings, and split the string into three variables representing Day, Month, and Year.</li>
+                            <li>Use a regex function to validate the strings, <em>and</em> split the string into three variables representing Day, Month, and Year.</li>
                             <li>Set the player&rsquo;s birthday attribute as a JavaScript Date object constructed from the three variables.</li>
                         </ul>
                     </li>
@@ -86,9 +82,8 @@
                     <li>With this starting information in hand, your game should begin the first player&rsquo;s turn
 
                         <ul>
-                            <li>At the start of a turn, your game should pop up an alert indicating whose turn it is by name (e.g., &ldquo;Click OK to begin Alice&rsquo;s turn&rdquo;).</li>
+                            <li>At the start of a turn, your game should use a dialog (you may use <code>alert()</code>, but you do not have to) indicating whose turn it is by name (e.g., &ldquo;Click OK to begin Alice&rsquo;s turn&rdquo;).</li>
                             <li>After the prompt is dismissed, your game should render one 7x6 grid created dynamically with JavaScript.
-
                                 <ul>
                                     <li>The grid should have a yellow background and blue border.</li>
                                     <li>Empty cells should have a white circle using the image from the starter repo located at <code>/images/white-circle.png</code>.</li>
@@ -97,21 +92,12 @@
                             <li>The count of remaining tokens for player one should be displayed on the left of the board.</li>
                             <li>The count of remaining tokens for player two should be displayed on the right of the board.</li>
                             <li>The player is then free to click a column to place their token.
-
                                 <ul>
-                                    <li>Clicks on the cells should have no effect.</li>
+                                    <li>The token should occupy the lowest available cell in the column.</li>
                                     <li>When a player places a token, the cell the token occupies should contain a circle referencing the player&rsquo;s token color: <code>/images/red-circle.png</code> and <code>/images/black-circle.png</code>.</li>
-                                    <li>The game should pop up an alert to inform the player how many tokens are left to reach a connect four (e.g. &ldquo;Alice needs two tokens to Connect Four!&rdquo;).
-
-                                        <ul>
-                                            <li>The count should only count viable options.</li>
-                                            <li>For example, if a player places two tokens (2 tokens left), but the connect four is blocked by the other player, the count should reset to the count of the next best possible connect 4 (e.g. &ldquo;Alice needs
-                                                three tokens to Connect Four!&rdquo;).</li>
-                                        </ul>
-                                    </li>
-                                    <li>If the player clicks on a column where no tokens can be placed, an alert should tell them the column is full.</li>
+                                    <li>If the player clicks on a column where no tokens can be placed, a dialog should tell them the column is full.</li>
                                     <li>Once a token is placed, the remaining tokens should be decremented by one.</li>
-                                    <li>After the player has placed their token, and the token count alert has been displayed, the player&rsquo;s turn is ended and the other player&rsquo;s turn should begin with a popup (e.g., &ldquo;Click to begin Bob&rsquo;s
+                                    <li>After the player has placed their token, the player&rsquo;s turn is ended and the other player&rsquo;s turn should begin with a dialog (e.g., &ldquo;Click to begin Bob&rsquo;s
                                         turn&rdquo;).
                                     </li>
                                 </ul>
@@ -120,10 +106,14 @@
                     </li>
                     <li>The game continues until one player achieves a Connect Four. The player who achieves a Connect Four is alerted with a message that they won (i.e. &ldquo;Congratulations! Alice won in <code>insert game duration here</code>!&rdquo;).
                         <ul>
-                            <li>Your game should keep track of the names and game durations of the 10 fastest games in local storage.</li>
-                            <li>Only update local storage if 10 slots have not been filled, or a duration is beats any time currently tracked in local storage.</li>
+                            <li>Your game should keep track of the names and game durations of the 10 fastest games in local storage.
+                                <ul>
+                                    <li>Consider using an <code>Array</code> of JavaScript <code>Objects</code> (i.e. <code>[ { key: value } ]</code>)</li>
+                                </ul>
+                            </li>
+                            <li>Only update local storage if there are less than or equal to 10 entries, or the duration of the game beats any time currently tracked in local storage.</li>
                             <li>When the game is over, remove the board and display the top 10 list.</li>
-                            <li>Empty values should render <code>&lt;Empty&gt;</code>.</li>
+                            <li>Empty values should render <code>--</code> in the listing.</li>
                             <li>Include a button to start a new game.</li>
                             <li>Starting a new game removes the score listing.</li>
                         </ul>
@@ -136,6 +126,7 @@
                     <li>You must name the main page for your game <code>connect-four.html</code>, and place it in the root directory of your repository.</li>
                     <li>Be sure to remember to push the latest copy of your code back to your GitHub repository before the the assignment is due. At the deadline, the repositories will automatically be copied for grading. Whatever is present in your GitHub
                         repository at that time will be considered your submission for this assignment.</li>
+                    <li>This should all be done with a single <code>connect-four.html</code> file. You may use multiple JavaScript files, but the entire application should work on a single <code>html</code> file.</li>
                     <li>Files included in the starter repo:
 
                         <ul>
