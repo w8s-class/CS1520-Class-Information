@@ -1,4 +1,4 @@
-# Syllabus and Course Information CS/COE 1520 Fall 2018
+# Syllabus and Course Information CS/COE 1520 Spring 2019
 
 * [Slides](https://w8s-class.github.io/CS1520-Class-Information/)
 * [Assignments](https://w8s-class.github.io/CS1520-Class-Information/assignments/)
