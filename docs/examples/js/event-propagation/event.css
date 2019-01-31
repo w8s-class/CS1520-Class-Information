@@ -1,0 +1,56 @@
+dl dt {
+    font-weight: bold;
+}
+
+dl dt:not(:first-child) {
+    margin-top: .5em;
+}
+
+dl dd {
+    margin-left: 1em;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+div#animate {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+div.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: white;
+}
+
+div.circle span {
+    text-align: center;
+    display: block;
+}
+
+div.circle span.capture-false::after {
+    content: "F";
+    font-size: .8em;
+    background-color: blue;
+    color: white;
+    border-radius: 10%;
+    margin: 3px;
+    padding: 2px;
+}
+
+div.circle span.capture-true::before {
+    content: "T";
+    font-size: .8em;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
+    margin: 3px;
+    padding: 2px;
+}

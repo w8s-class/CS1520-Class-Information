@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <link rel="stylesheet" type="text/css" href="event.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Event Propagation</h1>
+    <div class="content">
+        <button onclick="animateCapturePhase()">Capture Phase</button>
+        <button onclick="animateBubblePhase()">Bubble Phase</button>
+        <select id="element-choice"></select>
+        <div id="info"></div>
+        <div id="animate">
+
+        </div>
+        <div>
+            <h3>Order</h3>
+            <ol id="event-order"></ol>
+        </div>
+    </div>
+    <h2>Elements with Events</h2>
+    <div id="samples">
+        <p id="paragraph-sample">Sample Text</p>
+        <div id="div-sample">
+            <div id="nested-div-one"><span id="span-one">One</span></div>
+            <div id="nested-div-two"><span id="span-two">Two</span></div>
+            <div id="nested-div-three"><span id="span-three">Three</span></div>
+        </div>
+    </div>
+    <script>
+        var select = document.getElementById('element-choice');
+
+        // Event Listeners
+
+        addEventListenerWrapper(document.querySelector('#samples'), 'click',
+            function(e) {
+                select.value = e.currentTarget.id;
+                select.dispatchEvent(new Event('change'));
+                console.log(e.currentTarget.tagName);
+            }, false);
+
+        addEventListenerWrapper(document.getElementById('paragraph-sample'), 'click',
+            function(e) {
+                select.value = e.currentTarget.id;
+                select.dispatchEvent(new Event('change'));
+                console.log(e.currentTarget.tagName);
+            }, false);
+
+        addEventListenerWrapper(document.getElementById('div-sample'), 'click',
+            function(e) {
+                select.value = e.currentTarget.id;
+                select.dispatchEvent(new Event('change'));
+                console.log(e.currentTarget.tagName);
+            }, true);
+
+        addEventListenerWrapper(document.querySelector('#div-sample div'), 'click',
+            function(e) {
+                select.value = e.currentTarget.id;
+                select.dispatchEvent(new Event('change'));
+                console.log(e.currentTarget.tagName);
+            }, true);
+
+        addEventListenerWrapper(document.querySelector('#div-sample div span'), 'click',
+            function(e) {
+                select.value = e.currentTarget.id;
+                select.dispatchEvent(new Event('change'));
+                console.log(e.currentTarget.tagName);
+            }, false);
+
+
+
+
+
+        // Info Display
+
+        select.addEventListener('change', function(e) {
+            var elInfo = document.getElementById("info");
+            elInfo.innerHTML = "";
+            var ei = state.filter(getStateElement(e.currentTarget.selectedOptions[0].value))[0];
+            var dl = document.createElement('dl');
+
+            var tagDef = createDefinitionTerm("Element", ei.tag + "#" + ei.id);
+            dl.appendChild(tagDef[0]);
+            dl.appendChild(tagDef[1]);
+
+            tagDef = createDefinitionTerm("Parents", ei.getParentString());
+            dl.appendChild(tagDef[0]);
+            dl.appendChild(tagDef[1]);
+
+            tagDef = createDefinitionTerm("Listeners", ei.getListenerString());
+            dl.appendChild(tagDef[0]);
+            dl.appendChild(tagDef[1]);
+
+            elInfo.appendChild(dl);
+
+            buildAnimation();
+            //init(ei);
+        }, true);
+
+        state.forEach(function(item) {
+            var opt = document.createElement('option');
+            opt.text = item.tag + "#" + item.id;
+            opt.value = item.id;
+            select.add(opt);
+        });
+
+        select.dispatchEvent(new Event('change'));
+
+        // Animate
+
+        function buildAnimation() {
+            var obj = state.filter(getStateElement(select.selectedOptions[0].value))[0];
+            var animationDiv = document.getElementById('animate');
+            animationDiv.innerHTML = "";
+            var maxWidth = 300;
+            var widthStep = maxWidth / obj.parents.length;
+            for (var i = 0; i < obj.parents.length; i++) {
+                var cir = document.createElement('div');
+                cir.classList.add('circle');
+                var curWidth = maxWidth - (i * widthStep);
+                var pos = (maxWidth - curWidth) / 2;
+                cir.setAttribute("style", "width: " + curWidth + "px; height: " + curWidth + "px; top: " + pos + "px; left: " + pos + "px;");
+                cir.dataset.tag = obj.parents[i].tag;
+                var info = document.createElement("span");
+                info.textContent = obj.parents[i].tag;
+                info.setAttribute('style', 'margin-top:' + widthStep / 8 + 'px;');
+                if (typeof obj.parents[i].getCapture() === 'boolean' && obj.parents[i].getCapture()) {
+                    info.classList.add('capture-true');
+                } else if (typeof obj.parents[i].getCapture() === 'boolean' && !obj.parents[i].getCapture()) {
+                    info.classList.add('capture-false');
+                }
+                cir.appendChild(info);
+                animationDiv.appendChild(cir);
+            }
+        }
+        buildAnimation();
+
+        // Animation
+
+
+        /*
+
+                function draw() {
+                    var ctx = document.getElementById('canvas').getContext('2d');
+                    ctx.globalCompositeOperation = 'destination-over';
+                    ctx.clearRect(0, 0, 300, 300); // clear canvas
+                    var maxWidth = 105
+                    for (var i = 0; i < animationElement.parents.length; i++) {
+                        var width = maxWidth - (i * (100 / animationElement.parents.length))
+                        ctx.beginPath();
+                        ctx.arc(150, 150, width, 0, Math.PI * 2, false);
+                        ctx.stroke();
+                        ctx.fillText(animationElement.parents[i].tag, (150 - (width - 3)), 150);
+                        if (typeof animationElement.parents[i].getCapture() === 'boolean' && animationElement.parents[i].getCapture()) {
+                            ctx.fillText("T", (150 - (width - 6)), 165);
+                        } else if (typeof animationElement.parents[i].getCapture() === 'boolean' && !animationElement.parents[i].getCapture()) {
+                            ctx.fillText("F", (150 - (width - 6)), 135);
+                        }
+                    }
+                    ctx.save();
+
+
+                    //window.requestAnimationFrame(draw);
+                }
+
+                function calcWaypoints(verts) {
+                    var waypoints = [];
+                    for (var i = 1; i < verts.length; i++) {
+                        var pt0 = verts[i - 1];
+                        var pt1 = verts[i];
+                        var dx = pt1.x - pt0.x;
+                        var dy = pt1.y - pt0.y;
+                        for (var j = 0; j < 100; j++) {
+                            var x = pt0.x + dx * j / 100;
+                            var y = pt0.y + dy * j / 100;
+                            waypoints.push({
+                                x: x,
+                                y: y
+                            });
+                        }
+                    }
+                    return (waypoints);
+                }
+
+                function animate(ps) {
+                    return function() {
+                        var ctx = document.getElementById('canvas').getContext('2d');
+
+                        if (t < ps.length - 1) {
+                            requestAnimationFrame(animate(ps));
+                        } else {
+                            t = 1;
+                        }
+                        // draw a line segment from the last waypoint
+                        // to the current waypoint
+                        ctx.beginPath();
+                        ctx.moveTo(ps[t - 1].x, ps[t - 1].y);
+                        ctx.lineTo(ps[t].x, ps[t].y);
+                        ctx.stroke();
+                        // increment "t" to get the next waypoint
+                        t++;
+                    }
+                }
+
+                function init(ei) {
+                    var ctx = document.getElementById('canvas').getContext('2d');
+
+                    animationElement = ei;
+                    window.requestAnimationFrame(draw);
+                    var points = [{
+                        x: 0,
+                        y: 190
+                    }, {
+                        x: 170,
+                        y: 190
+                    }, {
+                        x: 170,
+                        y: 110
+                    }, {
+                        x: 0,
+                        y: 110
+                    }, ]
+                    var wp = calcWaypoints(points);
+                    window.requestAnimationFrame(animate(wp));
+                }
+                */
+    </script>
+
+</body>
+
+</html>
