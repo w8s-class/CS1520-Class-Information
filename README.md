@@ -119,12 +119,14 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [MDN Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)                                             |
 |    |            |                                                       | Javascript examples: [js12](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js12_storage.html)         |
 | 4  | 1/31/2019  | Regular Expressions                                   | [slides](https://w8s-class.github.io/CS1520-Class-Information/regex.html)                                               |
-|    |            |                                                       | [MDN Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)                    |
+|    | 2/7/2019   |                                                       | [MDN Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)                    |
 |    |            |                                                       | Javascript examples:                                                                                                    |
 |    |            |                                                       | [js13](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js13_regex.html)                                |
 |    |            |                                                       | [js14](https://w8s-class.github.io/CS1520-Class-Information/examples/js/js14_more_regex.html)                           |
-| 5  | 2/7/2019   | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
-|    | 2/14/2019  |                                                       | Tutorial                                                                                                                |
+| 5  | 2/14/2019  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
+|    |            |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                              |
+| 6  | 2/21/2019  | Python                                                | [slides](https://w8s-class.github.io/CS1520-Class-Information/python.html)                                              |
+|    | 2/28/2019  |                                                       | Tutorial                                                                                                                |
 |    |            |                                                       | [Language reference](https://docs.python.org/3/reference/index.html)                                                    |
 |    |            |                                                       | [Standard library](https://docs.python.org/3/library/index.html)                                                        |
 |    |            |                                                       | Python examples: [py1](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py1_intro.py)               |
@@ -136,8 +138,6 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [py7](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py7_oo.py">)                                 |
 |    |            |                                                       | [py8](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py8_dec.py)                                  |
 |    |            |                                                       | [py9](https://w8s-class.github.io/CS1520-Class-Information/examples/python/py9_context.py)                              |
-| 6  | 2/21/2019  | HTTP Overview and Introduction to Networking          | [slides](https://w8s-class.github.io/CS1520-Class-Information/http.html)                                                |
-|    |            |                                                       | [MDN HTTP codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                              |
 | 7  | 2/28/2019  | Server-side scripting with Flask                      | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask.html)                                               |
 |    |            |                                                       | [Installation](http://flask.pocoo.org/docs/0.12/installation/)                                                          |
 |    |            |                                                       | [Python 3 note](http://flask.pocoo.org/docs/0.12/python3/#python3-support)                                              |
@@ -149,8 +149,8 @@ Additional participation consideration is given to students who participate in c
 |    |            |                                                       | [fl4](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl4_login.py)                                 |
 |    |            |                                                       | [fl5](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl5_redirect.py)                              |
 |    |            |                                                       | [fl6](https://w8s-class.github.io/CS1520-Class-Information/examples/flask/fl6_session_login.py)                         |
-| 8  | 3/7/2019   | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
-|    | 3/21/2019  |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
+| 8  | 3/21/2019  | Developing Models in Flask                            | [slides](https://w8s-class.github.io/CS1520-Class-Information/flask-models.html)                                        |
+|    |            |                                                       | [SQLAlchemy install guide](http://docs.sqlalchemy.org/en/latest/intro.html#installation-guide)                          |
 |    |            |                                                       | [Flask-SQLAlchemy quickstart](http://flask-sqlalchemy.pocoo.org/2.3/quickstart/)                                        |
 |    |            |                                                       | [Flask-SQLAlchemy user's guide](http://flask-sqlalchemy.pocoo.org/2.3/)                                                 |
 |    |            |                                                       | [SQLAlchemy column types](http://docs.sqlalchemy.org/en/latest/core/types.html)                                         |
