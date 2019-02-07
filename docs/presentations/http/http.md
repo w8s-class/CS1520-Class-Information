@@ -224,6 +224,9 @@ Accept-Ranges: bytes
 
 ## Works in Theory
 
+<!-- .slide: class="element-bkg" -->
+<!-- .slide: data-background-image="https://media.tenor.com/images/06681b2ec4eb5ac1873c90d01f9a097e/tenor.gif" -->
+
 > In theory, there is no difference between theory and practice.
 
 **Yogi Berra**
@@ -232,14 +235,18 @@ Accept-Ranges: bytes
 
 ## Breaks in Practice
 
-<!-- .slide: class="element-bkg" -->
-<!-- .slide: data-background-image="https://media.tenor.com/images/06681b2ec4eb5ac1873c90d01f9a097e/tenor.gif" -->
+```plain
+scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+```
 
-* `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`
 * The URL **query string** can be used to affect server state
-* `http://example.com/storefront?user=nick&newitem=laptop`
-    * Could be used by the example.com webstore app to have me request to buy a laptop
-    * This is BAD
+
+```plain
+http://example.com/storefront?user=nick&newitem=laptop
+```
+
+* Could be used by the example.com webstore app to have me request to buy a laptop
+* This is BAD
 
 -###-
 
