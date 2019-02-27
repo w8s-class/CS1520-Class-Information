@@ -2,7 +2,7 @@ from flask import Flask, request, abort, url_for, redirect
 
 app = Flask(__name__)
 
-users = {"alice":"qwert", "bob":"asdfg", "charlie":"zxcvb"}
+users = {"alice": "qwert", "bob": "asdfg", "charlie": "zxcvb"}
 
 loginPage = """<!DOCTYPE html>
 <html>
@@ -46,29 +46,31 @@ otherProfile = """<!DOCTYPE html>
 
 @app.route("/")
 def default():
-	return redirect(url_for("login"))
-	
+    return redirect(url_for("login"))
+
+
 @app.route("/login/")
 def login():
-	return loginPage.format(url=url_for("profile"))
+    return loginPage.format(url=url_for("profile"))
+
 
 @app.route("/profile/", methods=["GET", "POST"])
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username=None):
-	if request.method == "POST":
-		if users[request.form["user"]] == request.form["pass"]:
-			return curProfile
-		elif request.form["user"] in users:
-			return redirect(url_for("profile", username=request.form["user"]))
-		else:
-			abort(401)
+    if request.method == "POST":
+        if users[request.form["user"]] == request.form["pass"]:
+            return curProfile
+        elif request.form["user"] in users:
+            return redirect(url_for("profile", username=request.form["user"]))
+        else:
+            abort(401)
 
-	else:
-		if username and username in users:
-			return otherProfile.format(user=username)
-		else:
-			abort(404)
-	
-	
+    else:
+        if username and username in users:
+            return otherProfile.format(user=username)
+        else:
+            abort(404)
+
+
 if __name__ == "__main__":
-	app.run()
+    app.run()
