@@ -307,8 +307,21 @@ section:not(.title-slide) {
     font-weight: 400;
     text-transform: none;
     margin-bottom: .6em; }
+    section:not(.title-slide) h1 code,
+    section:not(.title-slide) h2 code,
+    section:not(.title-slide) h3 code,
+    section:not(.title-slide) h4 code,
+    section:not(.title-slide) h5 code,
+    section:not(.title-slide) h6 code {
+      color: #1c2957;
+      background-color: rgba(205, 184, 124, 0.3);
+      padding: .1em .2em; }
   section:not(.title-slide) ul > li ul {
     font-size: .9em; }
+  section:not(.title-slide) ul > li code {
+    color: #1c2957;
+    background-color: rgba(205, 184, 124, 0.3);
+    padding: .1em .2em; }
   section:not(.title-slide) pre {
     width: 100%; }
   section:not(.title-slide) img {
