@@ -10,7 +10,7 @@ loginPage = """<!DOCTYPE html>
 		<title>Basic form</title>
 	</head>
 	<body>
-		<form action="{}" method="post">
+		<form action="{url}" method="post">
 			Username:  <input type="text" name="user" />
 			<br />
 			Password:  <input type="text" name="pass" />
@@ -35,10 +35,10 @@ curProfile = """<!DOCTYPE html>
 otherProfile = """<!DOCTYPE html>
 <html>
 	<head>
-		<title>{0}'s profile!</title>
+		<title>{user}'s profile!</title>
 	</head>
 	<body>
-		This is {0}'s profile page.
+		This is {user}'s profile page.
 	</body>
 </html>
 """
@@ -50,7 +50,7 @@ def default():
 	
 @app.route("/login/")
 def login():
-	return loginPage.format(url_for("profile"))
+	return loginPage.format(url=url_for("profile"))
 
 @app.route("/profile/", methods=["GET", "POST"])
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -65,7 +65,7 @@ def profile(username=None):
 
 	else:
 		if username and username in users:
-			return otherProfile.format(username)
+			return otherProfile.format(user=username)
 		else:
 			abort(404)
 	
