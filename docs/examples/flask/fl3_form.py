@@ -26,9 +26,9 @@ presentpage = """<!DOCTYPE html>
 		<title>Present data!</title>
 	</head>
 	<body>
-		You entered this number:  {}
+		You entered this number:  {number}
 		<br />
-		You entered this string:  {}
+		You entered this string:  {string}
 	</body>
 </html>
 """
@@ -36,7 +36,7 @@ presentpage = """<!DOCTYPE html>
 @app.route("/", methods=['GET', 'POST'])
 def form():
 	if request.method == 'POST':
-		return presentpage.format(request.form["anumber"], request.form["astring"])
+		return presentpage.format(number=request.form["anumber"], string=request.form["astring"])
 	else:
 		return formpage 
 	
