@@ -28,7 +28,7 @@ curProfile = """<!DOCTYPE html>
 	</head>
 	<body>
 		Welcome back!
-		<a href="{}">click here to logout</a>
+		<a href="{logout_url}">click here to logout</a>
 	</body>
 </html>
 """
@@ -36,10 +36,10 @@ curProfile = """<!DOCTYPE html>
 otherProfile = """<!DOCTYPE html>
 <html>
 	<head>
-		<title>{0}'s profile!</title>
+		<title>{user}'s profile!</title>
 	</head>
 	<body>
-		This is {0}'s profile page.
+		This is {user}'s profile page.
 	</body>
 </html>
 """
@@ -90,9 +90,9 @@ def profile(username=None):
 	elif username in users:
 		# if specified, check to handle users looking up their own profile
 		if "username" in session and session["username"] == username:
-			return curProfile.format(url_for("unlogger"))
+			return curProfile.format(logout_url=url_for("unlogger"))
 		else:
-			return otherProfile.format(username)
+			return otherProfile.format(user=username)
 			
 	else:
 		# cant find profile
