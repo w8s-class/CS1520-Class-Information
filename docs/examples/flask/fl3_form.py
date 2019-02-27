@@ -33,12 +33,16 @@ presentpage = """<!DOCTYPE html>
 </html>
 """
 
-@app.route("/", methods=['GET', 'POST'])
+
+@app.route("/", methods=["GET", "POST"])
 def form():
-	if request.method == 'POST':
-		return presentpage.format(number=request.form["anumber"], string=request.form["astring"])
-	else:
-		return formpage 
-	
+    if request.method == "POST":
+        return presentpage.format(
+            number=request.form["anumber"], string=request.form["astring"]
+        )
+    else:
+        return formpage
+
+
 if __name__ == "__main__":
-	app.run()
+    app.run()
