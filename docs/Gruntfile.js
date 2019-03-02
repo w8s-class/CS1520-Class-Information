@@ -140,7 +140,7 @@ module.exports = function(grunt) {
 				files: root.map(path => path + '/*.html').concat(['assignments/**/*.html'])
 			},
 			markdown: {
-				files: root.map(path => path + '/*.md')
+				files: root.map(path => path + '/*.md').concat(['presentations/**/*.md'])
 			},
 			options: {
 				livereload: true
