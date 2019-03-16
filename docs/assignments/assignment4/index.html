@@ -149,8 +149,27 @@
 
                 <h3 id="Additional-Notes%2FHints">Additional Notes/Hints</h3>
                 <ul>
+                    <li>Since we covered Flask already, I highly recommend setting up some dummy routes you will need that will, at the very least, return "Hello World" to make sure you can get Flask working.</li>
                     <li>You may find it handy to use the HTML <code>date</code> input type for appointment scheduling.</li>
-                    <li>I recommend creating a development bootstrapping script that allows you to delete and recreate a database with an Owner, Stylists, and Patrons, with some appointments to make development and debugging easier.</li>
+                    <li>I recommend creating a development bootstrapping Flask cli command that allows you to delete and recreate a database with an Owner, Stylists, and Patrons, with some appointments to make development and debugging easier.
+                        <ul>
+                            <li>Consider using <a href="https://docs.python.org/3/library/datetime.html" target="_blank"><code>datetime.datetime.now()</code></a> for appointment time generation so you don't have to worry about resetting appointment times for the as time passes.</li>
+                            <li>Also, <a href="https://docs.python.org/3/library/datetime.html#timedelta-objects" target="_blank"><code>timedelta</code></a> provides a way to simply perform math on dates.
+                                <ul>
+                                    <li><em>In addition to the operations listed above timedelta objects support certain additions and subtractions with date and datetime objects.</em></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Model relationships are <strong>your friend</strong>!!! Use them to tie the patrons and stylist together through appointments.
+                        <ul>
+                            <li>I recommend creating another object to handle the appointments that contain pointers to the datetime, stylist, and patron.</li>
+                            <li>SQLAlchemy query filters can be used to get the exact data you need.</li>
+                        </ul>
+                    </li>
+                    <li>Get familiar with using <code>GET</code> and <code>POST</code> in your routes to handle object creation and persistence.</li>
+                    <li>Use a SQL visualization tool to help inspect the database. Many IDEs include built-in SQLite tools (VS Code, PyCharm, etc.)</li>
+                    <li>Since we do not use a textbook, use the documentation links to dig into the features you will need to use. If an approach feels to complicated/complex for what you are trying to do, it probably is.</li>
                     <li>While you are not going to be heavily graded on the style and design of your web site, it should be presented in a clear and readable manner.</li>
                 </ul>
 
