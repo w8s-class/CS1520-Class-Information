@@ -153,6 +153,10 @@ Here it comes!!!
 
 * An extension, so must be imported on its own:
 
+```bash
+pip install Flask-SQLAlchemy
+```
+
 ```python
 from flask_sqlalchemy import SQLAlchemy
 ```
