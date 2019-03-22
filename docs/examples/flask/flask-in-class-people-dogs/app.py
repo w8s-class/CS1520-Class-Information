@@ -1,0 +1,109 @@
+from flask import Flask, render_template, abort, flash
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.secret_key = "This is a bad key"
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///intro.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+db = SQLAlchemy(app)
+
+person_to_dog_join = db.Table("person_to_dog_join",
+    db.Column("person_id", db.Integer(), db.ForeignKey("person.id")),
+    db.Column("dog_id", db.Integer(), db.ForeignKey("dog.id"))
+)
+
+
+class Person(db.Model):
+    id = db.Column(db.Integer(), primary_key=True)
+    name = db.Column(db.String(20))
+    movie = db.Column(db.String(255))
+    dogs = db.relationship(
+        "Dog", 
+        secondary=person_to_dog_join,
+        backref="owners", 
+        lazy="select"
+    )
+
+    def __init__(self, name, movie):
+        self.name = name
+        self.movie = movie
+
+
+class Dog(db.Model):
+    id = db.Column(db.Integer(), primary_key=True)
+    name = db.Column(db.String(20))
+
+    def __init__(self, name):
+        self.name = name
+
+
+people = [
+    {
+        "name": "Todd",
+        "movie": "Harold and Maude",
+        "dogs": [
+            {"name": "Peppa", "breed": "Golden Doodle"},
+            {"name": "Wesley", "breed": "Schnoodle"},
+        ],
+    },
+    {
+        "name": "Liz",
+        "movie": "The Music Man",
+        "dogs": [
+            {"name": "Peppa", "breed": "Golden Doodle"},
+            {"name": "Wesley", "breed": "Schnoodle"},
+        ],
+    },
+    {
+        "name": "Aaron",
+        "movie": "Fire Walk with Me",
+        "dogs": [{"name": "Arlo", "breed": "Chihuahua"}],
+    },
+]
+
+
+@app.route("/")
+def hello():
+    dogs = Dog.query.all()
+    return render_template('base.html', dogs=dogs)
+
+
+@app.route("/<name>/")
+def profile(name):
+    flash("This is the profile page!")
+    p = [p for p in people if p["name"] == name]
+    if len(p) < 1:
+        return abort(404)
+    return render_template("profile.html", person=p[0])
+
+
+@app.cli.command("initdb")
+def init_db():
+    """Initialize the database"""
+    db.drop_all()
+    db.create_all()
+
+@app.cli.command("devdata")
+def bootstrap_data():
+    p = Person("Todd", "Harold and Maude")
+    l = Person("Liz", "The Music Man")
+    d = Dog("Peppa")
+    w = Dog("Wesley")
+
+    p.dogs.append(d)
+    p.dogs.append(w)
+
+    d.owners.append(l)
+    w.owners.append(l)
+
+    db.session.add(d)
+    db.session.add(w)
+    db.session.add(p)
+    db.session.add(l)
+    db.session.commit()
+
+
+if __name__ == "__main__":
+    app.run()
