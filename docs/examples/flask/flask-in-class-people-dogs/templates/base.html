@@ -20,14 +20,16 @@
 
 <h1>People and Dogs</h1>
 
+<a href="{{ url_for('add_dog') }}">Add a Dog</a>
+
 {% if dogs %}
     <ul>
     {% for dog in dogs%}
-    <li>{{dog.name}}
-        {% if dog.owners %}
+    <li><a href="{{ url_for('profile', id=dog.id, name=dog.name) }}">{{dog.name}}</a>
+        {% if dog.owners.filter_by(name="Todd") %}
         <ul>
-            {% for person in dog.owners %}
-                <li>{{ person.name }}</li>
+            {% for person in dog.owners.filter_by(name="Todd") %}
+                <li>{{ person.name }} -- {{person.movie}}</li>
             {% endfor %}
         </ul>
         {% endif %}

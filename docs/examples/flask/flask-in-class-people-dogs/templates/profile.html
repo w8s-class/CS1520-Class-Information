@@ -1,5 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{person.name}}</h1>
+<h1>{{dog.name}}</h1>
+
+<h2>My Owners</h2>
+
+<blockquote>They didn't rescue me, I rescued them.</blockquote>
+
+{% if dog.owners %}
+<ul>
+{% for o in dog.owners %}
+    <li>{{ o.name }} -- {{ o.movie }} 
+        <ul>
+        {% for d in o.dogs %}
+            <li>{{ d.name }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>I am not loved. Or I am dead.</li>
+{% endif %}
+
 {% endblock %}

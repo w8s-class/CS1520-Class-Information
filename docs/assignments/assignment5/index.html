@@ -11,8 +11,8 @@
         <div class="container">
             <h1 class="display-3">Connect 4 II: The Revenge</h1>
             <p class="lead">Assignment Five</p>
-            <p class="lead">Due: Friday, April 12 at 11:59.999999 pm</p>
-            <p class="lead">200 Points</p>
+            <p class="lead">Due: Sunday, April 21 at 11:59.999999 pm</p>
+            <p class="lead">300 Points</p>
             <hr class="my-4">
             <p>Work with XmlHttpRequest to create a &ldquo;real-time&rdquo; multiplayer Connect 4 game.</p>
         </div>
@@ -26,7 +26,7 @@
                     <a class="list-group-item list-group-item-action" href="../assignment3/index.html">Assignment Three</a>
                     <a class="list-group-item list-group-item-action" href="../assignment4/index.html">Assignment Four</a>
                     <a class="list-group-item list-group-item-action active" href="../assignment5/index.html">Assignment Five</a>
-                    <a class="list-group-item list-group-item-action" href="../assignment6/index.html">Assignment Six</a>
+                    <del><a class="list-group-item list-group-item-action" href="../assignment6/index.html">Assignment Six</a></del>
                 </div>
             </div>
             <div class="col-md-9">
@@ -46,6 +46,11 @@
                     <li>Flask-SQLAlchemy 2.3.2
                         <ul>
                             <li><code>pip install Flask-SQLAlchemy==2.3.2</code></li>
+                        </ul>
+                    </li>
+                    <li>Flask-RESTful 0.3.7
+                        <ul>
+                            <li><code>pip install Flask-RESTful==0.3.7</code></li>
                         </ul>
                     </li>
                 </ul>
@@ -89,6 +94,13 @@
                     <li>Refreshing the page should not mess with the game&rsquo;s progress.</li>
                     <li>Once a game is completed, it cannot be replayed.</li>
                     <li>Unauthenticated users cannot access game boards.</li>
+                </ul>
+                <h3 id="RESTful-APIs">RESTful APIs</h3>
+                <ul>
+                    <li>All <code>XmlHttpRequest</code> requests to interact with data on the backend should be done against routes designed using RESTful API design strategies.</li>
+                    <li>Actions should use the correct <code>HTTP</code> method to interact with data: <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>.</li>
+                    <li>Implement query filtering on collection routes so you can issue a <code>GET</code> request against a collection <code>/api/games/?user=twaits</code> to only return games with user <code>twaits</code>
+                    <li>You may use the library Flask-RESTful (v0.3.7) to manage your RESTful routes and resources.</li>
                 </ul>
                 <h2 id="Submission-Guidelines">Submission Guidelines</h2>
                 <ul>

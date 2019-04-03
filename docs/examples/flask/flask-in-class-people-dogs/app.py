@@ -1,4 +1,13 @@
-from flask import Flask, render_template, abort, flash
+from flask import (
+    Flask, 
+    render_template, 
+    abort, 
+    flash, 
+    redirect, 
+    url_for,
+    request,
+    g
+)
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -9,9 +18,10 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
 
-person_to_dog_join = db.Table("person_to_dog_join",
+person_to_dog_join = db.Table(
+    "person_to_dog_join",
     db.Column("person_id", db.Integer(), db.ForeignKey("person.id")),
-    db.Column("dog_id", db.Integer(), db.ForeignKey("dog.id"))
+    db.Column("dog_id", db.Integer(), db.ForeignKey("dog.id")),
 )
 
 
@@ -21,9 +31,9 @@ class Person(db.Model):
     movie = db.Column(db.String(255))
     dogs = db.relationship(
         "Dog", 
-        secondary=person_to_dog_join,
-        backref="owners", 
-        lazy="select"
+        secondary=person_to_dog_join, 
+        backref=db.backref("owners", lazy="select"), 
+        lazy="joined"
     )
 
     def __init__(self, name, movie):
@@ -66,17 +76,38 @@ people = [
 
 @app.route("/")
 def hello():
-    dogs = Dog.query.all()
-    return render_template('base.html', dogs=dogs)
+    d = Dog.query.all()
+
+    return render_template("base.html", dogs=d)
 
 
-@app.route("/<name>/")
-def profile(name):
-    flash("This is the profile page!")
-    p = [p for p in people if p["name"] == name]
-    if len(p) < 1:
-        return abort(404)
-    return render_template("profile.html", person=p[0])
+@app.route("/<id>/<name>/")
+def profile(id, name):
+    # flash("This is the profile page!")
+
+    return render_template("profile.html", dog=d)
+
+
+@app.route("/newDog/")
+def add_dog():
+    return render_template("add_dog_form.html")
+
+
+@app.route("/newDog/processForm", methods=["POST"])
+def process_dog_form():
+    name = request.form.get("dog_name")
+
+    if name is None:
+        abort(400)
+    
+    d = Dog(name)
+
+    db.session.add(d)
+    db.session.commit()
+
+    flash("%s IS ALIVE AND NOT DEAD AS PIE" % d.name)
+
+    return redirect(url_for("add_dog"))
 
 
 @app.cli.command("initdb")
@@ -85,12 +116,18 @@ def init_db():
     db.drop_all()
     db.create_all()
 
+
 @app.cli.command("devdata")
 def bootstrap_data():
     p = Person("Todd", "Harold and Maude")
     l = Person("Liz", "The Music Man")
+    aaron = Person("Aaron", "Fast and the Furious")
+
     d = Dog("Peppa")
     w = Dog("Wesley")
+    arlo = Dog("Arlo")
+
+    arlo.owners.append(aaron)
 
     p.dogs.append(d)
     p.dogs.append(w)
@@ -102,6 +139,8 @@ def bootstrap_data():
     db.session.add(w)
     db.session.add(p)
     db.session.add(l)
+    db.session.add(aaron)
+    db.session.add(arlo)
     db.session.commit()
 
 
